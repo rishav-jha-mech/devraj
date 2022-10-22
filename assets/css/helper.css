@@ -286,3 +286,24 @@
 .maxh800{
     max-height: 800px;
 }
+.start{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}

@@ -9,24 +9,65 @@
     <link rel="stylesheet" href="./assets//css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/helper.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rishav Jha</title>
 </head>
 
 <body>
-    <header id="header" class="my-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="brand">
-                <a href="/">DEVRAJ</a>
-            </div>
-            <div class="ham-items">
-                <a class="ham-item mx-3" href="/">Home</a>
-                <a class="ham-item mx-3" href="/">About</a>
-                <a class="ham-item mx-3" href="/">Skills</a>
-                <a class="ham-item mx-3" href="/">Services</a>
-                <a class="ham-item mx-3" href="/">Portfolio</a>
-            </div>
+    <header class="container" id="header">
+        <div class="brand">
+            <a href="/">DEVRAJ</a>
+        </div>
+        <div class="ham-items tog-h" id="nav-list">
+            <a class="ham-item mx-3" href="/">Home</a>
+            <a class="ham-item mx-3" href="/">About</a>
+            <a class="ham-item mx-3" href="/">Skills</a>
+            <a class="ham-item mx-3" href="/">Services</a>
+            <a class="ham-item mx-3" href="/">Portfolio</a>
+        </div>
+        <div class="menu-btn-1" onclick="menuBtnFunction(this)">
+            <span></span>
         </div>
     </header>
+
+    <section class="main">
+        <div class="home minh600 container" id="home">
+            <!-- <div class="extra">
+                pjhfjh
+            </div> -->
+            <div class="left start">
+                <div class="details">
+                    <h1 class="heading">Hi I'am Devraj <capsule><i class="fa-solid fa-code"></i></capsule>
+                    </h1>
+                    <p class="subheading">Frontend Developer</p>
+                    <div class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo earum repellendus exercitationem ullam odio pariatur quia nemo id maiores beatae.
+                    </div>
+                    <button class="btn mt-4" onclick="">Scroll Down</button>
+                </div>
+            </div>
+            <div class="right center">
+                <div class="img-container relative">
+                    <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path fill="#66f" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path fill="#66f" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image id="me" x="18" xlink:href="./assets/img/devraj.png" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./assets//js/main.js"></script>
     <script src="./assets//js/bootstrap..js"></script>
