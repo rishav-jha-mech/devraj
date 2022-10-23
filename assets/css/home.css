@@ -46,6 +46,7 @@
 #home .left .text {
     font-size: var(--text-less);
     line-height: var(--text-height-less);
+    color: var(--bs-gray-600);
 }
 
 #home .right #me {
