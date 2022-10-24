@@ -4,6 +4,8 @@ const eduBtn = document.getElementById("educ-btn");
 const workBtn = document.getElementById("work-btn");
 const eduContainer = document.getElementById("educ-container");
 const workContainer = document.getElementById("work-container");
+const aboutContainer = document.getElementById("about");
+const skillsContainer = document.getElementById("skills");
 const frontEndContainer = document.getElementById("front-end");
 const backEndContainer = document.getElementById("back-end");
 const AppDevContainer = document.getElementById("app-dev");
@@ -124,11 +126,12 @@ const attachSkills = (parentElement, data) => {
     data.forEach((skill) => {
         const skillDiv = document.createElement("div");
         skillDiv.classList.add("skill");
+        const name = (`${skill.name}`).replace("_", " ");
         skillDiv.innerHTML = `
             <div class="skill-item">
                 <div class="between">
                     <div class="left">
-                        <h6>${skill.name}</h6>
+                        <h6>${name}</h6>
                     </div>
                     <div class="right">
                         <h6 for="${skill.name}" class="title">${skill.level}%</h6>
@@ -147,31 +150,41 @@ attachSkills(AppDevContainer, AppDeveloper);
 attachSkills(devOpsContainer, devOps);
 
 
-
-
-
 // Animate Progress
 
-var animate = true;
+var animateProgress = true;
+var animateSkills = true;
 
-document.addEventListener('scroll', e => {
-    if (document.documentElement.scrollTop >= (document.getElementById('skills').offsetTop - 300)) {
-        if (animate) {
-            animateProgress();
-            animate = false;
+const progressAnimationListener = document.addEventListener('scroll', e => {
+    if (document.documentElement.scrollTop >= (skillsContainer.offsetTop - 300)) {
+        if (animateProgress) {
+            animateProgressF();
+            animateProgress = false;
+            clearInterval(skillAnimationListener);
         }
     }
-})
-function animateProgress() {
+});
+
+const aboutAnimationListener = document.addEventListener('scroll', e => {
+    if (document.documentElement.scrollTop >= (aboutContainer.offsetTop - 300)) {
+        if (animateSkills) {
+            animateSkillsF();
+            animateSkills = false;
+            clearInterval(aboutAnimationListener);
+        }
+    }
+});
+
+function animateProgressF() {
     const progress = document.getElementById('skills').querySelectorAll('progress');
 
     progress.forEach((progress) => {
 
-        const _PRG = document.getElementById(progress.id),_OUT = document.querySelector(`[for=${progress.id}]`),K = 2,TMAX = K * _PRG.getAttribute('data-value');
+        const _PRG = document.getElementById(progress.id), _OUT = document.querySelector(`[for=${progress.id}]`), K = 2, TMAX = K * _PRG.getAttribute('data-value');
         function load(t = 0) {
             if (t <= TMAX) {
                 if (t % K === 0) {
-                    _OUT.innerHTML =  `${t / K}%`;
+                    _OUT.innerHTML = `${t / K}%`;
                     _PRG.value = t / K;
                 }
                 requestAnimationFrame(load.bind(this, t + 1));
@@ -180,3 +193,23 @@ function animateProgress() {
         load();
     })
 }
+function animateSkillsF() {
+    const elements = document.getElementById('about').querySelectorAll('.blockHero');
+    elements.forEach((obj) => {
+        counterAnim(obj, 0, parseInt(obj.getAttribute('data-value')), obj.getAttribute('data-duration') ?? 1000);
+    })
+}
+//#region - start of - number counter animation
+const counterAnim = (element, start = 0, end, duration = 1000) => {
+    const target = element;
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        target.innerText = Math.floor(progress * (end - start) + start) + '+';
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+};

@@ -60,7 +60,9 @@ body {
     padding: 0.65rem 1.5rem;
     color: var(--bs-white);
 }
-
+.btn:hover{
+    color: var(--bs-white);
+}
 .heading {
     font-size: var(--text-heading);
     font-weight: 700;
@@ -92,4 +94,3 @@ body {
     background-color: unset;
     box-shadow: none;
 }
-
