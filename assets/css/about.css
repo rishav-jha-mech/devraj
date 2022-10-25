@@ -24,7 +24,6 @@
     width: 400px;
     height: 400px;
     position: relative;
-    margin-left: 6rem;
     border-radius: 16px;
     background: linear-gradient(127deg, #E100FF, #7F00FF);
     overflow: hidden;
@@ -60,10 +59,6 @@
 @media(max-width: 1200px) {
     #about .blockHero {
         font-size: 2rem;
-    }
-
-    #about .gradient1 {
-        margin-left: 0;
     }
 }
 

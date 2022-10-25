@@ -103,3 +103,17 @@ body {
     background-color: unset;
     box-shadow: none;
 }
+
+/* Footer */
+#footer {
+    background-color: var(--theme-color);
+    color: var(--bs-white);
+    padding: 2rem 0;
+}
+#footer a{
+    text-decoration: none;
+    color: var(--bs-white);
+}
+#footer i{
+    font-size: 1.5rem;
+}
