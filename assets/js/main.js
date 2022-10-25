@@ -342,7 +342,7 @@ const appdev = [
 function addProject(parentElement, list) {
     parentElement.innerHTML = list.map((project) => {
         return `
-            <div class="col-12 col-lg-4 mb-3">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
                 <div class="project-item card rounded-5" data-ribbon="${project.label}" style="--d:6px;--f: 10px;--c:var(--theme-color)">
                     <div class="card-body">
                         <div class="project-image">
