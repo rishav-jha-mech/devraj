@@ -2,6 +2,8 @@ const menu = document.getElementById("nav-list");
 const main = document.getElementById("main");
 const eduBtn = document.getElementById("educ-btn");
 const workBtn = document.getElementById("work-btn");
+const webBtn = document.getElementById("web-btn");
+const appBtn = document.getElementById("app-btn");
 const eduContainer = document.getElementById("educ-container");
 const workContainer = document.getElementById("work-container");
 const aboutContainer = document.getElementById("about");
@@ -10,6 +12,9 @@ const frontEndContainer = document.getElementById("front-end");
 const backEndContainer = document.getElementById("back-end");
 const AppDevContainer = document.getElementById("app-dev");
 const devOpsContainer = document.getElementById("dev-ops");
+const projectGrid = document.getElementById("project-grid");
+const webdevContainer = document.getElementById("web-dev-projects");
+const appdevContainer = document.getElementById("app-dev-projects");
 
 function log(params) {
     console.log(params);
@@ -32,6 +37,7 @@ function toggleQual() {
 }
 
 // ADD SKILLS
+
 const frontEnd = [
     {
         name: "HTML",
@@ -149,8 +155,9 @@ attachSkills(backEndContainer, backEnd);
 attachSkills(AppDevContainer, AppDeveloper);
 attachSkills(devOpsContainer, devOps);
 
+// ADD Skills
 
-// Animate Progress
+// Animate Progress & Counter
 
 var animateProgress = true;
 var animateSkills = true;
@@ -160,7 +167,7 @@ const progressAnimationListener = document.addEventListener('scroll', e => {
         if (animateProgress) {
             animateProgressF();
             animateProgress = false;
-            clearInterval(skillAnimationListener);
+            clearInterval(progressAnimationListener);
         }
     }
 });
@@ -199,7 +206,7 @@ function animateSkillsF() {
         counterAnim(obj, 0, parseInt(obj.getAttribute('data-value')), obj.getAttribute('data-duration') ?? 1000);
     })
 }
-//#region - start of - number counter animation
+
 const counterAnim = (element, start = 0, end, duration = 1000) => {
     const target = element;
     let startTimestamp = null;
@@ -213,3 +220,160 @@ const counterAnim = (element, start = 0, end, duration = 1000) => {
     };
     window.requestAnimationFrame(step);
 };
+
+// Animate Progress & Counter
+
+// ADD PROJECTS
+
+const webdev = [
+    {
+        name: "Placement Management System",
+        label: "NIT DGP",
+        images: [
+            "https://static.vecteezy.com/system/resources/previews/008/516/784/non_2x/developer-coding-website-illustration-concept-vector.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Freya",
+        label: "Django",
+        images: [
+            "https://thumbs.dreamstime.com/b/modern-d-illustration-ui-design-web-development-application-coding-programming-laptop-concept-pink-background-vector-230177687.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "SamVaad",
+        label: "React",
+        images: [
+            "https://img.freepik.com/premium-vector/website-programming-coding-web-development-coding-3d-vector-illustrations_594024-93.jpg?w=2000"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "K Plus",
+        label: "Freelance",
+        images: [
+            "https://cdn.dribbble.com/users/1814344/screenshots/11764514/media/304d17afbd44f98d5e2a85d616b97f67.png?compress=1&resize=400x300"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Squid Game",
+        label: "Django",
+        images: [
+            "https://miro.medium.com/max/1400/1*FhdkND7pJKXYhNC4ovxcQQ.png"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Treasures at Hogwarts",
+        label: "Django",
+        images: [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52RchcLlWmKgoZ6SovgSWTHqdiYDjgxyDHLJF6Hp3XbtRodcDx50xFKbu7-quYgh69Kk&usqp=CAU"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+]
+
+const appdev = [
+    {
+        name: "SamVaad",
+        label: "React Native",
+        images: [
+            "https://static.vecteezy.com/system/resources/previews/000/247/824/original/vector-beautiful-landscape-illustration.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "UV Downloader",
+        label: "React Native",
+        images: [
+            "https://static.vecteezy.com/system/resources/thumbnails/000/208/995/small/eezy_07.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Freya Blogging App",
+        label: "React Native",
+        images: [
+            "https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg?w=2000"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Triunits",
+        label: "Flutter",
+        images: [
+            "https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/2361/posts/36065/image/what_is_illustration_example_illustrator.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Tricket",
+        label: "Flutter",
+        images: [
+            "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/113d1046-6bdc-4475-a781-99f6cf7d1acd/001-understand-yourself-large-opt.png"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Treklers",
+        label: "React Native",
+        images: [
+            "https://digitalsynopsis.com/wp-content/uploads/2019/08/beautiful-illustrations-design-inspiration-22.png"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    }
+]
+
+function addProject(parentElement,list) {
+    parentElement.innerHTML = list.map((project) => {
+        return `
+            <div class="col-12 col-lg-4 mb-3">
+                <div class="project-item card rounded-5" data-ribbon="${project.label}" style="--d:6px;--f: 10px;--c:var(--theme-color)">
+                    <div class="card-body">
+                        <div class="project-image">
+                            <img class="w-100" src="${project.images[0]}" alt="${project.name} Images">
+                        </div>
+                        <div class="project-description mt-4">
+                            <h6>${project.name}</h6>
+                            <p class="mt-3">${project.description}</p>
+                            <div class="around">
+                                <button class="btn active">
+                                    <a href="${project.link}" target="_blank">View Project</a>
+                                </button>
+                                <button class="btn">
+                                    <a href="${project.link}" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    }).join('');
+}
+addProject(webdevContainer,webdev);
+addProject(appdevContainer,appdev);
+// ADD PROJECTS
+
+// Toggle Projects
+function toggleProject() {
+    webBtn.classList.toggle("active");
+    appBtn.classList.toggle("active");
+    webdevContainer.classList.toggle("d-none");
+    appdevContainer.classList.toggle("d-none");
+}

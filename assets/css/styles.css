@@ -43,6 +43,7 @@
     padding: 0;
     margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -60,9 +61,11 @@ body {
     padding: 0.65rem 1.5rem;
     color: var(--bs-white);
 }
-.btn:hover{
+
+.btn:hover {
     color: var(--bs-white);
 }
+
 .heading {
     font-size: var(--text-heading);
     font-weight: 700;
@@ -76,9 +79,11 @@ body {
     font-size: var(--text-normal);
     line-height: var(--text-height-normal);
 }
+
 .text-theme {
-    color: var(--theme-color);
+    color: var(--theme-color) !important;
 }
+
 .accordion-item {
     border: none;
 }
