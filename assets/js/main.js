@@ -339,7 +339,7 @@ const appdev = [
     }
 ]
 
-function addProject(parentElement,list) {
+function addProject(parentElement, list) {
     parentElement.innerHTML = list.map((project) => {
         return `
             <div class="col-12 col-lg-4 mb-3">
@@ -349,7 +349,7 @@ function addProject(parentElement,list) {
                             <img class="w-100" src="${project.images[0]}" alt="${project.name} Images">
                         </div>
                         <div class="project-description mt-4">
-                            <h6>${project.name}</h6>
+                            <h6 class="fw-bold">${project.name}</h6>
                             <p class="mt-3">${project.description}</p>
                             <div class="around">
                                 <button class="btn active">
@@ -366,8 +366,8 @@ function addProject(parentElement,list) {
         `
     }).join('');
 }
-addProject(webdevContainer,webdev);
-addProject(appdevContainer,appdev);
+addProject(webdevContainer, webdev);
+addProject(appdevContainer, appdev);
 // ADD PROJECTS
 
 // Toggle Projects
@@ -377,3 +377,83 @@ function toggleProject() {
     webdevContainer.classList.toggle("d-none");
     appdevContainer.classList.toggle("d-none");
 }
+
+// Portfolio
+const portfolio = [
+
+    {
+        name: "Placement Management System",
+        label: "NIT DGP",
+        images: [
+            "https://static.vecteezy.com/system/resources/previews/008/516/784/non_2x/developer-coding-website-illustration-concept-vector.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "UV Downloader",
+        label: "React Native",
+        images: [
+            "https://static.vecteezy.com/system/resources/thumbnails/000/208/995/small/eezy_07.jpg"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        name: "Treklers",
+        label: "React Native",
+        images: [
+            "https://digitalsynopsis.com/wp-content/uploads/2019/08/beautiful-illustrations-design-inspiration-22.png"
+        ],
+        link: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    }
+
+]
+var swiper = new Swiper(".portfolio-swiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    autoplay:{
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project) => {
+    return `
+    <div class="swiper-slide w-100">
+        <div class="da-card">
+            <div class="row px-0">
+                <div class="col-12 col-md-6">
+                    <div class="img-container center">
+                        <img  class="w-100" src="${project.images[0]}" alt="Portfolio Rishav Jha ${project.name}">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="description">
+                        <h1 class="heading">${project.name}</h1>
+                        <h6 class="subheading mb-4 text-muted">Lorem ipsum dolor sit amet.</h6>
+                        <p class="text fs-6">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt blanditiis iure! 
+                        </p>
+                    </div>
+                    <div class="around">
+                        <button class="btn active">
+                            <a href="${project.link}" target="_blank">View Project</a>
+                        </button>
+                        <button class="btn">
+                            <a href="${project.link}" target="_blank">View Code</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+}).join('');

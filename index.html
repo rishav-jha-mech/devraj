@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="./assets/css/skills.css">
     <link rel="stylesheet" href="./assets/css/qualification.css">
     <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Rishav Jha</title>
 </head>
 
@@ -223,7 +225,8 @@
                 <div class="center my-3">
                     <button id="educ-btn" onclick="toggleQual()" class="btn active me-2 me-sm-3"><i
                             class="fa-solid fa-graduation-cap"></i> Education</button>
-                    <button id="work-btn" onclick="toggleQual()" class="btn ms-2 ms-sm-3"><i class="fa-solid fa-briefcase"></i>
+                    <button id="work-btn" onclick="toggleQual()" class="btn ms-2 ms-sm-3"><i
+                            class="fa-solid fa-briefcase"></i>
                         Work</button>
                 </div>
                 <div class="row px-2 mx-0 center">
@@ -287,7 +290,8 @@
             <h1 class="heading text-center">My Projects</h1>
             <h2 class="subheading text-center mb-5">What i made so far</h2>
             <div class="center my-3">
-                <button id="web-btn" onclick="toggleProject()" class="btn active me-2 me-sm-3"><i class="fa-solid fa-globe"></i></i> 
+                <button id="web-btn" onclick="toggleProject()" class="btn active me-2 me-sm-3"><i
+                        class="fa-solid fa-globe"></i></i>
                     Web Dev
                 </button>
                 <button id="app-btn" onclick="toggleProject()" class="btn"><i class="fa-solid fa-mobile-screen"></i>
@@ -295,15 +299,29 @@
                 </button>
             </div>
             <div class="py-4 row center mt-5 px-0 mb-0 " id="project-grid">
-                <div class="col-12 col-lg-10">    
+                <div class="col-12 col-lg-10">
                     <div id="web-dev-projects" class="row px-0 mx-0"></div>
                     <div id="app-dev-projects" class="row px-0 d-none mx-0"></div>
                 </div>
             </div>
         </div>
+        <div class="portfolio my-5 container minh600" id="portfolio">
+            <h1 class="heading text-center">Portfolio</h1>
+            <h2 class="subheading text-center mb-0 mb-sm-5">Most recent work</h2>
+            <div class="row py-4 mt-0 mt-sm-5 px-0 mb-0 center">
+                <div class="col-12 col-lg-10 px-0">
+                    <div class="py-4 swiper portfolio-swiper px-0 mb-0">
+                        <div class="swiper-wrapper pb-0 pb-sm-4" id="portfolio-wrapper"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="./assets//js/bootstrap..js"></script>
+    <script src="./assets//js/bootstrap.js"></script>
     <script src="./assets//js/swiper-bundle.min.js"></script>
     <script src="./assets//js/main.js"></script>
 </body>
