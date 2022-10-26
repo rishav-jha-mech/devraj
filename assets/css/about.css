@@ -25,7 +25,7 @@
     height: 400px;
     position: relative;
     border-radius: 16px;
-    background: linear-gradient(127deg, #E100FF, #7F00FF);
+    background: linear-gradient(127deg, var(--theme-color), var(--theme-primary));
     overflow: hidden;
 }
 

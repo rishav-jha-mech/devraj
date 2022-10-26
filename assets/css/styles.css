@@ -4,7 +4,12 @@
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --body-font: 'Poppins', sans-serif;
     --text-color: #000;
-    --theme-color: #6666ff;
+    --theme-color: #66f;
+    --theme-primary: #6E44FF;
+    --theme-secondary: #B892FF;
+    --theme-tertiary: #FFC2E2;
+    --theme-quartenary: #FF90B3;
+    --theme-quinary: #EF7A85;
     --text-heading: 3.25rem;
     --text-md: 1.75rem;
     --text-lg: 2rem;
@@ -46,6 +51,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition: 0.5s;
 }
 
 body {
@@ -88,6 +94,17 @@ body {
     background: var(--theme-color) !important;
 }
 
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background: none !important;
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    font-size: 1.2rem;
+    right: 1rem;
+    content: '\f106';
+    color: var(--theme-color);
+}
+
 .accordion-item {
     border: none;
 }
@@ -110,20 +127,23 @@ body {
     color: var(--bs-white);
     padding: 2rem 0;
 }
-#footer a{
+
+#footer a {
     text-decoration: none;
     color: var(--bs-white);
     transition: 0.5s ease;
 }
-#footer i{
+
+#footer i {
     font-size: 1.5rem;
 }
-#footer a:hover{
+
+#footer a:hover {
     transition: 0.5s ease;
     opacity: 0.8;
 }
 
-.upBtn{
+.upBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -141,17 +161,20 @@ body {
     animation: angleup 0.5s ease;
     border: 1px solid var(--bs-gray-200);
 }
-@media(max-width: 425px){
-    .upBtn{
+
+@media(max-width: 425px) {
+    .upBtn {
         bottom: 1.5rem;
         right: 1.25rem;
     }
 }
+
 @keyframes angleup {
-    0%{
+    0% {
         transform: translateY(50px);
     }
-    100%{
+
+    100% {
         transform: translateY(0)
     }
 }

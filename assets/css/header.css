@@ -103,7 +103,7 @@
 .menu-btn-1 span,
 .menu-btn-1 span::before,
 .menu-btn-1 span::after {
-    background: #66f;
+    background: var(--theme-color);
     border-radius: 3px;
     content: '';
     position: absolute;

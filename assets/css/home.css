@@ -23,7 +23,7 @@
 #home .left capsule {
     font-weight: 200;
     font-size: 1.5rem;
-    background: #66f;
+    background: var(--theme-color);
     color: var(--bs-white);
     padding: 0.65rem 1.5rem;
     margin-top: 1rem;

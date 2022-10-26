@@ -25,9 +25,11 @@ function kPrettyPrint(params) {
 }
 
 function menuBtnFunction() {
-    document.getElementsByClassName('menu-btn-1')[0].classList.toggle("active");
-    menu.classList.toggle("tog-h");
-    main.classList.toggle("d-none");
+    if (document.getElementsByTagName('html')[0].offsetWidth < 992) {
+        document.getElementsByClassName('menu-btn-1')[0].classList.toggle("active");
+        menu.classList.toggle("tog-h");
+        main.classList.toggle("d-none");
+    }    
 }
 
 var showupBtn = true
@@ -47,6 +49,10 @@ const upBtnListener = document.addEventListener('scroll', e => {
 
 upBtn.onclick = () => {
     document.documentElement.scrollTop = 0;
+}
+
+function scrollTo(id){
+    document.documentElement.scrollTop = document.getElementById(id).offsetTop
 }
 
 function toggleQual() {
