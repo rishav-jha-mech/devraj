@@ -29,7 +29,7 @@ function menuBtnFunction() {
         document.getElementsByClassName('menu-btn-1')[0].classList.toggle("active");
         menu.classList.toggle("tog-h");
         main.classList.toggle("d-none");
-    }    
+    }
 }
 
 var showupBtn = true
@@ -51,7 +51,7 @@ upBtn.onclick = () => {
     document.documentElement.scrollTop = 0;
 }
 
-function scrollTo(id){
+function scrollToFunc(id) {
     document.documentElement.scrollTop = document.getElementById(id).offsetTop
 }
 
@@ -484,3 +484,37 @@ document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project
     </div>
     `
 }).join('');
+
+
+var typingOptions = {
+    strings: ['Full Stack Developer', 'App Developer', 'UI/UX Designer', 'Freelancer', 'Open Source Contributor',],
+    typeSpeed: 80,
+    startDelay: 500,
+    backSpeed: 50,
+    backDelay: 700,
+    loop: true,
+    fadeOut: true,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 500,
+    showCursor: false,
+    autoInsertCss: true,
+};
+
+var typed = new Typed('#whatido', typingOptions);
+
+
+// MESSAGE FORM JAVASCRIPT
+const fields = ['f-name','f-email','f-subject','f-message'];
+
+function emptyValue(id) {
+    document.getElementById(id).value = "";
+}
+
+function handleFormSubmit() {
+    fields.forEach(id => emptyValue(id));
+    Swal.fire(
+        'Message Sent!',
+        'Please wait for a while, I will get back to you soon.',
+        'success'
+    );
+}

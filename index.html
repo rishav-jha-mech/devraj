@@ -41,7 +41,8 @@
         </div>
     </header>
 
-    <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle"><i class="fa-solid fa-angle-up fs-4"></i></button>
+    <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle"><i
+            class="fa-solid fa-angle-up fs-4"></i></button>
 
     <section class="main" id="main">
 
@@ -51,15 +52,17 @@
                     <div class="d-flex flex-column-reverse flex-lg-row">
                         <div class="left text-center text-lg-start mt-1 mt-sm-0">
                             <div class="details">
-                                <h1 class="heading d-flex align-items-center justify-content-center justify-content-lg-start">Hi I'am Devraj <capsule><i class="fa-solid fa-code"></i></capsule>
+                                <h1
+                                    class="heading d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    Hi I'am Devraj <capsule><i class="fa-solid fa-code"></i></capsule>
                                 </h1>
-                                <p class="subheading mb-2 mb-sm-4">Frontend Developer</p>
+                                <p class="subheading mb-2 mb-sm-4" id="whatido">Frontend Developer</p>
                                 <div class="text">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo earum repellendus
                                     exercitationem
                                     ullam odio pariatur quia nemo id maiores beatae.
                                 </div>
-                                <button class="btn mt-2 mt-sm-5" onclick="scrollTo('contact')">Contact me <i
+                                <button class="btn mt-2 mt-sm-5" onclick="scrollToFunc('contact')">Contact me <i
                                         class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
                             </div>
                         </div>
@@ -175,8 +178,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                     id="mdi-code-braces" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path
-                                                        fill="var(--theme-color)" 
+                                                    <path fill="var(--theme-color)"
                                                         d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
                                                 </svg>
                                             </div>
@@ -401,18 +403,18 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                            <form action="/">
+                            <form action="/" onsubmit="event.preventDefault(); handleFormSubmit();">
                                 <div class="right mt-sm-0 mt-4">
                                     <div class="row mb-3">
                                         <div class="col-12 col-lg-6 mb-lg-0 mb-3">
-                                            <input class="form-control py-3" type="text" placeholder="Name" required>
+                                            <input id="f-name" name="name" class="form-control py-3" type="text" placeholder="Name" required>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <input class="form-control py-3" type="email" placeholder="Email" required>
+                                            <input id="f-email" name="email" class="form-control py-3" type="email" placeholder="Email" required>
                                         </div>
                                     </div>
-                                    <input class="form-control py-3 mb-3" type="text" placeholder="Project" required>
-                                    <textarea class="form-control py-3 mb-3" name="" id="" cols="30" rows="10"
+                                    <input id="f-subject" name="subject" class="form-control py-3 mb-3" type="text" placeholder="Subject" required>
+                                    <textarea id="f-message" name="message" class="form-control py-3 mb-3" cols="30" rows="10"
                                         placeholder="Message" required></textarea>
                                     <div class="row mx-0 px-0">
                                         <button class="col-12 col-lg-5 btn fs-6" type="submit">Send Message</button>
@@ -473,6 +475,8 @@
 
     <script src="./assets//js/bootstrap.js"></script>
     <script src="./assets//js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/typed.js"></script>
+    <script src="./assets/js/swal2.js"></script>
     <script src="./assets//js/main.js"></script>
 </body>
 

@@ -27,7 +27,7 @@
     color: var(--bs-white);
     padding: 0.65rem 1.5rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
     border-radius: 60px;
 }
 
@@ -82,4 +82,11 @@
     #home {
         max-width: max-content;
     }
+    #home .left capsule {
+        margin-top: 0;
+    }
+}
+
+#whatido{
+    height: 42px;
 }
