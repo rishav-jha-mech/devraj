@@ -60,13 +60,17 @@
 }
 
 @media (max-width: 400px) {
+    #home .left,
+    #home .right {
+        flex: 1;
+    }
     #home .right #me {
         width: 175px;
     }
 
     #home .img-container {
         height: 270px;
-        width: 300px;
+        width: 270px;
     }
 }
 @media (max-width: 380px) {

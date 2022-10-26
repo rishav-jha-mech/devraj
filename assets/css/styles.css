@@ -113,7 +113,45 @@ body {
 #footer a{
     text-decoration: none;
     color: var(--bs-white);
+    transition: 0.5s ease;
 }
 #footer i{
     font-size: 1.5rem;
+}
+#footer a:hover{
+    transition: 0.5s ease;
+    opacity: 0.8;
+}
+
+.upBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--theme-color);
+    color: var(--bs-white);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    animation: angleup 0.5s ease;
+    border: 1px solid var(--bs-gray-200);
+}
+@media(max-width: 425px){
+    .upBtn{
+        bottom: 1.5rem;
+        right: 1.25rem;
+    }
+}
+@keyframes angleup {
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0)
+    }
 }

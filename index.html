@@ -31,37 +31,39 @@
         </div>
         <div class="ham-items tog-h" id="nav-list">
             <a class="ham-item text-theme mx-3" href="/">Home</a>
-            <a class="ham-item mx-3" href="/">About</a>
-            <a class="ham-item mx-3" href="/">Skills</a>
-            <a class="ham-item mx-3" href="/">Services</a>
-            <a class="ham-item mx-3" href="/">Portfolio</a>
+            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#about">About</a>
+            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#skills">Skills</a>
+            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#portfolio">Portfolio</a>
+            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#contact">Contact</a>
         </div>
-        <div class="menu-btn-1" onclick="menuBtnFunction(this)">
+        <div class="menu-btn-1" onclick="menuBtnFunction()">
             <span></span>
         </div>
     </header>
+
+    <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle"><i class="fa-solid fa-angle-up fs-4"></i></button>
 
     <section class="main" id="main">
 
         <div class="home minh625 container center" id="home">
             <div class="row mx-0 center">
-                <div class="col-12 col-lg-11">
+                <div class="col-12 col-lg-11 px-0 mx-0">
                     <div class="d-flex flex-column-reverse flex-lg-row">
-                        <div class="left text-center text-lg-start">
+                        <div class="left text-center text-lg-start mt-1 mt-sm-0">
                             <div class="details">
                                 <h1 class="heading d-flex align-items-center justify-content-center justify-content-lg-start">Hi I'am Devraj <capsule><i class="fa-solid fa-code"></i></capsule>
                                 </h1>
-                                <p class="subheading">Frontend Developer</p>
+                                <p class="subheading mb-2 mb-sm-4">Frontend Developer</p>
                                 <div class="text">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo earum repellendus
                                     exercitationem
                                     ullam odio pariatur quia nemo id maiores beatae.
                                 </div>
-                                <button class="btn mt-4" onclick="">Contact me <i
+                                <button class="btn mt-2 mt-sm-5" onclick="">Contact me <i
                                         class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
                             </div>
                         </div>
-                        <div class="right d-flex justify-content-center justify-content-lg-end align-items-lg-center">
+                        <div class="right d-flex justify-content-center justify-content-lg-end align-items-lg-start">
                             <div class="img-container relative">
                                 <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -411,7 +413,9 @@
                                     <input class="form-control py-3 mb-3" type="text" placeholder="Project" required>
                                     <textarea class="form-control py-3 mb-3" name="" id="" cols="30" rows="10"
                                         placeholder="Message" required></textarea>
-                                    <button class="btn fs-6" type="submit">Send Message</button>
+                                    <div class="row mx-0 px-0">
+                                        <button class="col-12 col-lg-5 btn fs-6" type="submit">Send Message</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>

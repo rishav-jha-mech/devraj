@@ -1,5 +1,6 @@
 const menu = document.getElementById("nav-list");
 const main = document.getElementById("main");
+const upBtn = document.getElementById('up-btn');
 const eduBtn = document.getElementById("educ-btn");
 const workBtn = document.getElementById("work-btn");
 const webBtn = document.getElementById("web-btn");
@@ -23,10 +24,29 @@ function kPrettyPrint(params) {
     console.log(JSON.stringify(params, null, 4));
 }
 
-function menuBtnFunction(menuBtn) {
-    menuBtn.classList.toggle("active");
+function menuBtnFunction() {
+    document.getElementsByClassName('menu-btn-1')[0].classList.toggle("active");
     menu.classList.toggle("tog-h");
     main.classList.toggle("d-none");
+}
+
+var showupBtn = true
+
+const upBtnListener = document.addEventListener('scroll', e => {
+    if (document.documentElement.scrollTop >= 200) {
+        if (upBtn.classList.contains('d-none')) {
+            upBtn.classList.remove('d-none');
+        }
+    } else {
+        if (upBtn.classList.contains('d-none') === false) {
+            upBtn.classList.toggle('d-none');
+        }
+    }
+}
+);
+
+upBtn.onclick = () => {
+    document.documentElement.scrollTop = 0;
 }
 
 function toggleQual() {
@@ -415,7 +435,8 @@ var swiper = new Swiper(".portfolio-swiper", {
         el: ".swiper-pagination",
         dynamicBullets: true,
     },
-    autoplay:{
+    cursor: "pointer",
+    autoplay: {
         delay: 1500,
         disableOnInteraction: false,
     },
