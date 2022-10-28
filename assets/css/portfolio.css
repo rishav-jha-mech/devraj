@@ -21,7 +21,8 @@
 
 #portfolio .swiper-slide img {
     height: 320px;
-    border-radius: 16px;
+    border: 1px solid var(--bs-gray-400);
+    border-radius: 8px;
 }
 
 .swiper-button-next,

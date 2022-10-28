@@ -253,10 +253,22 @@ const counterAnim = (element, start = 0, end, duration = 1000) => {
 
 const webdev = [
     {
-        name: "Placement Management System",
+        name: "Placement_Management_System",
         label: "NIT DGP",
         images: [
-            "https://static.vecteezy.com/system/resources/previews/008/516/784/non_2x/developer-coding-website-illustration-concept-vector.jpg"
+            "./assets/img/projects/Placement Management/1.png",
+            "./assets/img/projects/Placement Management/2.png",
+            "./assets/img/projects/Placement Management/3.png",
+            "./assets/img/projects/Placement Management/4.png",
+            "./assets/img/projects/Placement Management/5.png",
+            "./assets/img/projects/Placement Management/6.png",
+            "./assets/img/projects/Placement Management/7.png",
+            "./assets/img/projects/Placement Management/8.png",
+            "./assets/img/projects/Placement Management/9.png",
+            "./assets/img/projects/Placement Management/10.png",
+            "./assets/img/projects/Placement Management/11.png",
+            "./assets/img/projects/Placement Management/12.png",
+
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -280,7 +292,7 @@ const webdev = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "K Plus",
+        name: "K_Plus",
         label: "Freelance",
         images: [
             "https://cdn.dribbble.com/users/1814344/screenshots/11764514/media/304d17afbd44f98d5e2a85d616b97f67.png?compress=1&resize=400x300"
@@ -289,7 +301,7 @@ const webdev = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "Squid Game",
+        name: "Squid_Game",
         label: "Django",
         images: [
             "https://miro.medium.com/max/1400/1*FhdkND7pJKXYhNC4ovxcQQ.png"
@@ -298,7 +310,7 @@ const webdev = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "Treasures at Hogwarts",
+        name: "Treasures_at_Hogwarts",
         label: "Django",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52RchcLlWmKgoZ6SovgSWTHqdiYDjgxyDHLJF6Hp3XbtRodcDx50xFKbu7-quYgh69Kk&usqp=CAU"
@@ -319,7 +331,7 @@ const appdev = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "UV Downloader",
+        name: "UV_Downloader",
         label: "React Native",
         images: [
             "https://static.vecteezy.com/system/resources/thumbnails/000/208/995/small/eezy_07.jpg"
@@ -328,7 +340,7 @@ const appdev = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "Freya Blogging App",
+        name: "Freya_Blogging_App",
         label: "React Native",
         images: [
             "https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg?w=2000"
@@ -366,19 +378,34 @@ const appdev = [
 ]
 
 function addProject(parentElement, list) {
+
     parentElement.innerHTML = list.map((project) => {
+
+        let name = `${project.name}`.replace(/_/g, " ");
+
         return `
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
                 <div class="project-item card rounded-5" data-ribbon="${project.label}" style="--d:6px;--f: 10px;--c:var(--theme-color)">
                     <div class="card-body">
                         <div class="project-image">
-                            <img class="w-100" src="${project.images[0]}" alt="${project.name} Images">
+                            <div id="${project.name}Fade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    ${project.images.map((image, index) => {
+                                        return (
+                                            `<div class="carousel-item ${index == 0 ? 'active' : null}">
+                                                    <img src="${image}" class="d-block w-100" alt="${name} 1">
+                                                </div>`
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </div>
                         </div>
                         <div class="project-description mt-4">
-                            <h6 class="fw-bold">${project.name}</h6>
+                            <h6 class="fw-bold">${name}</h6>
                             <p class="mt-3">${project.description}</p>
                             <div class="around">
-                                <button class="btn active">
+                                <button class="btn my-active">
                                     <a href="${project.link}" target="_blank">View Project</a>
                                 </button>
                                 <button class="btn">
@@ -398,8 +425,8 @@ addProject(appdevContainer, appdev);
 
 // Toggle Projects
 function toggleProject() {
-    webBtn.classList.toggle("active");
-    appBtn.classList.toggle("active");
+    webBtn.classList.toggle("my-active");
+    appBtn.classList.toggle("my-active");
     webdevContainer.classList.toggle("d-none");
     appdevContainer.classList.toggle("d-none");
 }
@@ -408,10 +435,21 @@ function toggleProject() {
 const portfolio = [
 
     {
-        name: "Placement Management System",
+        name: "Placement_Management_System",
         label: "NIT DGP",
         images: [
-            "https://static.vecteezy.com/system/resources/previews/008/516/784/non_2x/developer-coding-website-illustration-concept-vector.jpg"
+            "./assets/img/projects/Placement Management/1.png",
+            "./assets/img/projects/Placement Management/2.png",
+            "./assets/img/projects/Placement Management/3.png",
+            "./assets/img/projects/Placement Management/4.png",
+            "./assets/img/projects/Placement Management/5.png",
+            "./assets/img/projects/Placement Management/6.png",
+            "./assets/img/projects/Placement Management/7.png",
+            "./assets/img/projects/Placement Management/8.png",
+            "./assets/img/projects/Placement Management/9.png",
+            "./assets/img/projects/Placement Management/10.png",
+            "./assets/img/projects/Placement Management/11.png",
+            "./assets/img/projects/Placement Management/12.png",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -443,8 +481,8 @@ var swiper = new Swiper(".portfolio-swiper", {
     },
     cursor: "pointer",
     autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
+        delay: 3500,
+        disableOnInteraction: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -453,18 +491,40 @@ var swiper = new Swiper(".portfolio-swiper", {
 });
 
 document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project) => {
+
+    let name = `${project.name}`.replace(/_/g, " ");
+
     return `
     <div class="swiper-slide w-100">
         <div class="da-card">
             <div class="row px-0">
                 <div class="col-12 col-md-6">
                     <div class="img-container center">
-                        <img  class="w-100" src="${project.images[0]}" alt="Portfolio Rishav Jha ${project.name}">
+                        <div id="${project.name}Portfolio" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                ${project.images.map((image, index) => {
+                                    return (
+                                        `<div class="carousel-item ${index == 0 ? 'active' : null}">
+                                                <img src="${image}" class="d-block w-100" alt="Portfolio Rishav Jha ${name}">
+                                            </div>`
+                                        )
+                                    })
+                                }
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="description">
-                        <h1 class="heading">${project.name}</h1>
+                        <h1 class="heading">${name}</h1>
                         <h6 class="subheading mb-4 text-muted">Lorem ipsum dolor sit amet.</h6>
                         <p class="text fs-6">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt blanditiis iure! 
@@ -504,7 +564,7 @@ var typed = new Typed('#whatido', typingOptions);
 
 
 // MESSAGE FORM JAVASCRIPT
-const fields = ['f-name','f-email','f-subject','f-message'];
+const fields = ['f-name', 'f-email', 'f-subject', 'f-message'];
 
 function emptyValue(id) {
     document.getElementById(id).value = "";

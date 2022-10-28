@@ -12,6 +12,7 @@
 }
 
 #projects .project-item::before {
+    z-index: 1000;
     content: attr(data-ribbon);
     position: absolute;
     font-size: var(--f);
@@ -41,7 +42,9 @@
     transform-origin: bottom right;
 }
 
-
+#projects .card {
+    border-radius: 8px;
+}
 #projects .btn {
     background-color: #fff !important;
     color: var(--theme-color);
@@ -54,13 +57,13 @@
     background: var(--bs-gray-200) !important;
 }
 
-#projects .active {
+#projects .my-active {
     transition: 0.5s ease;
     background: var(--theme-color) !important;
     color: #fff;
 }
 
-#projects .active:hover {
+#projects .my-active:hover {
     background: var(--theme-color) !important;
     color: #fff;
 }
@@ -72,6 +75,7 @@
 #projects .card img {
     height: 200px;
     border-radius: 8px;
+    border: 1px solid var(--bs-gray-300);
 }
 
 #projects .card .btn {
@@ -138,5 +142,11 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    #projects .card img{
+        height: 100%;
     }
 }
