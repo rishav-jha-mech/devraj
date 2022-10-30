@@ -1011,8 +1011,8 @@ function addProject(parentElement, list) {
                                 <div class="carousel-inner">
                                     ${project.images.map((image, index) => {
                                         return (
-                                            `<div class="carousel-item ${index == 0 ? 'active' : null}">
-                                                <img src="${image.url}" class="d-block ${image.style} w-100" alt="${name} 1">
+                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
                                             </div>`
                                         )
                                     }).join('')}
@@ -1168,7 +1168,7 @@ document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project
                             <div class="carousel-inner">
                                 ${project.images.map((image, index) => {
                                         return (
-                                            `<div class="carousel-item ${index == 0 ? 'active' : null}">
+                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
                                                 <img src="${image}" class="d-block w-100" alt="Portfolio Rishav Jha ${name}">
                                             </div>`
                                         )
