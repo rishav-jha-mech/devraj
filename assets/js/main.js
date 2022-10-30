@@ -256,28 +256,106 @@ const webdev = [
         name: "Placement_Management_System",
         label: "NIT DGP",
         images: [
-            "./assets/img/projects/Placement Management/1.png",
-            "./assets/img/projects/Placement Management/2.png",
-            "./assets/img/projects/Placement Management/3.png",
-            "./assets/img/projects/Placement Management/4.png",
-            "./assets/img/projects/Placement Management/5.png",
-            "./assets/img/projects/Placement Management/6.png",
-            "./assets/img/projects/Placement Management/7.png",
-            "./assets/img/projects/Placement Management/8.png",
-            "./assets/img/projects/Placement Management/9.png",
-            "./assets/img/projects/Placement Management/10.png",
-            "./assets/img/projects/Placement Management/11.png",
-            "./assets/img/projects/Placement Management/12.png",
-
+            {
+                url: "./assets/img/projects/Placement Management/screens/1.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/2.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/3.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/4.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/5.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/6.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/7.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/8.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/9.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/10.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/11.png",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/12.png",
+                style: ""
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "Freya",
+        name: "Buzzpost",
         label: "Django",
         images: [
-            "https://thumbs.dreamstime.com/b/modern-d-illustration-ui-design-web-development-application-coding-programming-laptop-concept-pink-background-vector-230177687.jpg"
+            {
+                url: "./assets/img/projects/Buzzpost/1.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/2.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/3.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/4.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/5.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/6.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/7.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/8.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/9.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/10.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Buzzpost/11.png",
+                style: ''
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -286,7 +364,27 @@ const webdev = [
         name: "SamVaad",
         label: "React",
         images: [
-            "https://img.freepik.com/premium-vector/website-programming-coding-web-development-coding-3d-vector-illustrations_594024-93.jpg?w=2000"
+            {
+                url: "./assets/img/projects/Samvaad/web-poster.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Samvaad/web1.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Samvaad/web2.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Samvaad/web3.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Samvaad/web4.png",
+                style: ''
+            },
+
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -295,7 +393,34 @@ const webdev = [
         name: "K_Plus",
         label: "Freelance",
         images: [
-            "https://cdn.dribbble.com/users/1814344/screenshots/11764514/media/304d17afbd44f98d5e2a85d616b97f67.png?compress=1&resize=400x300"
+            {
+                url: "./assets/img/projects/K Plus/1.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/2.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/3.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/4.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/5.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/6.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/K Plus/7.png",
+                style: ''
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -304,7 +429,42 @@ const webdev = [
         name: "Squid_Game",
         label: "Django",
         images: [
-            "https://miro.medium.com/max/1400/1*FhdkND7pJKXYhNC4ovxcQQ.png"
+            {
+                url: "./assets/img/projects/Squid Game/1.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/2.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/3.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/4.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/5.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/6.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/7.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/8.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Squid Game/9.png",
+                style: ''
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -313,7 +473,34 @@ const webdev = [
         name: "Treasures_at_Hogwarts",
         label: "Django",
         images: [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52RchcLlWmKgoZ6SovgSWTHqdiYDjgxyDHLJF6Hp3XbtRodcDx50xFKbu7-quYgh69Kk&usqp=CAU"
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/1.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/2.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/3.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/4.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/5.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/6.png",
+                style: ''
+            },
+            {
+                url: "./assets/img/projects/Treasures at Hogwarts/7.png",
+                style: ''
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -322,10 +509,33 @@ const webdev = [
 
 const appdev = [
     {
-        name: "SamVaad",
+        name: "Samvaad",
         label: "React Native",
         images: [
-            "https://static.vecteezy.com/system/resources/previews/000/247/824/original/vector-beautiful-landscape-illustration.jpg"
+            {
+                url: "./assets/img/projects/SamvaadApp/app-poster.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/SamvaadApp/1.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/SamvaadApp/2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/SamvaadApp/3.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/SamvaadApp/4.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/SamvaadApp/5.png",
+                style: 'h100p'
+            }
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -334,16 +544,149 @@ const appdev = [
         name: "UV_Downloader",
         label: "React Native",
         images: [
-            "https://static.vecteezy.com/system/resources/thumbnails/000/208/995/small/eezy_07.jpg"
+            {
+                url: "./assets/img/projects/UV Downloader/app-poster-1.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/app-poster-2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/1.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/3.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/4.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/5.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/6.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/UV Downloader/7.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/UV Downloader/8.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/UV Downloader/9.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/10.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/11.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/12.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/13.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/UV Downloader/14.png",
+                style: 'h100p'
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-        name: "Freya_Blogging_App",
+        name: "Buzzpost_Blogging_App",
         label: "React Native",
         images: [
-            "https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg?w=2000"
+            {
+                url: "./assets/img/projects/BuzzpostApp/app-poster.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/3.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/4.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/5.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/6.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/7.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/8.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/9.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/10.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/11.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/12.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/13.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/14.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/15.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/16.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/BuzzpostApp/17.png",
+                style: 'h100p'
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -352,7 +695,98 @@ const appdev = [
         name: "Triunits",
         label: "Flutter",
         images: [
-            "https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/2361/posts/36065/image/what_is_illustration_example_illustrator.jpg"
+            {
+                url: "./assets/img/projects/Triunits/app-poster.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/3.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/4.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/5.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/6.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/7.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/8.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/9.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/10.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/11.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/12.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/13.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/14.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/15.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/16.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/17.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/18.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/19.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/20.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/21.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/22.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Triunits/23.png",
+                style: 'h100p'
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -361,7 +795,59 @@ const appdev = [
         name: "Tricket",
         label: "Flutter",
         images: [
-            "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/113d1046-6bdc-4475-a781-99f6cf7d1acd/001-understand-yourself-large-opt.png"
+            {
+                url: "./assets/img/projects/Tricket/app-poster.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/2.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/3.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/4.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/5.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/6.png",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Tricket/7.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/8.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/9.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/10.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/11.png",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/12.png",
+                style: 'h100p'
+            },
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -370,7 +856,140 @@ const appdev = [
         name: "Treklers",
         label: "React Native",
         images: [
-            "https://digitalsynopsis.com/wp-content/uploads/2019/08/beautiful-illustrations-design-inspiration-22.png"
+                {
+                    url: "./assets/img/projects/Treklers/app-poster.png",
+                    style: 'h100p'
+                },
+                    
+                {
+                    url: "./assets/img/projects/Treklers/2.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/3.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/4.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/5.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/6.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/7.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/8.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/9.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/10.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/11.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/12.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/13.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/14.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/15.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/16.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/17.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/18.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/19.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/20.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/21.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/22.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/23.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/24.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/25.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/26.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/27.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/28.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/29.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/30.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/31.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/32.png",
+                    style: 'h100p'
+                },
+                {
+                    url: "./assets/img/projects/Treklers/33.png",
+                    style: 'h100p'
+                },
+
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -393,11 +1012,10 @@ function addProject(parentElement, list) {
                                     ${project.images.map((image, index) => {
                                         return (
                                             `<div class="carousel-item ${index == 0 ? 'active' : null}">
-                                                    <img src="${image}" class="d-block w-100" alt="${name} 1">
-                                                </div>`
-                                            )
-                                        })
-                                    }
+                                                <img src="${image.url}" class="d-block ${image.style} w-100" alt="${name} 1">
+                                            </div>`
+                                        )
+                                    }).join('')}
                                 </div>
                             </div>
                         </div>
@@ -458,7 +1076,20 @@ const portfolio = [
         name: "UV Downloader",
         label: "React Native",
         images: [
-            "https://static.vecteezy.com/system/resources/thumbnails/000/208/995/small/eezy_07.jpg"
+            "./assets/img/projects/UV Downloader/1.png",
+            "./assets/img/projects/UV Downloader/2.png",
+            "./assets/img/projects/UV Downloader/3.png",
+            "./assets/img/projects/UV Downloader/4.png",
+            "./assets/img/projects/UV Downloader/5.png",
+            "./assets/img/projects/UV Downloader/6.png",
+            "./assets/img/projects/UV Downloader/7.png",
+            "./assets/img/projects/UV Downloader/8.png",
+            "./assets/img/projects/UV Downloader/9.png",
+            "./assets/img/projects/UV Downloader/10.png",
+            "./assets/img/projects/UV Downloader/11.png",
+            "./assets/img/projects/UV Downloader/12.png",
+            "./assets/img/projects/UV Downloader/13.png",
+            "./assets/img/projects/UV Downloader/14.png",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -467,7 +1098,39 @@ const portfolio = [
         name: "Treklers",
         label: "React Native",
         images: [
-            "https://digitalsynopsis.com/wp-content/uploads/2019/08/beautiful-illustrations-design-inspiration-22.png"
+            "./assets/img/projects/Treklers/app-poster.png",
+            "./assets/img/projects/Treklers/2.png",
+            "./assets/img/projects/Treklers/3.png",
+            "./assets/img/projects/Treklers/4.png",
+            "./assets/img/projects/Treklers/5.png",
+            "./assets/img/projects/Treklers/6.png",
+            "./assets/img/projects/Treklers/7.png",
+            "./assets/img/projects/Treklers/8.png",
+            "./assets/img/projects/Treklers/9.png",
+            "./assets/img/projects/Treklers/10.png",
+            "./assets/img/projects/Treklers/11.png",
+            "./assets/img/projects/Treklers/12.png",
+            "./assets/img/projects/Treklers/13.png",
+            "./assets/img/projects/Treklers/14.png",
+            "./assets/img/projects/Treklers/15.png",
+            "./assets/img/projects/Treklers/16.png",
+            "./assets/img/projects/Treklers/17.png",
+            "./assets/img/projects/Treklers/18.png",
+            "./assets/img/projects/Treklers/19.png",
+            "./assets/img/projects/Treklers/20.png",
+            "./assets/img/projects/Treklers/21.png",
+            "./assets/img/projects/Treklers/22.png",
+            "./assets/img/projects/Treklers/23.png",
+            "./assets/img/projects/Treklers/24.png",
+            "./assets/img/projects/Treklers/25.png",
+            "./assets/img/projects/Treklers/26.png",
+            "./assets/img/projects/Treklers/27.png",
+            "./assets/img/projects/Treklers/28.png",
+            "./assets/img/projects/Treklers/29.png",
+            "./assets/img/projects/Treklers/30.png",
+            "./assets/img/projects/Treklers/31.png",
+            "./assets/img/projects/Treklers/32.png",
+            "./assets/img/projects/Treklers/33.png",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -479,11 +1142,11 @@ var swiper = new Swiper(".portfolio-swiper", {
         el: ".swiper-pagination",
         dynamicBullets: true,
     },
-    cursor: "pointer",
     autoplay: {
         delay: 3500,
         disableOnInteraction: true,
     },
+    disableOnInteraction: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -500,23 +1163,23 @@ document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project
             <div class="row px-0">
                 <div class="col-12 col-md-6">
                     <div class="img-container center">
-                        <div id="${project.name}Portfolio" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="${project.name}Portfolio" class="carousel carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 ${project.images.map((image, index) => {
-                                    return (
-                                        `<div class="carousel-item ${index == 0 ? 'active' : null}">
+                                        return (
+                                            `<div class="carousel-item ${index == 0 ? 'active' : null}">
                                                 <img src="${image}" class="d-block w-100" alt="Portfolio Rishav Jha ${name}">
                                             </div>`
                                         )
                                     })
-                                }
+                                        }
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="fa fa-angle-right text-theme fs-5" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
@@ -577,4 +1240,9 @@ function handleFormSubmit() {
         'Please wait for a while, I will get back to you soon.',
         'success'
     );
+}
+
+
+for (let index = 1; index < 15; index++) {
+    console.log(`"./assets/img/projects/UV Downloader/${index}.png",`);    
 }

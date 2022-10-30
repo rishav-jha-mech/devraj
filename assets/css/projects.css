@@ -132,6 +132,10 @@
     animation: project-animation 0.5s ease-in-out;
     transition: 0.5s ease;
 }
+#projects .app-img-carousel {
+    height: 100% !important;
+    object-fit: cover;
+}
 
 @keyframes project-animation {
     from {
