@@ -257,51 +257,51 @@ const webdev = [
         label: "NIT DGP",
         images: [
             {
-                url: "./assets/img/projects/Placement Management/screens/1.png",
+                url: "./assets/img/projects/Placement Management/screens/1.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/2.png",
+                url: "./assets/img/projects/Placement Management/screens/2.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/3.png",
+                url: "./assets/img/projects/Placement Management/screens/3.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/4.png",
+                url: "./assets/img/projects/Placement Management/screens/4.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/5.png",
+                url: "./assets/img/projects/Placement Management/screens/5.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/6.png",
+                url: "./assets/img/projects/Placement Management/screens/6.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/7.png",
+                url: "./assets/img/projects/Placement Management/screens/7.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/8.png",
+                url: "./assets/img/projects/Placement Management/screens/8.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/9.png",
+                url: "./assets/img/projects/Placement Management/screens/9.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/10.png",
+                url: "./assets/img/projects/Placement Management/screens/10.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/11.png",
+                url: "./assets/img/projects/Placement Management/screens/11.webp",
                 style: ""
             },
             {
-                url: "./assets/img/projects/Placement Management/screens/12.png",
+                url: "./assets/img/projects/Placement Management/screens/12.webp",
                 style: ""
             },
         ],
@@ -313,47 +313,47 @@ const webdev = [
         label: "Django",
         images: [
             {
-                url: "./assets/img/projects/Buzzpost/1.png",
+                url: "./assets/img/projects/Buzzpost/1.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/2.png",
+                url: "./assets/img/projects/Buzzpost/2.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/3.png",
+                url: "./assets/img/projects/Buzzpost/3.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/4.png",
+                url: "./assets/img/projects/Buzzpost/4.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/5.png",
+                url: "./assets/img/projects/Buzzpost/5.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/6.png",
+                url: "./assets/img/projects/Buzzpost/6.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/7.png",
+                url: "./assets/img/projects/Buzzpost/7.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/8.png",
+                url: "./assets/img/projects/Buzzpost/8.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/9.png",
+                url: "./assets/img/projects/Buzzpost/9.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/10.png",
+                url: "./assets/img/projects/Buzzpost/10.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Buzzpost/11.png",
+                url: "./assets/img/projects/Buzzpost/11.webp",
                 style: ''
             },
         ],
@@ -365,23 +365,23 @@ const webdev = [
         label: "React",
         images: [
             {
-                url: "./assets/img/projects/Samvaad/web-poster.png",
+                url: "./assets/img/projects/Samvaad/web-poster.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Samvaad/web1.png",
+                url: "./assets/img/projects/Samvaad/1.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Samvaad/web2.png",
+                url: "./assets/img/projects/Samvaad/2.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Samvaad/web3.png",
+                url: "./assets/img/projects/Samvaad/3.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Samvaad/web4.png",
+                url: "./assets/img/projects/Samvaad/4.webp",
                 style: ''
             },
 
@@ -394,31 +394,31 @@ const webdev = [
         label: "Freelance",
         images: [
             {
-                url: "./assets/img/projects/K Plus/1.png",
+                url: "./assets/img/projects/K Plus/1.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/2.png",
+                url: "./assets/img/projects/K Plus/2.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/3.png",
+                url: "./assets/img/projects/K Plus/3.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/4.png",
+                url: "./assets/img/projects/K Plus/4.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/5.png",
+                url: "./assets/img/projects/K Plus/5.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/6.png",
+                url: "./assets/img/projects/K Plus/6.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/K Plus/7.png",
+                url: "./assets/img/projects/K Plus/7.webp",
                 style: ''
             },
         ],
@@ -430,39 +430,39 @@ const webdev = [
         label: "Django",
         images: [
             {
-                url: "./assets/img/projects/Squid Game/1.png",
+                url: "./assets/img/projects/Squid Game/1.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/2.png",
+                url: "./assets/img/projects/Squid Game/2.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/3.png",
+                url: "./assets/img/projects/Squid Game/3.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/4.png",
+                url: "./assets/img/projects/Squid Game/4.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/5.png",
+                url: "./assets/img/projects/Squid Game/5.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/6.png",
+                url: "./assets/img/projects/Squid Game/6.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/7.png",
+                url: "./assets/img/projects/Squid Game/7.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/8.png",
+                url: "./assets/img/projects/Squid Game/8.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Squid Game/9.png",
+                url: "./assets/img/projects/Squid Game/9.webp",
                 style: ''
             },
         ],
@@ -474,31 +474,31 @@ const webdev = [
         label: "Django",
         images: [
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/1.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/1.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/2.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/2.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/3.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/3.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/4.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/4.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/5.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/5.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/6.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/6.webp",
                 style: ''
             },
             {
-                url: "./assets/img/projects/Treasures at Hogwarts/7.png",
+                url: "./assets/img/projects/Treasures at Hogwarts/7.webp",
                 style: ''
             },
         ],
@@ -513,27 +513,27 @@ const appdev = [
         label: "React Native",
         images: [
             {
-                url: "./assets/img/projects/SamvaadApp/app-poster.png",
+                url: "./assets/img/projects/SamvaadApp/app-poster.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/SamvaadApp/1.png",
+                url: "./assets/img/projects/SamvaadApp/1.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/SamvaadApp/2.png",
+                url: "./assets/img/projects/SamvaadApp/2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/SamvaadApp/3.png",
+                url: "./assets/img/projects/SamvaadApp/3.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/SamvaadApp/4.png",
+                url: "./assets/img/projects/SamvaadApp/4.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/SamvaadApp/5.png",
+                url: "./assets/img/projects/SamvaadApp/5.webp",
                 style: 'h100p'
             }
         ],
@@ -545,70 +545,70 @@ const appdev = [
         label: "React Native",
         images: [
             {
-                url: "./assets/img/projects/UV Downloader/app-poster-1.png",
+                url: "./assets/img/projects/UV Downloader/app-poster-1.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/app-poster-2.png",
+                url: "./assets/img/projects/UV Downloader/app-poster-2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/1.png",
+                url: "./assets/img/projects/UV Downloader/1.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/2.png",
+                url: "./assets/img/projects/UV Downloader/2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/3.png",
+                url: "./assets/img/projects/UV Downloader/3.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/4.png",
+                url: "./assets/img/projects/UV Downloader/4.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/5.png",
+                url: "./assets/img/projects/UV Downloader/5.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/6.png",
-                style: 'h100p'
-            },
-            
-            {
-                url: "./assets/img/projects/UV Downloader/7.png",
+                url: "./assets/img/projects/UV Downloader/6.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/UV Downloader/8.png",
+                url: "./assets/img/projects/UV Downloader/7.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/UV Downloader/9.png",
+                url: "./assets/img/projects/UV Downloader/8.webp",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/UV Downloader/9.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/10.png",
+                url: "./assets/img/projects/UV Downloader/10.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/11.png",
+                url: "./assets/img/projects/UV Downloader/11.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/12.png",
+                url: "./assets/img/projects/UV Downloader/12.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/13.png",
+                url: "./assets/img/projects/UV Downloader/13.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/UV Downloader/14.png",
+                url: "./assets/img/projects/UV Downloader/14.webp",
                 style: 'h100p'
             },
         ],
@@ -620,71 +620,71 @@ const appdev = [
         label: "React Native",
         images: [
             {
-                url: "./assets/img/projects/BuzzpostApp/app-poster.png",
+                url: "./assets/img/projects/BuzzpostApp/app-poster.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/2.png",
+                url: "./assets/img/projects/BuzzpostApp/2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/3.png",
+                url: "./assets/img/projects/BuzzpostApp/3.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/4.png",
+                url: "./assets/img/projects/BuzzpostApp/4.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/5.png",
+                url: "./assets/img/projects/BuzzpostApp/5.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/6.png",
+                url: "./assets/img/projects/BuzzpostApp/6.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/7.png",
+                url: "./assets/img/projects/BuzzpostApp/7.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/8.png",
+                url: "./assets/img/projects/BuzzpostApp/8.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/9.png",
+                url: "./assets/img/projects/BuzzpostApp/9.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/10.png",
+                url: "./assets/img/projects/BuzzpostApp/10.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/11.png",
+                url: "./assets/img/projects/BuzzpostApp/11.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/12.png",
+                url: "./assets/img/projects/BuzzpostApp/12.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/13.png",
+                url: "./assets/img/projects/BuzzpostApp/13.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/14.png",
+                url: "./assets/img/projects/BuzzpostApp/14.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/15.png",
+                url: "./assets/img/projects/BuzzpostApp/15.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/16.png",
+                url: "./assets/img/projects/BuzzpostApp/16.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/BuzzpostApp/17.png",
+                url: "./assets/img/projects/BuzzpostApp/17.webp",
                 style: 'h100p'
             },
         ],
@@ -696,95 +696,95 @@ const appdev = [
         label: "Flutter",
         images: [
             {
-                url: "./assets/img/projects/Triunits/app-poster.png",
+                url: "./assets/img/projects/Triunits/app-poster.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/2.png",
+                url: "./assets/img/projects/Triunits/2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/3.png",
+                url: "./assets/img/projects/Triunits/3.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/4.png",
+                url: "./assets/img/projects/Triunits/4.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/5.png",
+                url: "./assets/img/projects/Triunits/5.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/6.png",
+                url: "./assets/img/projects/Triunits/6.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/7.png",
+                url: "./assets/img/projects/Triunits/7.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/8.png",
+                url: "./assets/img/projects/Triunits/8.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/9.png",
+                url: "./assets/img/projects/Triunits/9.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/10.png",
+                url: "./assets/img/projects/Triunits/10.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/11.png",
+                url: "./assets/img/projects/Triunits/11.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/12.png",
+                url: "./assets/img/projects/Triunits/12.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/13.png",
+                url: "./assets/img/projects/Triunits/13.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/14.png",
+                url: "./assets/img/projects/Triunits/14.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/15.png",
+                url: "./assets/img/projects/Triunits/15.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/16.png",
+                url: "./assets/img/projects/Triunits/16.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/17.png",
+                url: "./assets/img/projects/Triunits/17.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/18.png",
+                url: "./assets/img/projects/Triunits/18.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/19.png",
+                url: "./assets/img/projects/Triunits/19.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/20.png",
+                url: "./assets/img/projects/Triunits/20.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/21.png",
+                url: "./assets/img/projects/Triunits/21.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/22.png",
+                url: "./assets/img/projects/Triunits/22.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Triunits/23.png",
+                url: "./assets/img/projects/Triunits/23.webp",
                 style: 'h100p'
             },
         ],
@@ -796,56 +796,56 @@ const appdev = [
         label: "Flutter",
         images: [
             {
-                url: "./assets/img/projects/Tricket/app-poster.png",
+                url: "./assets/img/projects/Tricket/app-poster.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/2.png",
+                url: "./assets/img/projects/Tricket/2.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/3.png",
+                url: "./assets/img/projects/Tricket/3.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/4.png",
+                url: "./assets/img/projects/Tricket/4.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/5.png",
+                url: "./assets/img/projects/Tricket/5.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/6.png",
+                url: "./assets/img/projects/Tricket/6.webp",
                 style: 'h100p'
             },
             {
-                url: "./assets/img/projects/Tricket/7.png",
-                style: 'h100p'
-            },
-            
-            {
-                url: "./assets/img/projects/Tricket/8.png",
+                url: "./assets/img/projects/Tricket/7.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/Tricket/9.png",
+                url: "./assets/img/projects/Tricket/8.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/Tricket/10.png",
+                url: "./assets/img/projects/Tricket/9.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/Tricket/11.png",
+                url: "./assets/img/projects/Tricket/10.webp",
                 style: 'h100p'
             },
             
             {
-                url: "./assets/img/projects/Tricket/12.png",
+                url: "./assets/img/projects/Tricket/11.webp",
+                style: 'h100p'
+            },
+            
+            {
+                url: "./assets/img/projects/Tricket/12.webp",
                 style: 'h100p'
             },
         ],
@@ -857,136 +857,136 @@ const appdev = [
         label: "React Native",
         images: [
                 {
-                    url: "./assets/img/projects/Treklers/app-poster.png",
+                    url: "./assets/img/projects/Treklers/app-poster.webp",
                     style: 'h100p'
                 },
                     
                 {
-                    url: "./assets/img/projects/Treklers/2.png",
+                    url: "./assets/img/projects/Treklers/2.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/3.png",
+                    url: "./assets/img/projects/Treklers/3.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/4.png",
+                    url: "./assets/img/projects/Treklers/4.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/5.png",
+                    url: "./assets/img/projects/Treklers/5.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/6.png",
+                    url: "./assets/img/projects/Treklers/6.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/7.png",
+                    url: "./assets/img/projects/Treklers/7.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/8.png",
+                    url: "./assets/img/projects/Treklers/8.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/9.png",
+                    url: "./assets/img/projects/Treklers/9.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/10.png",
+                    url: "./assets/img/projects/Treklers/10.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/11.png",
+                    url: "./assets/img/projects/Treklers/11.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/12.png",
+                    url: "./assets/img/projects/Treklers/12.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/13.png",
+                    url: "./assets/img/projects/Treklers/13.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/14.png",
+                    url: "./assets/img/projects/Treklers/14.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/15.png",
+                    url: "./assets/img/projects/Treklers/15.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/16.png",
+                    url: "./assets/img/projects/Treklers/16.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/17.png",
+                    url: "./assets/img/projects/Treklers/17.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/18.png",
+                    url: "./assets/img/projects/Treklers/18.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/19.png",
+                    url: "./assets/img/projects/Treklers/19.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/20.png",
+                    url: "./assets/img/projects/Treklers/20.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/21.png",
+                    url: "./assets/img/projects/Treklers/21.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/22.png",
+                    url: "./assets/img/projects/Treklers/22.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/23.png",
+                    url: "./assets/img/projects/Treklers/23.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/24.png",
+                    url: "./assets/img/projects/Treklers/24.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/25.png",
+                    url: "./assets/img/projects/Treklers/25.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/26.png",
+                    url: "./assets/img/projects/Treklers/26.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/27.png",
+                    url: "./assets/img/projects/Treklers/27.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/28.png",
+                    url: "./assets/img/projects/Treklers/28.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/29.png",
+                    url: "./assets/img/projects/Treklers/29.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/30.png",
+                    url: "./assets/img/projects/Treklers/30.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/31.png",
+                    url: "./assets/img/projects/Treklers/31.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/32.png",
+                    url: "./assets/img/projects/Treklers/32.webp",
                     style: 'h100p'
                 },
                 {
-                    url: "./assets/img/projects/Treklers/33.png",
+                    url: "./assets/img/projects/Treklers/33.webp",
                     style: 'h100p'
                 },
 
@@ -1056,18 +1056,18 @@ const portfolio = [
         name: "Placement_Management_System",
         label: "NIT DGP",
         images: [
-            "./assets/img/projects/Placement Management/1.png",
-            "./assets/img/projects/Placement Management/2.png",
-            "./assets/img/projects/Placement Management/3.png",
-            "./assets/img/projects/Placement Management/4.png",
-            "./assets/img/projects/Placement Management/5.png",
-            "./assets/img/projects/Placement Management/6.png",
-            "./assets/img/projects/Placement Management/7.png",
-            "./assets/img/projects/Placement Management/8.png",
-            "./assets/img/projects/Placement Management/9.png",
-            "./assets/img/projects/Placement Management/10.png",
-            "./assets/img/projects/Placement Management/11.png",
-            "./assets/img/projects/Placement Management/12.png",
+            "./assets/img/projects/Placement Management/1.webp",
+            "./assets/img/projects/Placement Management/2.webp",
+            "./assets/img/projects/Placement Management/3.webp",
+            "./assets/img/projects/Placement Management/4.webp",
+            "./assets/img/projects/Placement Management/5.webp",
+            "./assets/img/projects/Placement Management/6.webp",
+            "./assets/img/projects/Placement Management/7.webp",
+            "./assets/img/projects/Placement Management/8.webp",
+            "./assets/img/projects/Placement Management/9.webp",
+            "./assets/img/projects/Placement Management/10.webp",
+            "./assets/img/projects/Placement Management/11.webp",
+            "./assets/img/projects/Placement Management/12.webp",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -1076,20 +1076,20 @@ const portfolio = [
         name: "UV Downloader",
         label: "React Native",
         images: [
-            "./assets/img/projects/UV Downloader/1.png",
-            "./assets/img/projects/UV Downloader/2.png",
-            "./assets/img/projects/UV Downloader/3.png",
-            "./assets/img/projects/UV Downloader/4.png",
-            "./assets/img/projects/UV Downloader/5.png",
-            "./assets/img/projects/UV Downloader/6.png",
-            "./assets/img/projects/UV Downloader/7.png",
-            "./assets/img/projects/UV Downloader/8.png",
-            "./assets/img/projects/UV Downloader/9.png",
-            "./assets/img/projects/UV Downloader/10.png",
-            "./assets/img/projects/UV Downloader/11.png",
-            "./assets/img/projects/UV Downloader/12.png",
-            "./assets/img/projects/UV Downloader/13.png",
-            "./assets/img/projects/UV Downloader/14.png",
+            "./assets/img/projects/UV Downloader/1.webp",
+            "./assets/img/projects/UV Downloader/2.webp",
+            "./assets/img/projects/UV Downloader/3.webp",
+            "./assets/img/projects/UV Downloader/4.webp",
+            "./assets/img/projects/UV Downloader/5.webp",
+            "./assets/img/projects/UV Downloader/6.webp",
+            "./assets/img/projects/UV Downloader/7.webp",
+            "./assets/img/projects/UV Downloader/8.webp",
+            "./assets/img/projects/UV Downloader/9.webp",
+            "./assets/img/projects/UV Downloader/10.webp",
+            "./assets/img/projects/UV Downloader/11.webp",
+            "./assets/img/projects/UV Downloader/12.webp",
+            "./assets/img/projects/UV Downloader/13.webp",
+            "./assets/img/projects/UV Downloader/14.webp",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -1098,39 +1098,39 @@ const portfolio = [
         name: "Treklers",
         label: "React Native",
         images: [
-            "./assets/img/projects/Treklers/app-poster.png",
-            "./assets/img/projects/Treklers/2.png",
-            "./assets/img/projects/Treklers/3.png",
-            "./assets/img/projects/Treklers/4.png",
-            "./assets/img/projects/Treklers/5.png",
-            "./assets/img/projects/Treklers/6.png",
-            "./assets/img/projects/Treklers/7.png",
-            "./assets/img/projects/Treklers/8.png",
-            "./assets/img/projects/Treklers/9.png",
-            "./assets/img/projects/Treklers/10.png",
-            "./assets/img/projects/Treklers/11.png",
-            "./assets/img/projects/Treklers/12.png",
-            "./assets/img/projects/Treklers/13.png",
-            "./assets/img/projects/Treklers/14.png",
-            "./assets/img/projects/Treklers/15.png",
-            "./assets/img/projects/Treklers/16.png",
-            "./assets/img/projects/Treklers/17.png",
-            "./assets/img/projects/Treklers/18.png",
-            "./assets/img/projects/Treklers/19.png",
-            "./assets/img/projects/Treklers/20.png",
-            "./assets/img/projects/Treklers/21.png",
-            "./assets/img/projects/Treklers/22.png",
-            "./assets/img/projects/Treklers/23.png",
-            "./assets/img/projects/Treklers/24.png",
-            "./assets/img/projects/Treklers/25.png",
-            "./assets/img/projects/Treklers/26.png",
-            "./assets/img/projects/Treklers/27.png",
-            "./assets/img/projects/Treklers/28.png",
-            "./assets/img/projects/Treklers/29.png",
-            "./assets/img/projects/Treklers/30.png",
-            "./assets/img/projects/Treklers/31.png",
-            "./assets/img/projects/Treklers/32.png",
-            "./assets/img/projects/Treklers/33.png",
+            "./assets/img/projects/Treklers/app-poster.webp",
+            "./assets/img/projects/Treklers/2.webp",
+            "./assets/img/projects/Treklers/3.webp",
+            "./assets/img/projects/Treklers/4.webp",
+            "./assets/img/projects/Treklers/5.webp",
+            "./assets/img/projects/Treklers/6.webp",
+            "./assets/img/projects/Treklers/7.webp",
+            "./assets/img/projects/Treklers/8.webp",
+            "./assets/img/projects/Treklers/9.webp",
+            "./assets/img/projects/Treklers/10.webp",
+            "./assets/img/projects/Treklers/11.webp",
+            "./assets/img/projects/Treklers/12.webp",
+            "./assets/img/projects/Treklers/13.webp",
+            "./assets/img/projects/Treklers/14.webp",
+            "./assets/img/projects/Treklers/15.webp",
+            "./assets/img/projects/Treklers/16.webp",
+            "./assets/img/projects/Treklers/17.webp",
+            "./assets/img/projects/Treklers/18.webp",
+            "./assets/img/projects/Treklers/19.webp",
+            "./assets/img/projects/Treklers/20.webp",
+            "./assets/img/projects/Treklers/21.webp",
+            "./assets/img/projects/Treklers/22.webp",
+            "./assets/img/projects/Treklers/23.webp",
+            "./assets/img/projects/Treklers/24.webp",
+            "./assets/img/projects/Treklers/25.webp",
+            "./assets/img/projects/Treklers/26.webp",
+            "./assets/img/projects/Treklers/27.webp",
+            "./assets/img/projects/Treklers/28.webp",
+            "./assets/img/projects/Treklers/29.webp",
+            "./assets/img/projects/Treklers/30.webp",
+            "./assets/img/projects/Treklers/31.webp",
+            "./assets/img/projects/Treklers/32.webp",
+            "./assets/img/projects/Treklers/33.webp",
         ],
         link: "",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -1243,6 +1243,8 @@ function handleFormSubmit() {
 }
 
 
-for (let index = 1; index < 15; index++) {
-    console.log(`"./assets/img/projects/UV Downloader/${index}.png",`);    
+var x = ''
+for (let index = 2; index < 34; index++) {
+    x+=`cwebp -q 75 ${index}.png -o ${index}.webp && rm ${index}.png\n`
 }
+console.log(x)
