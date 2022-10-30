@@ -1076,6 +1076,7 @@ const portfolio = [
         name: "UV Downloader",
         label: "React Native",
         images: [
+            "./assets/img/projects/UV Downloader/app-poster-1.webp",
             "./assets/img/projects/UV Downloader/1.webp",
             "./assets/img/projects/UV Downloader/2.webp",
             "./assets/img/projects/UV Downloader/3.webp",
@@ -1243,8 +1244,8 @@ function handleFormSubmit() {
 }
 
 
-var x = ''
-for (let index = 2; index < 34; index++) {
-    x+=`cwebp -q 75 ${index}.png -o ${index}.webp && rm ${index}.png\n`
-}
-console.log(x)
+// var x = ''
+// for (let index = 2; index < 34; index++) {
+//     x+=`cwebp -q 75 ${index}.png -o ${index}.webp && rm ${index}.png\n`
+// }
+// console.log(x)
