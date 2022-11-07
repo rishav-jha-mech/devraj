@@ -15,7 +15,7 @@
 }
 #qual .btn {
     background-color: #fff !important;
-    color: var(--theme-color);
+    color: var(--theme-color) !important;
     border-color: var(--theme-color);
     transition: 0.5s  ease;
 }
@@ -26,11 +26,11 @@
 #qual .active {
     transition: 0.5s  ease;
     background: var(--theme-color) !important;
-    color: #fff;
+    color: var(--bs-white) !important;
 }
 #qual .active:hover {
     background: var(--theme-color) !important;
-    color: #fff;
+    color: var(--bs-white) !important;
 }
 #qual .stepper-container .h-130 {
     height: 100px;

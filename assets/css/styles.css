@@ -65,11 +65,16 @@ body {
     background-color: var(--theme-color) !important;
     font-size: 1.15rem;
     padding: 0.65rem 1.5rem;
-    color: var(--bs-white);
+    color: var(--bs-white) !important;
+    border: 1px solid var(--theme-color);
+    transition: 0.5s ease;
 }
 
 .btn:hover {
-    color: var(--bs-white);
+    transition: 0.5s ease;
+    color: var(--theme-color) !important;
+    background-color: var(--bs-white) !important;
+    border: 1px solid var(--theme-color);
 }
 
 .heading {

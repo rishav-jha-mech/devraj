@@ -45,9 +45,10 @@
 #projects .card {
     border-radius: 8px;
 }
+
 #projects .btn {
     background-color: #fff !important;
-    color: var(--theme-color);
+    color: var(--theme-color) !important;
     border-color: var(--theme-color);
     transition: 0.5s ease;
 }
@@ -60,12 +61,11 @@
 #projects .my-active {
     transition: 0.5s ease;
     background: var(--theme-color) !important;
-    color: #fff;
+    color: var(--bs-white) !important;
 }
 
 #projects .my-active:hover {
     background: var(--theme-color) !important;
-    color: #fff;
 }
 
 #projects .card h6 {
@@ -86,41 +86,20 @@
     border: 1px solid var(--theme-color);
 }
 
-#projects .card .btn:last-of-type {
-    margin-left: 0.5rem;
-    background: var(--bs-white) !important;
-}
-
-#projects .card .btn:last-of-type:hover {
-    background: var(--bs-gray-100) !important;
-    transition: 0.5s ease;
-}
-
-#projects .card .btn:last-of-type:hover>a {
-    color: var(--theme-color) !important;
-    transition: 0.5s ease;
-}
-
-#projects .card .btn:last-of-type>a {
-    color: var(--theme-color) !important;
-}
-
-#projects .card .btn:first-of-type {
-    margin-right: 0.5rem;
-}
-
-#projects .card .btn:first-of-type:hover {
+#projects .card .pri {
     background: var(--theme-color) !important;
 }
 
-#projects .card .btn:first-of-type:hover>a {
+#projects .card .btn:hover {
+    background: var(--bs-gray-100) !important;
+    color: var(--theme-color) !important;
     transition: 0.5s ease;
-    color: var(--bs-white) !important;
 }
 
-#projects .card .btn a {
-    color: var(--bs-white);
-    text-decoration: none;
+#projects .sec{
+    background: var(--bs-white) !important;
+    color: var(--theme-color) !important;
+    transition: 0.5s ease;
 }
 
 #web-dev-projects {
@@ -132,6 +111,7 @@
     animation: project-animation 0.5s ease-in-out;
     transition: 0.5s ease;
 }
+
 #projects .app-img-carousel {
     height: 100% !important;
     object-fit: cover;
@@ -149,8 +129,38 @@
     }
 }
 
+.modal1 img{
+    max-height: 300px !important;
+    padding: 0.5rem;
+    object-fit: contain;
+}
+
+.modal .modal-title{
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+.modal p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+#web-dev-projects .modal2 .modal-body{
+    padding: 3rem 1rem;
+}
+#web-dev-projects .modal2 .modal-body img{
+    min-height: 350px;
+}
 @media (max-width: 768px) {
-    #projects .card img{
+    #web-dev-projects .modal2 .modal-body img{
+        min-height: unset;
+    }
+    .modal1 img{
+        max-height: none !important;
+        padding: 0;
+    }
+    #projects .card img {
         height: 100%;
+    }
+    .modal p{
+        font-size: 1rem;
     }
 }

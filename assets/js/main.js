@@ -255,6 +255,7 @@ const webdev = [
     {
         name: "Placement_Management_System",
         label: "NIT DGP",
+        title: "Made to keep track of the placement process, by ensuring proper communication between the placement coordinators and placement cell.",
         images: [
             {
                 url: "./assets/img/projects/Placement Management/screens/1.webp",
@@ -311,6 +312,7 @@ const webdev = [
     {
         name: "Buzzpost",
         label: "Django",
+        title: "Blogging website with a social media feel. Users can interact with other users and like and comment on their posts. Trending page for trending posts & users.",
         images: [
             {
                 url: "./assets/img/projects/Buzzpost/1.webp",
@@ -363,6 +365,7 @@ const webdev = [
     {
         name: "SamVaad",
         label: "React",
+        title: "It provides you with the latest news from all over the world in 7 different categories from different sources which are verfied and trusted.",
         images: [
             {
                 url: "./assets/img/projects/Samvaad/web-poster.webp",
@@ -392,6 +395,7 @@ const webdev = [
     {
         name: "K_Plus",
         label: "Freelance",
+        title: "K Plus is a platform which provides free and paid courses to the students along with free resources and notes. It also has a custom admin panel for various operations.",
         images: [
             {
                 url: "./assets/img/projects/K Plus/1.webp",
@@ -428,6 +432,7 @@ const webdev = [
     {
         name: "Squid_Game",
         label: "Django",
+        title: "Squid game theme website where users play and go through two elimination rounds. The first round being 'Green Light Red Light' and the second one is 'Paper Candy'.",
         images: [
             {
                 url: "./assets/img/projects/Squid Game/1.webp",
@@ -472,6 +477,7 @@ const webdev = [
     {
         name: "Treasures_at_Hogwarts",
         label: "Django",
+        title: "Treasures at Hogwarts is a treasure hunt game where users have to find the hidden treasure by solving the riddles and clues and find the location given to them.",
         images: [
             {
                 url: "./assets/img/projects/Treasures at Hogwarts/1.webp",
@@ -511,6 +517,7 @@ const appdev = [
     {
         name: "Samvaad",
         label: "React Native",
+        title: "Samvaad App brings you news from 50+ countries across 7 Categories.",
         images: [
             {
                 url: "./assets/img/projects/SamvaadApp/app-poster.webp",
@@ -538,10 +545,11 @@ const appdev = [
             }
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     },
     {
         name: "UV_Downloader",
+        title: "UV Downloader is a video downloader app which allows users to download videos from various platforms like Youtube, Facebook, Instagram, Twitter, etc.",
         label: "React Native",
         images: [
             {
@@ -613,10 +621,11 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     },
     {
         name: "Buzzpost_Blogging_App",
+        title: "Buzzpost is a blogging app which allows users to create their own blogs and share them with the world. It has all the features that are in the website.",
         label: "React Native",
         images: [
             {
@@ -689,11 +698,12 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     },
     {
         name: "Triunits",
         label: "Flutter",
+        title: "Triunits is a cryptocurrency trading app which allows users to trade cryptocurrencies and earn money. It has charts and graphs to show the current market status.",
         images: [
             {
                 url: "./assets/img/projects/Triunits/app-poster.webp",
@@ -789,11 +799,12 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     },
     {
         name: "Tricket",
         label: "Flutter",
+        title: "Tricket is an Indian fantasy sports platform that allows users to play fantasy cricket and win real money. It has a live scorecard to show the current status of the match.",
         images: [
             {
                 url: "./assets/img/projects/Tricket/app-poster.webp",
@@ -850,11 +861,12 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     },
     {
         name: "Treklers",
         label: "React Native",
+        title: "Treklers is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling.",
         images: [
                 {
                     url: "./assets/img/projects/Treklers/app-poster.webp",
@@ -992,7 +1004,7 @@ const appdev = [
 
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
     }
 ]
 
@@ -1007,29 +1019,81 @@ function addProject(parentElement, list) {
                 <div class="project-item card rounded-5" data-ribbon="${project.label}" style="--d:6px;--f: 10px;--c:var(--theme-color)">
                     <div class="card-body">
                         <div class="project-image">
-                            <div id="${project.name}Fade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    ${project.images.map((image, index) => {
-                                        return (
-                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
-                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
-                                            </div>`
-                                        )
-                                    }).join('')}
-                                </div>
-                            </div>
+                            <img src="${project.images[0].url}" width="100%" height="100%" class="d-block ${project.images[0].style} w-100" alt="${name} 1">
                         </div>
                         <div class="project-description mt-4">
                             <h6 class="fw-bold">${name}</h6>
-                            <p class="mt-3">${project.description}</p>
-                            <div class="around">
-                                <button class="btn my-active">
-                                    <a href="${project.link}" target="_blank">View Project</a>
-                                </button>
-                                <button class="btn">
-                                    <a href="${project.link}" target="_blank">View Code</a>
-                                </button>
+                            <p class="mt-3">${project.title}</p>
+                                <div class="around">
+                                    <button class="btn pri d-block my-active" data-bs-toggle="modal" data-bs-target="#projectModal${project.name}">
+                                        Read More
+                                    </button>
+                                    <button class="btn sec ms-2" data-bs-toggle="modal" data-bs-target="#viewScreensProjectModal${project.name}">
+                                        View Screens
+                                    </button>
+                                </div>
+                            
+                            <!-- Modal Description -->
+                            <div class="modal modal1 fade" id="projectModal${project.name}" tabindex="-1" aria-labelledby="projectModal${project.name}Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title" id="projectModal${project.name}Label">${name}</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="${project.images[0].url}" width="100%" height="100%" class="d-block ${project.images[0].style} w-100" alt="${name} 1">
+                                            <div class="mt-4">
+                                                <p class="">${project.description}</p>
+                                            </div>
+                                        </div>
+                                        <!--<div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>-->
+                                    </div>
+                                </div>
                             </div>
+
+
+                            <!-- MODAL VIEW SCREENS -->
+                            <div class="modal modal2 fade" id="viewScreensProjectModal${project.name}" tabindex="-1" aria-labelledby="viewScreensProject${project.name}Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title" id="viewScreensProject${project.name}Label">${name} Screens</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="viewScreensProject${project.name}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    ${project.images.map((image, index) => {
+                                                        return (
+                                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+                                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
+                                                            </div>`
+                                                        )
+                                                    }).join('')}
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="prev">
+                                                    <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="next">
+                                                    <span class="fa fa-angle-right text-theme fs-5" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--<div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
