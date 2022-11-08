@@ -255,6 +255,7 @@ const webdev = [
     {
         name: "Placement_Management_System",
         label: "NIT DGP",
+        modalStyle: 'modal-lg',
         title: "Made to keep track of the placement process, by ensuring proper communication between the placement coordinators and placement cell.",
         images: [
             {
@@ -305,9 +306,117 @@ const webdev = [
                 url: "./assets/img/projects/Placement Management/screens/12.webp",
                 style: ""
             },
+            {
+                url: "./assets/img/projects/Placement Management/screens/13.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/14.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/15.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/16.webp",
+                style: ""
+            },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+        Placements are crucial for job aspirants, and so is placement management. In the digital era, one can tremendously improve the efficiency and quality of tasks by working out a strategy that involves the perfect concoction of harnessing the best out of technology and human brains. When there are 180+ companies coming for campus placements it is difficult to keep track of the status of the company. Whenever a company comes to our campus for recruitment there are a set of steps that are to be followed, but when the no. of companies become large enough it becomes difficult to manage, moreover there should be proper communication between the Placement Cell and the Placement Coordinators. When we look closely on this problem we  get to know placement coordination is mostly a repetitive process and this process can be shifted from manual to semi-automatic this will not only boost the productivity of the placement cell and the coordinators as well but will also save time and energy that can be utilized to work on different matters.
+        <br>
+        <br>
+        This Placement Management website helps to combat all of these problems, here is a quick description of the project.
+            <ol>
+                <li> There are two types of accounts, one is for the Placement cell and the other one is for the Placement Coordinators. 
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/1.webp" alt="There are two types of accounts, one is for the Placement cell and the other one is for the Placement Coordinators. " />
+                </li>
+                <li> 
+                    This is admin dashboard where you can see statistics of companies, placement coordinators and tasks (that are assigned by the placement cell to the coordinators)
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/2.webp" alt="This is admin dashboard where you can see statistics of companies, placement coordinators and tasks (that are assigned by the placement cell to the coordinators)" />
+                </li>
+                <li> 
+                    This is download tab where the admin can download current database of the companies, placement coordinators, tasks and point of contacts in .csv format.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/3.webp" alt="This is download tab where the admin can download current database of the companies, placement coordinators, tasks and point of contacts in .csv format." />
+                </li>
+                <li> 
+                    Here the admin can add a placement coordinator. Once a coordinator is created the coordinator will receive notifications (when enabled) and emails for the status of the assigned company.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/4.webp" alt="Here the admin can add a placement coordinator. Once a coordinator is created the coordinator will receive notifications (when enabled) and emails for the status of the assigned company." />
+                </li>
+                <li> 
+                    Here the admin can add a company. On the right hand side there is a section which will show the admin if the same company is already present or not so that the admin can change the naming convention (Sometimes a company comes to the campus twice).
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/5.webp" alt="Here the admin can add a company. On the right hand side there is a section which will tell the admin if the same company is already present or not so that the admin can change the naming convention (Sometimes a company comes to the campus twice)." />
+                </li>
+                <li> 
+                    Send notification tab, The admin can send push notifications to the admin devices and placement coordinators who have their push notifications enabled. There is also a section which shows the placement coordinators who have not enabled (or disabled) their push notifications.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/6.webp" alt="Send notification tab, The admin can send push notifications to the admin devices and placement coordinators who have their push notifications enabled. There is also a section which shows the placement coordinators who have not enabled (or disabled) their push notifications." />
+                </li>
+                <li> 
+                    List of companies tab, The admin can view all the details of all the companies at once.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/7.webp" alt="List of companies tab, The admin can view all the details of all the companies at once." />
+                </li>
+                <li> 
+                    List of placement coordinators tab, the admin can view the details of all the placement coordinators at once.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/8.webp" alt="List of placement coordinators tab, the admin can view the details of all the placement coordinators at once." />
+                </li>
+                <li> 
+                    List of tasks tab, the admin can view list of all tasks at once.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/9.webp" alt="List of tasks tab, the admin can view list of all tasks at once." />
+                </li>
+                <li> Company details screen where 
+                    <ul style="list-style-type:disc;">
+                        <li> The admin or the coordinator can update the progress of the company. </li>
+                        <li> The admin can edit details of the company, the admin can also add files like job description etc.</li>
+                        <li> The admin can add or view Whatsapp group link with the company officials</li>
+                        <li> The admin can send notification to all allotted coordinators at once.</li>
+                        <li> The admin can add, edit or remove a task, where as the coordinator can only change the status of the task.</li>
+                        <li> The admin can manage the contact details of the Point of contacts.</li>
+                    </ul>
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/10.webp" alt="List of tasks tab, the admin can view list of all tasks at once." />
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/11.webp" alt="List of tasks tab, the admin can view list of all tasks at once." />
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/12.webp" alt="List of tasks tab, the admin can view list of all tasks at once." />
+                </li>
+                <li> 
+                    This is the dashboard of a placement coordinator, where he/she can view Tasks Statistics and list of companies whose placement process is ongoing and also the ones whose placement process is completed.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/13.webp" alt="This is the dashboard of a placement coordinator, where he/she can view Tasks Statistics and list of companies whose placement process is ongoing and also the ones whose placement process is completed." />
+                </li>
+                <li> 
+                    The coordinator can view all the allotted companies at once.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/14.webp" alt="The coordinator can view all the allotted companies at once." />
+                </li>
+                <li> 
+                    The coordinator can change its status from available to unavailable and has to state a reason for it.
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/15.webp" alt="The coordinator can change its status from available to unavailable and has to state a reason for it." />
+                </li>
+                <li> 
+                    The coordinator can change its password. 
+                    <img class="img-fluid mb-3 mt-2" src="./assets/img/projects/Placement Management/screens/16.webp" alt="The coordinator can change its password. " />
+                </li>
+            </ol>
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Features under development</span>
+        <br>
+        <ul style="list-style-type:disc;">
+            <li>A calendar to show which process is scheduled on which day.</li>
+            <li>Students database on website.</li>
+        </ul>
+        <span class="text-theme fw-bold">Technologies used</span>
+        <br>
+        <ul style="list-style-type:disc;">
+            <li>Frontend: HTML, CSS, Javascript, Boostrap.</li>
+            <li>Backend: Django</li>
+            <li>Hosting: AWS EC2</li>
+        </ul>
+
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://tpsw.ccanitd.in/" target="_blank" rel="noopener noreferrer">
+                Visit Website
+            </a>
+        </button>
+        `,
     },
     {
         name: "Buzzpost",
@@ -1035,16 +1144,16 @@ function addProject(parentElement, list) {
                             
                             <!-- Modal Description -->
                             <div class="modal modal1 fade" id="projectModal${project.name}" tabindex="-1" aria-labelledby="projectModal${project.name}Label" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-dialog ${project.modalStyle} modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h1 class="modal-title" id="projectModal${project.name}Label">${name}</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img src="${project.images[0].url}" width="100%" height="100%" class="d-block ${project.images[0].style} w-100" alt="${name} 1">
-                                            <div class="mt-4">
-                                                <p class="">${project.description}</p>
+                                            <img src="${project.images[0].url}" class="w-100 ${project.images[0].style}" alt="${name} 1">
+                                            <div class="mt-4 project-description">
+                                                ${project.description}
                                             </div>
                                         </div>
                                         <!--<div class="modal-footer">

@@ -128,26 +128,34 @@
         transform: translateY(0);
     }
 }
-
+/* 
 .modal1 img{
     max-height: 300px !important;
     padding: 0.5rem;
     object-fit: contain;
-}
+} */
 
 .modal .modal-title{
     font-size: 1.5rem !important;
     font-weight: 600;
 }
-.modal p{
-    font-size: 1.1rem;
-    line-height: 1.6;
+.modal .modal-body{
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.modal .modal-body button a{
+    text-decoration: none;
 }
 #web-dev-projects .modal2 .modal-body{
     padding: 3rem 1rem;
 }
 #web-dev-projects .modal2 .modal-body img{
     min-height: 350px;
+}
+#projects .modal .modal-body img{
+    display: block;
+    margin:  1rem auto;
+    min-height: 300px;
 }
 @media (max-width: 768px) {
     #web-dev-projects .modal2 .modal-body img{
@@ -160,7 +168,7 @@
     #projects .card img {
         height: 100%;
     }
-    .modal p{
-        font-size: 1rem;
+    #projects .modal .modal-body .project-description img{
+        min-height: unset;
     }
 }

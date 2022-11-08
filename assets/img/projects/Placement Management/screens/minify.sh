@@ -10,3 +10,7 @@ cwebp -q 75 9.png -o 9.webp && rm 9.png
 cwebp -q 75 10.png -o 10.webp && rm 10.png
 cwebp -q 75 11.png -o 11.webp && rm 11.png
 cwebp -q 75 12.png -o 12.webp && rm 12.png
+cwebp -q 75 13.png -o 13.webp && rm 13.png
+cwebp -q 75 14.png -o 14.webp && rm 14.png
+cwebp -q 75 15.png -o 15.webp && rm 15.png
+cwebp -q 75 16.png -o 16.webp && rm 16.png
