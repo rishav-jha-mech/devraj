@@ -469,7 +469,56 @@ const webdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+
+        Buzzpost is a blogging website where users can post their blogs and connect with each other. 
+        The website has the following pages and features 
+        <br>
+        <br>
+        <ol>
+            <li>Home page</li>
+            <li>Login/Signup Page</li>
+            <li>Trending page where the top 5 bloggers with highest blog views will be shown and top 10 trending blogs.</li>
+            <li>Read blogs page where you can search blogs and you can sort the blogs by
+                <ul style="list-style-type:disc;">
+                    <li>Views</li>
+                    <li>Likes</li>
+                    <li>Blog length</li>
+                    <li>Newer</li>
+                    <li>Older</li>
+                </ul>
+            </li>
+            <li>Search user screen where you can search for a user</li>
+            <li>Search blog screen where you can search for a blog</li>
+            <li>Feedback screen.</li>
+            <li>My Blogs screen.</li>
+            <li>Write a blog screen with rich text editor (Tiny MCE).</li>
+            <li>Profile page.</li>
+            <li>My profile page.</li>
+            <li>Edit profile page.</li>
+            <li>Blogs that can be liked and commented upon</li>
+            <li>Comments which have an option to be liked and replied. </li>
+        </ol>
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Things to be done:</span>
+            <ul style="list-style-type:disc;">
+                <li>Some APIs for the mobile app is to be made.</li>
+                <li>UI/UX fixes.</li>
+            </ul>
+        <span class="text-theme fw-bold">Technologies used:</span>
+            <ul style="list-style-type:disc;">
+                <li>Frontend: HTML, CSS, Javascript</li>
+                <li>Backend: Django</li>
+                <li>Hosting: Heroku</li>
+            </ul>
+        
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://rj-freya.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                Visit Website
+            </a>
+        </button>
+        `,
     },
     {
         name: "SamVaad",
@@ -499,7 +548,29 @@ const webdev = [
 
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+        Samvaad provides you with the latest news from all over the world in 7 different categories from different sources. You can get trending news from here. This was my first react project which I made from scratch. Learnt about how to pass props from parent to child components and how to call parent functions from child. The backend is made using Flask and python requests module calls NewsApi and then sends the data to the frontend. Since NewsApi has a limit of 100 requests per day, try catch mechanism can serve around 1500 requests per day.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Things to do:</span>
+            <ul style="list-style-type:disc;">
+                <li>Caching mechanism to cache the news this will help the backend to serve even more requests.</li>
+            </ul>
+        <br>
+        <span class="text-theme fw-bold">Technologies used</span>
+            <ul style="list-style-type:disc;">
+                <li>Frontend: HTML, CSS, Javascript, React.</li>
+                <li>Backend: Flask</li>
+                <li>Hosting: Cloudflare pages</li>
+            </ul>
+
+                
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://samvaad.pages.dev" target="_blank" rel="noopener noreferrer">
+                Visit Website
+            </a>
+        </button>
+        `,
     },
     {
         name: "K_Plus",
@@ -536,7 +607,89 @@ const webdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+        K PLUS provides educational services from classes 5-12, B. Com/BBA /CA, CS, CMA FOUNDATION (online & offline). K<sub>2</sub>5 classes is the mentor and mentorship program and Krishna foundation is the social wing which aims to provide educational facilities to underprivileged students and empowering women via several training facilities.
+        <br>
+        <br>
+
+        The website serves to show information about K Plus classes and has the following pages and features:
+        <br>
+        <br>
+
+        <ol>
+        <li>Landing Page for K Plus classes</li>
+        <li>Landing Page for K<sub>2</sub>5 Classes</li>
+        <li>Landing Page for Krishna Foundation</li>
+        <li>Login Page </li>
+        <li>Signup Page</li>
+        <li>Dashboard for the students
+            <ul style="list-style-type:disc;">
+                <li>Home Tab where the student can see important notifications</li>
+                <li>Free resources Tab where the student can watch download free resources</li>
+                <li>Courses Tab where the student can preview and buy the courses</li>
+                <li>Tests Tab</li>
+                <li>Quiz Tab</li>
+                <li>Account Settings
+                    <ul>
+                        <li>Update profile</li>
+                        <li>Change password</li>
+                    </ul>
+                </li>
+                <li>Feedback</li>
+                <li>Contact office</li>
+            </ul>
+        </li>
+        <li>Admin panel 
+            <ul style="list-style-type:disc;">
+                <li>To manage various links of forms added on the website</li>
+                <li>Gallery (CRUD)</li>
+                <li>Events (CRUD)</li>
+                <li>Testimonials (CRUD)</li>
+                <li>Careers (CRUD)</li>
+                <li>Background (CRUD)</li>
+                <li>What we do (CRUD)</li>
+                <li>Our projects (CRUD)</li>
+            </ul>
+        </li>
+        </ol>
+        Initial version of the website was made using React for the frontend, but after considering the huge scale of the website we decided to switch to Django’s Jinja2 templating engine this made changing and developing new features for the website easier and quicker.
+        
+        <br>
+        <br>
+        
+        
+        <span class="text-theme fw-bold">Features under development:</span>
+        <ul style="list-style-type:disc;">
+            <li>Payment integration</li>
+            <li>Tests and Quizes </li>
+            <li>Educational Blogs</li>
+        </ul>
+        
+        <span class="text-theme fw-bold">Things to Improve</span>
+        <ul style="list-style-type:disc;">
+            <li>UI/UX improvements</li>
+            <li>Minified CSS and JS for faster loading</li>
+            <li>Uniform design throughout the website</li>
+        </ul>
+        
+        <span class="text-theme fw-bold">Technologies used:</span>
+        <ul style="list-style-type:disc;">
+            <li>Frontend:  HTML, CSS, Javascript, Bootstrap.</li>
+            <li>Backend : Django, PostgreSQL (Database)</li>
+            <li>Hosting: AWS</li>
+        </ul>
+        
+        With the use of Google Lighthouse, SEO of the website is improved to an extent when you google “K Plus Classes” the first website you will see is the one made by us.
+        
+        
+
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://www.kplusclasses.com" target="_blank" rel="noopener noreferrer">
+                Visit Website
+            </a>
+        </button>
+
+        `,
     },
     {
         name: "Squid_Game",
@@ -581,7 +734,35 @@ const webdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+        Squid game themed website where users play and go through two elimination rounds. The first round being 'Green Light Red Light' and the second one is 'Paper Candy'. This website has been made with collective efforts of <a href="https://www.linkedin.com/in/bihan-saha-19598320a" target="_blank" rel="noopener noreferrer">Bihan Saha</a> (Framing the event) , <a href="https://www.linkedin.com/in/rishitashaw" target="_blank" rel="noopener noreferrer">Rishita Shaw</a> (Frontend Developer & Framing the event) and the rest of the Prakriti Team as an online event when classes were online.
+        <br>
+        <br>
+        Each user will get a card just like the one they receive in the game post registering via google.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Round 1  “Green Light Red Light” </span>The player has to turn on the camera and he has to move his head when the doll is not looking in order to move forward (distance travelled is shown on the screen). After sometime when the doll looks at the player, if the movement sensitivity meter reaches 100 then the user will die and he/she has to start all over again. The player will get 3 chances and if the player tries any mischievous activity that player will be labelled as a cheater. 
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Round 2 “Paper Candy” </span>The player has to cut out the given shape Heart, Crescent, Umbrella and Star within the given time, once the paper is ready the player has to upload the image on the website after which we will decide if the player is ready to be promoted to the next round or not. If the user is promoted to the next round then user is prompted to add his phone number after which we add them to the Whatsapp group of next round.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Technologies used:</span>
+        <ul style="list-style-type:disc;">
+            <li>Frontend:  HTML, CSS, Javascript</li>
+            <li>Backend: Django</li>
+            <li>Hosting: AWS</li>
+        </ul>
+
+        It took us about a month to test and then successfully deploy this website, due to this the players faced no bugs/problems while playing. The event was successful and saw a footfall of<span class="text-theme fw-bold"> 300+ participants </span>.
+        
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://github.com/prakritinitd/squid-game" target="_blank" rel="noopener noreferrer">
+                Visit Github
+            </a>
+        </button>
+        
+        `
     },
     {
         name: "Treasures_at_Hogwarts",
@@ -618,7 +799,27 @@ const webdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        description: `
+        Treasures at Hogwarts is an online-offline event, which has two rounds which involves the website.This website has been made with collective efforts of <a href="https://www.linkedin.com/in/bihan-saha-19598320a" target="_blank" rel="noopener noreferrer">Bihan Saha</a> (Framing the event) , <a href="https://www.linkedin.com/in/rishitashaw" target="_blank" rel="noopener noreferrer">Rishita Shaw</a> (Frontend, backend & Framing the event) and the rest of the Prakriti Team.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">First round:</span> The team will have to play Quidditch and grab the flying snitch, on clicking at the moving snitch the user will get one point, one team has total of 3 attempts and the final score will be shown on the leader board.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Second round</span> The players will be given an image, they have to identify the location on our campus, take a selfie at that exact location and upload it on the website, from the backend we will verify the image and accept it or reject it,  if the picture is accepted then user gets another image and if not then he/she will get the same image along with the reason why their uploaded image was rejected.
+        <br>
+        <br>
+        
+        The whole website was made within 10 days from frontend to backend to deployment. The event was successful and saw a footfall of<span class="text-theme fw-bold"> 160+ participants </span>.
+
+        
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://github.com/prakritinitd/Treasures-At-Hogwarts" target="_blank" rel="noopener noreferrer">
+                Visit Github
+            </a>
+        </button>
+        
+        `
     },
 ]
 
