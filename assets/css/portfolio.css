@@ -19,8 +19,8 @@
     padding: 3rem 0;
 }
 
-#portfolio .swiper-slide img {
-    height: 100%;
+#portfolio .swiper-slide .poster {
+    max-height: 450px;
     border: 1px solid var(--bs-gray-400);
     border-radius: 8px;
 }
@@ -83,7 +83,7 @@
     text-decoration: none;
 }
 
-@media(max-width: 746px) {
+@media(max-width: 991px) {
     #portfolio .da-card{
         min-height: 518px;
     }
@@ -129,4 +129,43 @@
     #portfolio .swiper-slide .subheading {
         font-size: 1.1rem;
     }
+}
+
+#portfolio .modal .modal-body img{
+    display: block;
+    margin:  1rem auto;
+    min-height: 300px;
+}
+
+#portfolio .modal .modal-body .btn a{
+    color: unset;
+    font-size: 1rem;
+    padding: 1.25rem 2rem;
+}
+
+#portfolio .modal .modal-content{
+    border-radius: 16px;
+    border: none;
+}
+
+#portfolio .modal .modal-header{
+    background-color: var(--theme-color);
+    border-radius: 16px 16px 0 0;
+    border-bottom: #ebcc00 2px solid;
+    color: var(--bs-white);
+    letter-spacing: 1px;
+}
+
+@media(max-width: 746px) {
+    #portfolio img{
+        min-height: unset;
+        width: 100%;
+    }
+    #portfolio .modal .modal-header{
+        letter-spacing: unset;
+    }
+}
+
+#portfolio .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff1'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }

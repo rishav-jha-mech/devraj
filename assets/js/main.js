@@ -32,6 +32,10 @@ function menuBtnFunction() {
     }
 }
 
+function clickBtnId(id) {
+    document.getElementById(id).click();
+}
+
 var showupBtn = true
 
 const upBtnListener = document.addEventListener('scroll', e => {
@@ -249,82 +253,10 @@ const counterAnim = (element, start = 0, end, duration = 1000) => {
 
 // Animate Progress & Counter
 
-// ADD PROJECTS
+// My Gems
 
-const webdev = [
-    {
-        name: "Placement_Management_System",
-        label: "NIT DGP",
-        modalStyle: 'modal-lg',
-        title: "Made to keep track of the placement process, by ensuring proper communication between the placement coordinators and placement cell.",
-        images: [
-            {
-                url: "./assets/img/projects/Placement Management/screens/1.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/2.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/3.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/4.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/5.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/6.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/7.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/8.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/9.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/10.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/11.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/12.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/13.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/14.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/15.webp",
-                style: ""
-            },
-            {
-                url: "./assets/img/projects/Placement Management/screens/16.webp",
-                style: ""
-            },
-        ],
-        link: "",
-        description: `
+const pms_title = `Made to keep track of the placement process, by ensuring proper communication between the placement coordinators and placement cell.`;
+const pms_des = `
         Placements are crucial for job aspirants, and so is placement management. In the digital era, one can tremendously improve the efficiency and quality of tasks by working out a strategy that involves the perfect concoction of harnessing the best out of technology and human brains. When there are 180+ companies coming for campus placements it is difficult to keep track of the status of the company. Whenever a company comes to our campus for recruitment there are a set of steps that are to be followed, but when the no. of companies become large enough it becomes difficult to manage, moreover there should be proper communication between the Placement Cell and the Placement Coordinators. When we look closely on this problem we  get to know placement coordination is mostly a repetitive process and this process can be shifted from manual to semi-automatic this will not only boost the productivity of the placement cell and the coordinators as well but will also save time and energy that can be utilized to work on different matters.
         <br>
         <br>
@@ -416,7 +348,162 @@ const webdev = [
                 Visit Website
             </a>
         </button>
-        `,
+`;
+const uv_title = `UV Downloader is a video downloader app which allows users to download videos from various platforms like Youtube, Facebook, Instagram, Twitter, etc.`;
+const uv_des = `
+
+        UV stands for universal downloader. We all love to listen to music, some play it using Spotify some use Youtube, but almost all the music streaming platforms are filled with annoying ads and most of the songs are not available for offline download. People want to share some videos and media with our friends and family but they prefer sharing the original video instead of a link, but this is not possible for most of the platforms. 
+        <br>
+        <br>
+        UV Downloader solves this problem by enabling users to download HD videos  and High quality audios at high speeds, users can download media from websites like Facebook, Instagram, Youtube, Reddit and many more. UV Downloader also provides a file system for users to navigate through their files and downloads. Users can also browse the web within the app and find the media they want to download. 
+        <br>
+        <br>
+        <ul style="list-style-type:disc;">
+            <li>The first version of this app was made using Javascript and Context API.</li>
+            <li>The second version of this app was made using Javascript and Redux Core.</li>
+            <li>The latest version of this app has Typescript enabled and uses Redux Toolkit.</li>
+        </ul>
+        <span class="fs-4 mt-3 d-block text-theme fw-bold text-center">First Version</span>
+        The most difficult part of this project was finding the proper library with compatible version, initially while building this (I was using Javascript back then ) I faced a lot of bugs & errors, almost to a point where I almost gave up. React Native Fetch Blob may help you to download files via url but many times it fails and sometimes even download does not even start, so it was not an reliable option. Then I switched to React Native FS, and while installing this library I again got a lot of build fails, but eventually when this was ready to use, I found out that it’s the most reliable library for downloading files from the internet, it also has many options which enables the developer to build feature rich applications moreover its free and open source. Now the problem was how do I show that the download has started and its progress (react-native-fs gives you the download progress asynchronously), now the problem is I have to store and update this data from somewhere. So as at that time I was familiar with context api (which I will regret later). Now due to the frequent updation of the download status, the downloading file component was flickering, and when more downloads are added it started to flicker even more. So now I knew that using context api is not a good idea. This was the first version which was made using Javascript and Context API.<
+        <span class="fs-4 mt-3 d-block text-theme fw-bold text-center">Second Version</span>
+        Then I built a new branch and switched to redux, the code became more simpler and there was no flickering even though 10 files were getting downloaded at the same time. This was the second version of the application where I was using Javascript and Redux Core.<
+        <span class="fs-4 mt-3 d-block text-theme fw-bold text-center">Latest Version</span>
+        I could have stopped here but I wanted to solve one more problem, what youtube does is, it has audio and video (only the high quality ones) as separate files, till now I was showing only the lower quality video files (480p to 720p max) that have audio embedded in them, but now I had to change this, I decided to introduce another very important library to our application FFMPEG. What FFMPEG does is, it merges the video and audio into a single output file whose extension can chosen by the developer (I kept it to mp4 since it’s the most widely used video file format). Now the challenge was how to install FFMPEG because the documentation is not properly written, and I spent around 2 days just to install FFMPEG min version. Meanwhile I recently worked on Treklers passenger app which I made from scratch in Typescript, so I knew how beneficial Typescript is for this project. Then I rewrote the entire project in Typescript and installed Redux Toolkit and after all of this was done. I started working on Downloading the audio and video, merging them together and then deleting the source files. Typescript really helped here I faced no bugs while making this feature and thus the third and the latest version of the app is ready, which is written in Typescript and has Redux Toolkit for state management.
+
+        <br>
+        <br>
+
+        <span class="text-theme fw-bold">Things to do:</span>
+            <ul style="list-style-type:disc;">
+                <li>Better UI/UX</li>
+                <li>Add support to enable download from different websites</li>
+            </ul>
+        <span class="text-theme fw-bold">Technologies used</span>
+            <ul style="list-style-type:disc;">
+                <li>Frontend: React Native (Typescript)</li>
+                <li>Backend: Flask</li>
+            </ul>
+                
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://github.com/rishav-jha-mech/UV-Plus-App" target="_blank" rel="noopener noreferrer">
+                Visit Github
+            </a>
+        </button>
+`;
+
+const trek_title = `Treklers is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling.`;
+const trek_des = `
+                
+        <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Capricon Technologies</span></span>
+        <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Android Developer</span></span>
+
+        <span class="fw-bold">Treklers</span> is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling. I built this project from scratch using Typescript in React Native.
+        The app has over 50+ screens and is currently under development. 
+
+        <span class="fw-bold d-block mt-3">Some important screens:</span>
+        <ol>
+            <li>Splash screens.</li>
+            <li>Login Screen.</li>
+            <li>Signup Screen.</li>
+            <li>Verify OTP screen.</li>
+            <li>Home screen.</li>
+            <li>Profile screen.</li>
+            <li>My rides screen.</li>
+            <li>Promotions screen.</li>
+            <li>My favorites screen.</li>
+            <li>My drivers screen.</li>
+            <li>Payments screen.</li>
+            <li>Notifications screen.</li>
+            <li>Select location screen.</li>
+            <li>Additional Info screen.</li>
+            <li>Select car screen.</li>
+            <li>Feedback screen.</li>
+        </ol>
+        
+        <span class="text-theme d-block mt-2 fw-bold">Technologies used</span>
+        <ul style="list-style-type:disc;">
+            <li>React Native</li>
+            <li>Typescript</li>
+        </ul>
+
+`
+
+// ADD PROJECTS
+
+const webdev = [
+    {
+        name: "Placement_Management_System",
+        label: "NIT DGP",
+        modalStyle: 'modal-lg',
+        title: pms_title,
+        images: [
+            {
+                url: "./assets/img/projects/Placement Management/screens/1.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/2.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/3.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/4.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/5.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/6.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/7.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/8.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/9.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/10.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/11.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/12.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/13.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/14.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/15.webp",
+                style: ""
+            },
+            {
+                url: "./assets/img/projects/Placement Management/screens/16.webp",
+                style: ""
+            },
+        ],
+        link: "",
+        description: pms_des,
     },
     {
         name: "Buzzpost",
@@ -523,7 +610,7 @@ const webdev = [
     {
         name: "SamVaad",
         label: "React",
-        title: "It provides you with the latest news from all over the world in 7 different categories from different sources which are verfied and trusted.",
+        title: "It provides you with the latest news from all over the world in 7 different categories from different sources. This is my first project on React which i built from scratch.",
         images: [
             {
                 url: "./assets/img/projects/Samvaad/web-poster.webp",
@@ -556,7 +643,6 @@ const webdev = [
             <ul style="list-style-type:disc;">
                 <li>Caching mechanism to cache the news this will help the backend to serve even more requests.</li>
             </ul>
-        <br>
         <span class="text-theme fw-bold">Technologies used</span>
             <ul style="list-style-type:disc;">
                 <li>Frontend: HTML, CSS, Javascript, React.</li>
@@ -810,6 +896,13 @@ const webdev = [
         <br>
         <br>
         
+        <span class="text-theme fw-bold">Technologies used:</span>
+        <ul style="list-style-type:disc;">
+            <li>Frontend:  HTML, CSS, Javascript</li>
+            <li>Backend: Django</li>
+            <li>Hosting: AWS</li>
+        </ul>
+        
         The whole website was made within 10 days from frontend to backend to deployment. The event was successful and saw a footfall of<span class="text-theme fw-bold"> 160+ participants </span>.
 
         
@@ -827,7 +920,7 @@ const appdev = [
     {
         name: "Samvaad",
         label: "React Native",
-        title: "Samvaad App brings you news from 50+ countries across 7 Categories.",
+        title: "Samvaad App brings you news from 50+ countries across 7 Categories from different sources. This is my first project on React Native which i built from scratch.",
         images: [
             {
                 url: "./assets/img/projects/SamvaadApp/app-poster.webp",
@@ -855,11 +948,32 @@ const appdev = [
             }
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: `
+            
+        Samvaad provides you with the latest news from all over the world in 7 different categories from different sources. You can get trending news from here. This was my first React Native project which I made from scratch. Learnt about how to pass props from parent to child components and how to call parent functions from child. The backend is made using Flask and python requests module calls NewsApi and then sends the data to the frontend. Since NewsApi has a limit of 100 requests per day, try catch mechanism can serve around 1500 requests per day.
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Things to do:</span>
+            <ul style="list-style-type:disc;">
+                <li>Caching mechanism to cache the news this will help the backend to serve even more requests.</li>
+            </ul>
+        <span class="text-theme fw-bold">Technologies used</span>
+            <ul style="list-style-type:disc;">
+                <li>Frontend: React Native (Javascript)</li>
+                <li>Backend: Flask</li>
+            </ul>
+                
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://github.com/rishav-jha-mech/SamVaad-App" target="_blank" rel="noopener noreferrer">
+                Visit Github
+            </a>
+        </button>
+
+        `
     },
     {
         name: "UV_Downloader",
-        title: "UV Downloader is a video downloader app which allows users to download videos from various platforms like Youtube, Facebook, Instagram, Twitter, etc.",
+        title: uv_title,
         label: "React Native",
         images: [
             {
@@ -931,7 +1045,7 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: uv_des
     },
     {
         name: "Buzzpost_Blogging_App",
@@ -1008,7 +1122,57 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: `
+            
+        Buzzpost is a blogging app where users can post their blogs and connect with each other. 
+        The app has the following screen and features 
+        <br>
+        <br>
+        <ol>
+            <li>Home screen</li>
+            <li>Login/Signup screen</li>
+            <li>Trending screen where the top 5 bloggers with highest blog views will be shown and top 10 trending blogs.</li>
+            <li>Read blogs screen where you can search blogs and you can sort the blogs by
+                <ul style="list-style-type:disc;">
+                    <li>Views</li>
+                    <li>Likes</li>
+                    <li>Blog length</li>
+                    <li>Newer</li>
+                    <li>Older</li>
+                </ul>
+            </li>
+            <li>Search user screen where you can search for a user</li>
+            <li>Search blog screen where you can search for a blog</li>
+            <li>Feedback screen.</li>
+            <li>My Blogs screen.</li>
+            <li>Write a blog screen with rich text editor.</li>
+            <li>Profile screen.</li>
+            <li>My profile screen.</li>
+            <li>Edit profile screen.</li>
+            <li>Blogs that can be liked and commented upon.</li>
+            <li>Comments which have an option to be liked and replied. </li>
+        </ol>
+        <br>
+        <br>
+        <span class="text-theme fw-bold">Things to be done:</span>
+            <ul style="list-style-type:disc;">
+                <li>Making commenting feature.</li>
+                <li>Complete API integration.</li>
+            </ul>
+        <span class="text-theme fw-bold">Technologies used:</span>
+            <ul style="list-style-type:disc;">
+                <li>Frontend: React Native (Javascript)</li>
+                <li>Backend: Django</li>
+                <li>Hosting: Heroku</li>
+            </ul>
+        
+        <button class="btn btn-lg d-block my-4 mx-auto">
+            <a href="https://rj-freya.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                Visit Website
+            </a>
+        </button>
+
+        `
     },
     {
         name: "Triunits",
@@ -1109,7 +1273,62 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: `
+        
+        <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Capricon Technologies</span></span>
+        <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Android Developer</span></span>
+
+        <span class="fw-bold">Triunits</span> is a cryptocurrency trading app which allows users to trade cryptocurrencies and earn money. It has charts and graphs to show the current market status. The app is currently on Google Play Store. The goal of a developer while making this app is to keep the UI of the application minimal and easy to use. I have worked on many screens and also developed several screens from scratch. I also add the shimmering loading effect in various parts of the application for better User Experience. I also created a coin news API which scrapes data from the web, caches it and sends it to the app.
+        
+        <br>
+        <span class="fw-bold d-block mt-3">Screens and Features:</span>
+        <ol>
+            <li>Home screen with wallet balance, favorite coins and settings.</li>
+            <li>Market screen where users can browse over 1000+ coins.</li>
+            <li>Futures screen where users can browse over 1000+ coins.</li>
+            <li>Wallet screen where users can see their transaction history, their account balance and manage their portfolio.</li>
+            <li>Coin detail screen where there are four tabs.
+                <ul style="list-style-type:disc;">
+                    <li>Live chart tab where it has line chart and candle stick chart. At the bottom of the chart user can browse latest News regarding to the selected coin.</li>
+                    <li>Order book tab.</li>
+                    <li>History tab.</li>
+                    <li>My trades tab</li>
+                    <li>For the futures coin there are 4 sub tabs in My trades tab
+                            <ul style="list-style-type:disc;">
+                                <li>Position</li>
+                                <li>Open orders</li>
+                                <li>Open history</li>
+                                <li>Trade history</li>
+                                <li>Income history</li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <br>
+        <span class="text-theme fw-bold">Technologies used</span>
+            <ul style="list-style-type:disc;">
+                <li>Flutter</li>
+                <li>Flask</li>
+                <li>Redis</li>
+                <li>Python</li>
+                <li>Dart</li>
+            </ul>
+        <div class="around">
+            <button class="btn btn-lg d-block me-1 my-4 mx-auto">
+                <a href="https://triunits.com/" target="_blank" rel="noopener noreferrer">
+                    Visit Website
+                </a>
+            </button>
+            <button class="btn my-active btn-lg d-block ms-1 my-4 mx-auto">
+                <a href="https://play.google.com/store/apps/details?id=com.triunits.android.triunits.triunits&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                    Visit Play Store
+                </a>
+            </button>
+        </div>
+
+        `
     },
     {
         name: "Tricket",
@@ -1171,12 +1390,26 @@ const appdev = [
             },
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: `
+            
+            <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Helpen.in</span></span>
+            <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Flutter Developer</span></span>
+            <span class="fw-bold">Tricket</span> is an Indian fantasy sports platform that allows users to play fantasy cricket and win real money. 
+            <br>
+            Created the live scorecard on the live match screen, leaderboard screen and live matches screen.            
+            <br>
+            <span class="text-theme d-block mt-2 fw-bold">Technologies used</span>
+            <ul style="list-style-type:disc;">
+                <li>Flutter</li>
+                <li>Dart</li>
+            </ul>
+
+        `,
     },
     {
         name: "Treklers",
         label: "React Native",
-        title: "Treklers is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling.",
+        title: trek_title,
         images: [
                 {
                     url: "./assets/img/projects/Treklers/app-poster.webp",
@@ -1314,7 +1547,7 @@ const appdev = [
 
         ],
         link: "",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ex at reprehenderit, sunt beatae quas cupiditate quaerat, laudantium deleniti praesentium veritatis dignissimos excepturi tempora quo deserunt dolor magnam. Sapiente cum dolorem deleniti. Nisi quos dicta voluptatum culpa veniam asperiores. Possimus nulla fugit, sequi beatae tempora maxime fuga in suscipit error!"
+        description: trek_des
     }
 ]
 
@@ -1335,82 +1568,85 @@ function addProject(parentElement, list) {
                             <h6 class="fw-bold">${name}</h6>
                             <p class="mt-3">${project.title}</p>
                                 <div class="around">
-                                    <button class="btn pri d-block my-active" data-bs-toggle="modal" data-bs-target="#projectModal${project.name}">
+                                    <button id="modalBtnReadMore${project.name}" class="btn pri d-block my-active" data-bs-toggle="modal" data-bs-target="#projectModal${project.name}">
                                         Read More
                                     </button>
-                                    <button class="btn sec ms-2" data-bs-toggle="modal" data-bs-target="#viewScreensProjectModal${project.name}">
+                                    <button id="modalBtnViewScreens${project.name}" class="btn sec ms-2" data-bs-toggle="modal" data-bs-target="#viewScreensProjectModal${project.name}">
                                         View Screens
                                     </button>
                                 </div>
-                            
-                            <!-- Modal Description -->
-                            <div class="modal modal1 fade" id="projectModal${project.name}" tabindex="-1" aria-labelledby="projectModal${project.name}Label" aria-hidden="true">
-                                <div class="modal-dialog ${project.modalStyle} modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title" id="projectModal${project.name}Label">${name}</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="${project.images[0].url}" class="w-100 ${project.images[0].style}" alt="${name} 1">
-                                            <div class="mt-4 project-description">
-                                                ${project.description}
-                                            </div>
-                                        </div>
-                                        <!--<div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- MODAL VIEW SCREENS -->
-                            <div class="modal modal2 fade" id="viewScreensProjectModal${project.name}" tabindex="-1" aria-labelledby="viewScreensProject${project.name}Label" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title" id="viewScreensProject${project.name}Label">${name} Screens</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div id="viewScreensProject${project.name}" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                                <div class="carousel-inner">
-                                                    ${project.images.map((image, index) => {
-                                                        return (
-                                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
-                                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
-                                                            </div>`
-                                                        )
-                                                    }).join('')}
-                                                </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="prev">
-                                                    <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="next">
-                                                    <span class="fa fa-angle-right text-theme fs-5" aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!--<div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            
+            <!-- Modal Description -->
+            <div class="modal modal1 fade" id="projectModal${project.name}" tabindex="-1" aria-labelledby="projectModal${project.name}Label" aria-hidden="true">
+                <div class="modal-dialog ${project.modalStyle} modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="projectModal${project.name}Label">${name}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="${project.images[0].url}" class="w-100 ${project.images[0].style}" alt="${name} 1">
+                            <div class="mt-4 project-description">
+                                ${project.description}
+                            </div>
+                        </div>
+                        <!--<div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MODAL VIEW SCREENS -->
+            <div class="modal modal2 fade" id="viewScreensProjectModal${project.name}" tabindex="-1" aria-labelledby="viewScreensProject${project.name}Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="viewScreensProject${project.name}Label">${name} Screens</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="viewScreensProject${project.name}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    ${project.images.map((image, index) => {
+                                        return (
+                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
+                                            </div>`
+                                        )
+                                    }).join('')}
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="prev">
+                                    <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="next">
+                                    <span class="fa fa-angle-right text-theme fs-5" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!--<div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
         `
     }).join('');
+    
 }
+
 addProject(webdevContainer, webdev);
 addProject(appdevContainer, appdev);
 // ADD PROJECTS
@@ -1428,7 +1664,9 @@ const portfolio = [
 
     {
         name: "Placement_Management_System",
+        tagline: "Managing hassle-free placements",
         label: "NIT DGP",
+        modal1Size: "modal-lg",
         images: [
             "./assets/img/projects/Placement Management/1.webp",
             "./assets/img/projects/Placement Management/2.webp",
@@ -1444,10 +1682,12 @@ const portfolio = [
             "./assets/img/projects/Placement Management/12.webp",
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        title: pms_title,
+        description: pms_des,
     },
     {
-        name: "UV Downloader",
+        name: "UV_Downloader",
+        tagline: "Download YouTube Videos",
         label: "React Native",
         images: [
             "./assets/img/projects/UV Downloader/app-poster-1.webp",
@@ -1467,10 +1707,12 @@ const portfolio = [
             "./assets/img/projects/UV Downloader/14.webp",
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        title: uv_title,
+        description: uv_des,
     },
     {
         name: "Treklers",
+        tagline: "Booking rides made easy",
         label: "React Native",
         images: [
             "./assets/img/projects/Treklers/app-poster.webp",
@@ -1508,7 +1750,8 @@ const portfolio = [
             "./assets/img/projects/Treklers/33.webp",
         ],
         link: "",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        title: trek_title,
+        description: trek_des,
     }
 
 ]
@@ -1536,52 +1779,95 @@ document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project
     <div class="swiper-slide w-100">
         <div class="da-card">
             <div class="row px-0">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="img-container center">
-                        <div id="${project.name}Portfolio" class="carousel carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                ${project.images.map((image, index) => {
-                                        return (
-                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
-                                                <img src="${image}" class="d-block w-100" alt="Portfolio Rishav Jha ${name}">
-                                            </div>`
-                                        )
-                                    })
-                                        }
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="prev">
-                                <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#${project.name}Portfolio" data-bs-slide="next">
-                                <span class="fa fa-angle-right text-theme fs-5" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                        <img src="${project.images[0]}" class="d-block poster" alt="Portfolio Rishav Jha ${name}">
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="description">
                         <h1 class="heading">${name}</h1>
-                        <h6 class="subheading mb-4 text-muted">Lorem ipsum dolor sit amet.</h6>
+                        <h6 class="subheading mb-4 text-muted">${project.tagline}</h6>
                         <p class="text fs-6">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt blanditiis iure! 
+                            ${project.title}
                         </p>
                     </div>
+                    
                     <div class="around">
-                        <button class="btn active">
-                            <a href="${project.link}" target="_blank">View Project</a>
+                        <button class="btn active" type="button" data-bs-toggle="modal" data-bs-target="#readMorePortfolio${project.name}">
+                            <a>Read More</a>
                         </button>
-                        <button class="btn">
-                            <a href="${project.link}" target="_blank">View Code</a>
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#viewScreensPortfolio${project.name}">
+                            <a>View Screens</a>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     `
-}).join('');
+    
+    }).join('');
+
+document.getElementById('portfolio-modals').innerHTML += portfolio.map((project) => {
+    let name = `${project.name}`.replace(/_/g, " ");
+    return `
+    
+    
+    <!-- READ MORE MODAL -->
+    <div class="modal modal1 fade" id="readMorePortfolio${project.name}" tabindex="-1" aria-labelledby="readMorePortfolio${project.name}Label" aria-hidden="true">
+        <div class="modal-dialog ${project.modal1Size} modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="readMorePortfolio${project.name}Label">${name}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="${project.images[0]}" class="d-block mx-auto maxh400" alt="${name} 1">
+                    <div class="mt-4 project-description">
+                        ${project.description}
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- VIEW SCREENS MODAL -->
+    <div class="modal modal2 fade" id="viewScreensPortfolio${project.name}" tabindex="-1" aria-labelledby="viewScreensPortfolio${project.name}Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="viewScreensPortfolio${project.name}Label">${name} Screens</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ${project.images.map((image, index) => {
+                        return (
+                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+                                <img src="${image}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
+                            </div>`
+                        )
+                    }).join('')}
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+
+    `
+
+}).join('')
 
 
 var typingOptions = {

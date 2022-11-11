@@ -157,6 +157,11 @@
     margin:  1rem auto;
     min-height: 300px;
 }
+#projects .modal .modal-body .btn a{
+    color: unset;
+    font-size: 1rem;
+    padding: 1.25rem 2rem;
+}
 @media (max-width: 768px) {
     #web-dev-projects .modal2 .modal-body img{
         min-height: unset;
