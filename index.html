@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
+
     <link rel="stylesheet" href="./assets//css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets//css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -18,9 +19,10 @@
     <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="./assets/css/hero-and-contactme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    
     <title>Rishav Jha</title>
 </head>
 
@@ -46,8 +48,6 @@
 
     <section class="main" id="main">
 
-        <div id="modals-container"></div>
-
         <div class="home minh625 container center" id="home">
             <div class="row mx-0 center">
                 <div class="col-12 col-lg-11 px-0 mx-0">
@@ -55,7 +55,7 @@
                         <div class="left text-center text-lg-start mt-1 mt-sm-0">
                             <div class="details">
                                 <h1
-                                    class="heading d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    class="heading text-dark d-flex align-items-center justify-content-center justify-content-lg-start">
                                     Hi I'am Rishav <capsule><i class="fa-solid fa-code"></i></capsule>
                                 </h1>
                                 <p class="subheading mb-2 mb-sm-4" id="whatido">Frontend Developer</p>
@@ -93,31 +93,35 @@
         </div>
         <div class="about minh700 container" id="about">
             <h1 class="heading text-center">About Me</h1>
-            <h2 class="subheading text-center mb-5">My introduction</h2>
+            <h2 class="subheading text-center mb-5 pb-3">My introduction</h2>
             <div class="row mx-0 center">
                 <div class="col-12 col-lg-11">
                     <div class="row px-0">
-                        <div class="col-12 col-lg-6 left start">
+                        <div class="col-12 col-lg-5 left start">
                             <div class="gradient1">
                                 <img src="./assets/img/devraj.png" alt="">
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 center flex-column">
+                        <div class="col-12 col-lg-7 center flex-column">
                             <p class="text text-dark mb-3">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facere optio error nisi repudiandae blanditiis quidem omnis nobis cumque aspernatur iusto sequi, consequatur repellat nulla odit velit ducimus.
                             </p>
                             <div class="row w-100 flex-row text-center my-2 my-sm-4">
-                                <div class="col-sm-4 col-6 my-2 my-sm-0">
-                                    <span data-value="24" data-duration="2000" class="blockHero">0</span>
-                                    <span class="title">Months Experience</span>
+                                <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                    <span data-value="2" data-duration="800" class="blockHero">0</span>
+                                    <span class="title">Years Experience</span>
                                 </div>
-                                <div class="col-sm-4 col-6 my-2 my-sm-0">
+                                <div class="col-sm-3 col-6 my-2 my-sm-0">
                                     <span data-value="2600" data-duration="3500" class="blockHero">0</span>
                                     <span class="title">Commits on Github</span>
                                 </div>
-                                <div class="col-sm-4 col-6 my-2 my-sm-0">
+                                <div class="col-sm-3 col-6 my-2 my-sm-0">
                                     <span data-value="100" data-duration="2000" class="blockHero">0</span>
                                     <span class="title">Repositories on Github</span>
+                                </div>
+                                <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                    <span data-value="20" data-duration="2000" class="blockHero">0</span>
+                                    <span class="title">Fullstack Projects</span>
                                 </div>
                             </div>
                             <div
@@ -126,7 +130,6 @@
                                         class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -308,7 +311,7 @@
             <h2 class="subheading text-center mb-5">What i made so far</h2>
             <div class="center my-3">
                 <button id="web-btn" onclick="toggleProject()" class="btn me-2 me-sm-3"><i
-                        class="fa-solid fa-globe"></i></i>
+                        class="icon-globe"></i></i>
                     Web Dev
                 </button>
                 <button id="app-btn" onclick="toggleProject()" class="btn my-active"><i class="fa-solid fa-mobile-screen"></i>
@@ -346,7 +349,7 @@
                                 <h1 class="heading text-white">You have a new project</h1>
                                 <p class="subheading text-white">Contact me now and get a 30% discount on your new
                                     project.</p>
-                                <button class="btn mt-5 bg-white fs-6 between">Contact me <i
+                                <button class="btn mt-5 bg-white fs-6 between" onclick="scrollToFunc('contact')">Contact me <i
                                         class="fa-solid fa-angle-right fs-6 ms-1"></i></button>
                             </div>
                         </div>
@@ -360,7 +363,7 @@
             </div>
         </div>
         <div class="contact container px-0 my-5 minh600" id="contact">
-            <h1 class="heading text-center">Contact Me</h1>
+            <h1 class="heading text-center text-dark">Contact Me</h1>
             <h2 class="subheading text-center mb-0 mb-sm-5">Stay in touch</h2>
             <div class="row mx-0 center">
                 <div class="col-12 col-lg-10">
@@ -369,28 +372,28 @@
                             <div class="left">
                                 <div class="contact-item d-flex">
                                     <i class="fa-solid fa-phone me-3 text-theme"></i>
-                                    <div class="detail">
+                                    <div class="detail text-dark">
                                         <h5>Phone</h5>
                                         <span>+91 7439876937</span>
                                     </div>
                                 </div>
                                 <div class="contact-item d-flex">
-                                    <i class="fa-solid fa-envelope me-3 text-theme"></i>
-                                    <div class="detail">
+                                    <i class="icon-envelope me-3 text-theme"></i>
+                                    <div class="detail text-dark">
                                         <h5>Email</h5>
                                         <span>rishav.rj74@gmail.com</span>
                                     </div>
                                 </div>
                                 <div class="contact-item d-flex">
                                     <i class="fa-brands fa-github me-3 text-theme"></i>
-                                    <div class="detail">
+                                    <div class="detail  text-dark">
                                         <h5>Github</h5>
                                         <span>@rishav-jha-mech</span>
                                     </div>
                                 </div>
                                 <div class="contact-item d-flex">
-                                    <i class="fa-solid fa-location-pin me-3 text-theme"></i>
-                                    <div class="detail">
+                                    <i class="icon-location-pin me-3 text-theme"></i>
+                                    <div class="detail text-dark">
                                         <h5>Location</h5>
                                         <span>Kolkata, West Bengal, India.</span>
                                     </div>
@@ -432,29 +435,32 @@
                                     <div class="d-flex flex-column align-items-start align-items-lg-end">
                                         <div>
                                             <h3>Rishav Jha</h3>
-                                            <p>Lorem ipsum dolor sit.</p>
+                                            <p>Personal Portfolio Website.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 mb-4">
                                     <div
                                         class="d-flex flex-sm-row flex-column justify-content-start justify-content-lg-center">
-                                        <a class="me-5 mb-2" href="/">About me</a>
-                                        <a class="me-5 mb-2" href="/">Portfolio</a>
-                                        <a class="me-5 mb-2" href="/">Contact me</a>
+                                        <a class="me-5 mb-2" href="#about" target="_blank" rel="noopener noreferrer" >About me</a>
+                                        <a class="me-5 mb-2" href="https://github.com/rishav-jha-mech/devraj" target="_blank" rel="noopener noreferrer" >Portfolio</a>
+                                        <a class="me-5 mb-2" href="tel:+917439876937" target="_blank" rel="noopener noreferrer" >Contact me</a>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-3 mb-3">
                                     <div class="d-flex flex-column align-items-start">
                                         <div>
-                                            <a class="me-4 mb-2" href="/">
+                                            <a class="me-4 mb-2" href="https://github.com/rishav-jha-mech" target="_blank" rel="noopener noreferrer">
                                                 <i class="fa-brands fa-github"></i>
                                             </a>
-                                            <a class="me-4 mb-2" href="/">
+                                            <a class="me-4 mb-2" href="https://www.linkedin.com/in/rishav-jha-549b45203/"  target="_blank" rel="noopener noreferrer">
                                                 <i class="fa-brands fa-linkedin"></i>
                                             </a>
-                                            <a class="me-4 mb-2" href="/">
+                                            <a class="me-4 mb-2" href="https://stackoverflow.com/users/16330307/rishav-jha"  target="_blank" rel="noopener noreferrer">
                                                 <i class="fa-brands fa-stack-overflow"></i>
+                                            </a>
+                                            <a class="me-4 mb-2" href="https://wa.me/send?text=Hi%20Rishav&phone=7439876937" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-whatsapp"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -474,5 +480,4 @@
     <script src="./assets/js/swal2.js"></script>
     <script src="./assets//js/main.js"></script>
 </body>
-
 </html>

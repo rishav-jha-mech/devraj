@@ -163,8 +163,15 @@
     padding: 1.25rem 2rem;
 }
 @media (max-width: 768px) {
-    #web-dev-projects .modal2 .modal-body img{
-        min-height: unset;
+    #projects .card h6 {
+        font-size: 1.25rem;
+    }
+    #projects .modal .modal-body .btn a{
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+    #web-dev-projects .modal .modal-body img{
+        min-height: unset !important;
     }
     .modal1 img{
         max-height: none !important;

@@ -32,10 +32,6 @@ function menuBtnFunction() {
     }
 }
 
-function clickBtnId(id) {
-    document.getElementById(id).click();
-}
-
 var showupBtn = true
 
 const upBtnListener = document.addEventListener('scroll', e => {
@@ -1902,10 +1898,3 @@ function handleFormSubmit() {
         'success'
     );
 }
-
-
-// var x = ''
-// for (let index = 2; index < 34; index++) {
-//     x+=`cwebp -q 75 ${index}.png -o ${index}.webp && rm ${index}.png\n`
-// }
-// console.log(x)

@@ -123,11 +123,11 @@
     }
 
     #portfolio .swiper-slide .heading {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
     }
 
     #portfolio .swiper-slide .subheading {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -144,13 +144,11 @@
 }
 
 #portfolio .modal .modal-content{
-    border-radius: 16px;
     border: none;
 }
 
 #portfolio .modal .modal-header{
     background-color: var(--theme-color);
-    border-radius: 16px 16px 0 0;
     border-bottom: #ebcc00 2px solid;
     color: var(--bs-white);
     letter-spacing: 1px;
@@ -160,6 +158,9 @@
     #portfolio img{
         min-height: unset;
         width: 100%;
+    }
+    .portfolio .modal .modal-body img {
+        min-height: unset !important;
     }
     #portfolio .modal .modal-header{
         letter-spacing: unset;

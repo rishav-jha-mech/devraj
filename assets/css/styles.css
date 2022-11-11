@@ -58,9 +58,9 @@ body {
     font-family: var(--body-font);
     background-color: var(--body-color);
     color: var(--text-color);
+    background: var(--bs-white);
     /* overflow: hidden; */
 }
-
 .btn {
     background-color: var(--theme-color) !important;
     font-size: 1.15rem;
@@ -182,4 +182,27 @@ body {
     100% {
         transform: translateY(0)
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.btn{
+    text-align: center;
 }
