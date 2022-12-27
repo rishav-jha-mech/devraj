@@ -579,3 +579,9 @@
 .pr-10 {
     padding-right: 10rem;
 }
+.minhfull{
+    min-height: 100vh;
+}
+.maxhfull{
+    max-height: 100vh;
+}

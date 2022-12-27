@@ -19,460 +19,510 @@
     <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="./assets/css/hero-and-contactme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-    
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
     <title>Rishav Jha</title>
 </head>
 
 <body>
-    <header class="container" id="header">
-        <div class="brand">
-            <a href="/">RISHAV</a>
-        </div>
-        <div class="ham-items tog-h" id="nav-list">
-            <a class="ham-item text-theme mx-3" href="/">Home</a>
-            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#about">About</a>
-            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#skills">Skills</a>
-            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#portfolio">Portfolio</a>
-            <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#contact">Contact</a>
-        </div>
-        <div class="menu-btn-1" onclick="menuBtnFunction()">
-            <span></span>
-        </div>
-    </header>
-
-    <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle"><i
-            class="fa-solid fa-angle-up fs-4"></i></button>
-
-    <section class="main" id="main">
-
-        <div class="home minh625 container center" id="home">
-            <div class="row mx-0 center">
-                <div class="col-12 col-lg-11 px-0 mx-0">
-                    <div class="d-flex flex-column-reverse flex-lg-row">
-                        <div class="left text-center text-lg-start mt-1 mt-sm-0">
-                            <div class="details">
-                                <h1
-                                    class="heading text-dark d-flex align-items-center justify-content-center justify-content-lg-start">
-                                    Hi I'am Rishav <capsule><i class="fa-solid fa-code"></i></capsule>
-                                </h1>
-                                <p class="subheading mb-2 mb-sm-4" id="whatido">Frontend Developer</p>
-                                <div class="text text-dark mb-3">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque facilis enim autem assumenda itaque, hic nemo. Maiores nemo consequuntur dicta dolor?
-                                </div>
-                                <button class="btn mt-2 mt-sm-5" onclick="scrollToFunc('contact')">Contact me <i
-                                        class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
-                            </div>
-                        </div>
-                        <div class="right d-flex justify-content-center justify-content-lg-end align-items-lg-start">
-                            <div class="img-container relative">
-                                <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <mask id="mask0" mask-type="alpha">
-                                        <path fill="var(--theme-color)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                    </mask>
-                                    <g mask="url(#mask0)">
-                                        <path fill="var(--theme-color)"
-                                            d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                        <image id="me" x="18" xlink:href="./assets/img/devraj.png" />
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="loading" class="minhfull flex-column center" style="background-color: #07192F;">
+        <h1 class="text-info fw-bolder">
+            <i class="fa-solid fa-code fs-1"></i> LOADING ...
+        </h1>
+    </section>
+    <section id="page" class="d-none">
+        <header class="container" id="header">
+            <div class="brand">
+                <a href="/">RISHAV</a>
             </div>
-        </div>
-        <div class="about minh700 container" id="about">
-            <h1 class="heading text-center">About Me</h1>
-            <h2 class="subheading text-center mb-5 pb-3">My introduction</h2>
-            <div class="row mx-0 center">
-                <div class="col-12 col-lg-11">
-                    <div class="row px-0">
-                        <div class="col-12 col-lg-5 left start">
-                            <div class="gradient1">
-                                <img src="./assets/img/devraj.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-7 center flex-column">
-                            <p class="text text-dark mb-3">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facere optio error nisi repudiandae blanditiis quidem omnis nobis cumque aspernatur iusto sequi, consequatur repellat nulla odit velit ducimus.
-                            </p>
-                            <div class="row w-100 flex-row text-center my-2 my-sm-4">
-                                <div class="col-sm-3 col-6 my-2 my-sm-0">
-                                    <span data-value="2" data-duration="800" class="blockHero">0</span>
-                                    <span class="title">Years Experience</span>
-                                </div>
-                                <div class="col-sm-3 col-6 my-2 my-sm-0">
-                                    <span data-value="2600" data-duration="3500" class="blockHero">0</span>
-                                    <span class="title">Commits on Github</span>
-                                </div>
-                                <div class="col-sm-3 col-6 my-2 my-sm-0">
-                                    <span data-value="100" data-duration="2000" class="blockHero">0</span>
-                                    <span class="title">Repositories on Github</span>
-                                </div>
-                                <div class="col-sm-3 col-6 my-2 my-sm-0">
-                                    <span data-value="20" data-duration="2000" class="blockHero">0</span>
-                                    <span class="title">Fullstack Projects</span>
+            <div class="ham-items tog-h" id="nav-list">
+                <a class="ham-item text-theme mx-3" href="/">Home</a>
+                <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#about">About</a>
+                <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#skills">Skills</a>
+                <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#portfolio">Portfolio</a>
+                <a class="ham-item mx-3" onclick="menuBtnFunction()" href="#contact">Contact</a>
+            </div>
+            <div class="menu-btn-1" onclick="menuBtnFunction()">
+                <span></span>
+            </div>
+        </header>
+
+        <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle">
+            <i class="fa-solid fa-angle-up fs-4"></i>
+        </button>
+
+        <section class="main" id="main">
+
+            <div class="home minh625 container center" id="home">
+                <div class="row mx-0 center">
+                    <div class="col-12 col-lg-11 px-0 mx-0">
+                        <div class="d-flex flex-column-reverse flex-lg-row">
+                            <div class="left text-center text-lg-start mt-1 mt-sm-0">
+                                <div class="details">
+                                    <h1
+                                        class="heading text-dark d-flex align-items-center justify-content-center justify-content-lg-start">
+                                        Hi I'am Rishav <capsule><i class="fa-solid fa-code"></i></capsule>
+                                    </h1>
+                                    <p class="subheading mb-2 mb-sm-4" id="whatido">Frontend Developer</p>
+                                    <div class="text text-dark mb-3">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque facilis
+                                        enim autem assumenda itaque, hic nemo. Maiores nemo consequuntur dicta dolor?
+                                    </div>
+                                    <button class="btn mt-2 mt-sm-5" onclick="scrollToFunc('contact')">Contact me <i
+                                            class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
                                 </div>
                             </div>
                             <div
-                                class="display-flex justify-content-center justify-content-sm-start align-center w-100">
-                                <button class="btn d-block mx-auto mx-xl-0 my-3 mt-md-4" onclick="">Download CV <i
-                                        class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
+                                class="right d-flex justify-content-center justify-content-lg-end align-items-lg-start">
+                                <div class="img-container relative">
+                                    <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0" mask-type="alpha">
+                                            <path fill="var(--theme-color)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                        </mask>
+                                        <g mask="url(#mask0)">
+                                            <path fill="var(--theme-color)"
+                                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                            <image id="me" x="18" xlink:href="./assets/img/devraj.png" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="skills minh525 container" id="skills">
-            <h1 class="heading text-center">Skills</h1>
-            <h2 class="subheading text-center mb-5">My technical level</h2>
-            <div class="row mx-0 center">
-                <div class="col-12 col-lg-11">
-                    <div class="row px-0 mx-0">
-                        <div class="accordion col-12 col-lg-6 accordion-flush" id="a1">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
-                                        <div class="icon">
-                                            <i class="fa-solid text-theme fa-code fs-4 me-3"></i>
-                                        </div>
-                                        <div class="text">
-                                            Frontend Developer
-                                            <h6 class="sec-text fw-light text-muted">More than 2 years of experience</h6>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#a1">
-                                    <div class="accordion-body" id="front-end"></div>
+            <div class="about minh700 container" id="about">
+                <h1 class="heading text-center">About Me</h1>
+                <h2 class="subheading text-center mb-5 pb-3">My introduction</h2>
+                <div class="row mx-0 center">
+                    <div class="col-12 col-lg-11">
+                        <div class="row px-0">
+                            <div class="col-12 col-lg-5 left start">
+                                <div class="gradient1">
+                                    <img src="./assets/img/devraj.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 center flex-column">
+                                <p class="text text-dark mb-3">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facere optio error
+                                    nisi repudiandae blanditiis quidem omnis nobis cumque aspernatur iusto sequi,
+                                    consequatur repellat nulla odit velit ducimus.
+                                </p>
+                                <div class="row w-100 flex-row text-center my-2 my-sm-4">
+                                    <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                        <span data-value="2" data-duration="800" class="blockHero">0</span>
+                                        <span class="title">Years Experience</span>
+                                    </div>
+                                    <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                        <span data-value="2600" data-duration="3500" class="blockHero">0</span>
+                                        <span class="title">Commits on Github</span>
+                                    </div>
+                                    <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                        <span data-value="100" data-duration="2000" class="blockHero">0</span>
+                                        <span class="title">Repositories on Github</span>
+                                    </div>
+                                    <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                        <span data-value="20" data-duration="2000" class="blockHero">0</span>
+                                        <span class="title">Fullstack Projects</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="display-flex justify-content-center justify-content-sm-start align-center w-100">
+                                    <button class="btn d-block mx-auto mx-xl-0 my-3 mt-md-4" onclick="">Download CV <i
+                                            class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion col-12 col-lg-6 accordion-flush" id="a2">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                        aria-controls="flush-collapseTwo">
-                                        <div class="icon">
-                                            <div class="me-3" style="transform: scale(1.4);">
-                                                <?xml version="1.0" encoding="UTF-8"?>
-                                                <!DOCTYPE svg
-                                                    PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                    id="mdi-code-braces" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path fill="var(--theme-color)"
-                                                        d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
-                                                </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="skills minh525 container" id="skills">
+                <h1 class="heading text-center">Skills</h1>
+                <h2 class="subheading text-center mb-5">My technical level</h2>
+                <div class="row mx-0 center">
+                    <div class="col-12 col-lg-11">
+                        <div class="row px-0 mx-0">
+                            <div class="accordion col-12 col-lg-6 accordion-flush" id="a1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                            aria-controls="flush-collapseOne">
+                                            <div class="icon">
+                                                <i class="fa-solid text-theme fa-code fs-4 me-3"></i>
+                                            </div>
+                                            <div class="text">
+                                                Frontend Developer
+                                                <h6 class="sec-text fw-light text-muted">More than 2 years of experience
+                                                </h6>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#a1">
+                                        <div class="accordion-body" id="front-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion col-12 col-lg-6 accordion-flush" id="a2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                            aria-controls="flush-collapseTwo">
+                                            <div class="icon">
+                                                <div class="me-3" style="transform: scale(1.4);">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <!DOCTYPE svg
+                                                        PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                        id="mdi-code-braces" width="24" height="24" viewBox="0 0 24 24">
+                                                        <path fill="var(--theme-color)"
+                                                            d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                Backend Developer
+                                                <h6 class="sec-text fw-light text-muted">More than 1.5 years of
+                                                    experience</h6>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#a2">
+                                        <div class="accordion-body" id="back-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion col-12 col-lg-6 accordion-flush" id="a3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree">
+                                            <div class="icon">
+                                                <i class="fa-solid text-theme fa-mobile-screen-button fs-4 me-4"></i>
+                                            </div>
+                                            <div class="text">
+                                                App Developer
+                                                <h6 class="sec-text fw-light text-muted">More than 1 year of experience
+                                                </h6>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#a3">
+                                        <div class="accordion-body" id="app-dev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion col-12 col-lg-6 accordion-flush" id="a4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                            aria-controls="flush-collapseFour">
+                                            <div class="icon">
+                                                <i class="fa-solid text-theme fs-4 me-3 fa-terminal"></i>
+                                            </div>
+                                            <div class="text">
+                                                Devops
+                                                <h6 class="sec-text fw-light text-muted">More than 1 year of experience
+                                                </h6>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#a4">
+                                        <div class="accordion-body" id="dev-ops"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qual container minh600" id="qual">
+                <h1 class="heading text-center">Qualification</h1>
+                <h2 class="subheading text-center mb-5">My Journey</h2>
+                <div class="row px-0 mb-0">
+                    <div class="center my-3">
+                        <button id="educ-btn" onclick="toggleQual()" class="btn active me-2 me-sm-3"><i
+                                class="fa-solid fa-graduation-cap"></i> Education</button>
+                        <button id="work-btn" onclick="toggleQual()" class="btn ms-2 ms-sm-3"><i
+                                class="fa-solid fa-briefcase"></i>
+                            Work</button>
+                    </div>
+                    <div class="row px-2 mx-0 center">
+                        <div class="col-12 col-lg-7 stepper-container mt-5" id="educ-container">
+                            <div class="left">
+                                <div class="qual-item qual-item1">
+                                    <h4 class="title">Matriculation</h4>
+                                    <h6 class="text-muted">St' Stephens School</h6>
+                                    <span class="mt-3 d-block date">
+                                        Completed May 2017
+                                    </span>
+                                </div>
+                                <div class="h-130"></div>
+                                <div class="qual-item qual-item2 pb-3 pb-sm-0">
+                                    <h4 class="title">Bachelor of Technology</h4>
+                                    <h6 class="text-muted">National Institute of Technology Durgapur</h6>
+                                    <span class="mt-3 d-block date text-theme">2020 to Present</span>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="right">
+                                <div class="h-130"></div>
+                                <div class="qual-item qual-item3">
+                                    <h4 class="title">Intermediate</h4>
+                                    <h6 class="text-muted">St' Stephens School</h6>
+                                    <span class="mt-3 d-block date">Completed May 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 stepper-container d-none mt-5" id="work-container">
+                            <div class="left">
+                                <div class="qual-item qual-item1">
+                                    <h4 class="title">React Developer</h4>
+                                    <h6 class="text-muted">Tech Particle</h6>
+                                    <span class="mt-3 d-block date">
+                                        April 2021 to June 2021
+                                    </span>
+                                </div>
+                                <div class="h-130"></div>
+
+                                <div class="qual-item qual-item3 mt-7 pb-4">
+                                    <h4 class="title">App Developer</h4>
+                                    <h6 class="text-muted">Triunits</h6>
+                                    <span class="mt-3 d-block date text-theme">January 2022 to Present</span>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="right">
+                                <div class="h-130"></div>
+                                <div class="qual-item qual-item2">
+                                    <h4 class="title">Flutter Developer</h4>
+                                    <h6 class="text-muted">Helpen.in Infotech</h6>
+                                    <span class="mt-3 d-block date">April 2022 to May 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects container minh600" id="projects">
+                <h1 class="heading text-center">My Projects</h1>
+                <h2 class="subheading text-center mb-5">What i made so far</h2>
+                <div class="center my-3">
+                    <button id="web-btn" onclick="toggleProject()" class="btn me-2 me-sm-3"><i
+                            class="icon-globe"></i></i>
+                        Web Dev
+                    </button>
+                    <button id="app-btn" onclick="toggleProject()" class="btn my-active"><i
+                            class="fa-solid fa-mobile-screen"></i>
+                        App Dev
+                    </button>
+                </div>
+                <div class="py-4 row center mt-5 px-0 mb-0 " id="project-grid">
+                    <div class="col-12 col-lg-10">
+                        <div id="web-dev-projects" class="row px-0 d-none mx-0"></div>
+                        <div id="app-dev-projects" class="row px-0 mx-0"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio py-5 container minh600" id="portfolio">
+                <h1 class="heading text-center">Portfolio</h1>
+                <h2 class="subheading text-center mb-0 mb-sm-5">Most recent work</h2>
+                <div id="portfolio-modals"></div>
+                <div class="row py-4 mt-0 mt-sm-5 px-0 mb-0 center">
+                    <div class="col-12 col-xl-10 px-0">
+                        <div class="py-4 swiper portfolio-swiper px-0 mb-0">
+                            <div class="swiper-wrapper pb-0 pb-sm-4" id="portfolio-wrapper"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero container my-5 px-0" id="hero">
+                <div class="row py-4 px-0 mx-0 center">
+                    <div class="col-12 col-lg-10 px-0 mx-0">
+                        <div class="row mx-0 bg-theme">
+                            <div class="col-12 col-lg-7">
+                                <div class="">
+                                    <h1 class="heading text-white">You have a new project</h1>
+                                    <p class="subheading text-white">Contact me now and get a 30% discount on your new
+                                        project.</p>
+                                    <button class="btn mt-5 bg-white fs-6 between"
+                                        onclick="scrollToFunc('contact')">Contact me <i
+                                            class="fa-solid fa-angle-right fs-6 ms-1"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="center">
+                                    <img class="h250 img-fluid" src="./assets/img/project.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact container px-0 my-5 minh600" id="contact">
+                <h1 class="heading text-center text-dark">Contact Me</h1>
+                <h2 class="subheading text-center mb-0 mb-sm-5">Stay in touch</h2>
+                <div class="row mx-0 center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row mx-0 px-0 mt-5">
+                            <div class="col-lg-6 col-12">
+                                <div class="left">
+                                    <div class="contact-item d-flex">
+                                        <i class="fa-solid fa-phone me-3 text-theme"></i>
+                                        <div class="detail text-dark">
+                                            <h5>Phone</h5>
+                                            <span>+91 7439876937</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item d-flex">
+                                        <i class="icon-envelope me-3 text-theme"></i>
+                                        <div class="detail text-dark">
+                                            <h5>Email</h5>
+                                            <span>rishav.rj74@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item d-flex">
+                                        <i class="fa-brands fa-github me-3 text-theme"></i>
+                                        <div class="detail  text-dark">
+                                            <h5>Github</h5>
+                                            <span>@rishav-jha-mech</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item d-flex">
+                                        <i class="icon-location-pin me-3 text-theme"></i>
+                                        <div class="detail text-dark">
+                                            <h5>Location</h5>
+                                            <span>Kolkata, West Bengal, India.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <form action="/" onsubmit="event.preventDefault(); handleFormSubmit();">
+                                    <div class="right mt-sm-0 mt-4">
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-lg-6 mb-lg-0 mb-3">
+                                                <input id="f-name" name="name" class="form-control py-3" type="text"
+                                                    placeholder="Name" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <input id="f-email" name="email" class="form-control py-3" type="email"
+                                                    placeholder="Email" required>
                                             </div>
                                         </div>
-                                        <div class="text">
-                                            Backend Developer
-                                            <h6 class="sec-text fw-light text-muted">More than 1.5 years of experience</h6>
+                                        <input id="f-subject" name="subject" class="form-control py-3 mb-3" type="text"
+                                            placeholder="Subject" required>
+                                        <textarea id="f-message" name="message" class="form-control py-3 mb-3" cols="30"
+                                            rows="10" placeholder="Message" required></textarea>
+                                        <div class="row mx-0 px-0">
+                                            <button class="col-12 col-lg-5 btn fs-6" type="submit">Send Message</button>
                                         </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                                    aria-labelledby="flush-headingTwo" data-bs-parent="#a2">
-                                    <div class="accordion-body" id="back-end"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion col-12 col-lg-6 accordion-flush" id="a3">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
-                                        <div class="icon">
-                                            <i class="fa-solid text-theme fa-mobile-screen-button fs-4 me-4"></i>
-                                        </div>
-                                        <div class="text">
-                                            App Developer
-                                            <h6 class="sec-text fw-light text-muted">More than 1 year of experience</h6>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                                    aria-labelledby="flush-headingThree" data-bs-parent="#a3">
-                                    <div class="accordion-body" id="app-dev"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion col-12 col-lg-6 accordion-flush" id="a4">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingFour">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                        aria-controls="flush-collapseFour">
-                                        <div class="icon">
-                                            <i class="fa-solid text-theme fs-4 me-3 fa-terminal"></i>
-                                        </div>
-                                        <div class="text">
-                                            Devops
-                                            <h6 class="sec-text fw-light text-muted">More than 1 year of experience</h6>
-                                        </div>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFour" class="accordion-collapse collapse show"
-                                    aria-labelledby="flush-headingFour" data-bs-parent="#a4">
-                                    <div class="accordion-body" id="dev-ops"></div>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="qual container minh600" id="qual">
-            <h1 class="heading text-center">Qualification</h1>
-            <h2 class="subheading text-center mb-5">My Journey</h2>
-            <div class="row px-0 mb-0">
-                <div class="center my-3">
-                    <button id="educ-btn" onclick="toggleQual()" class="btn active me-2 me-sm-3"><i
-                            class="fa-solid fa-graduation-cap"></i> Education</button>
-                    <button id="work-btn" onclick="toggleQual()" class="btn ms-2 ms-sm-3"><i
-                            class="fa-solid fa-briefcase"></i>
-                        Work</button>
-                </div>
-                <div class="row px-2 mx-0 center">
-                    <div class="col-12 col-lg-7 stepper-container mt-5" id="educ-container">
-                        <div class="left">
-                            <div class="qual-item qual-item1">
-                                <h4 class="title">Matriculation</h4>
-                                <h6 class="text-muted">St' Stephens School</h6>
-                                <span class="mt-3 d-block date">
-                                    Completed May 2017
-                                </span>
-                            </div>
-                            <div class="h-130"></div>
-                            <div class="qual-item qual-item2 pb-3 pb-sm-0">
-                                <h4 class="title">Bachelor of Technology</h4>
-                                <h6 class="text-muted">National Institute of Technology Durgapur</h6>
-                                <span class="mt-3 d-block date text-theme">2020 to Present</span>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="right">
-                            <div class="h-130"></div>
-                            <div class="qual-item qual-item3">
-                                <h4 class="title">Intermediate</h4>
-                                <h6 class="text-muted">St' Stephens School</h6>
-                                <span class="mt-3 d-block date">Completed May 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-7 stepper-container d-none mt-5" id="work-container">
-                        <div class="left">
-                            <div class="qual-item qual-item1">
-                                <h4 class="title">React Developer</h4>
-                                <h6 class="text-muted">Tech Particle</h6>
-                                <span class="mt-3 d-block date">
-                                    April 2021 to June 2021
-                                </span>
-                            </div>
-                            <div class="h-130"></div>
 
-                            <div class="qual-item qual-item3 mt-7 pb-4">
-                                <h4 class="title">App Developer</h4>
-                                <h6 class="text-muted">Triunits</h6>
-                                <span class="mt-3 d-block date text-theme">January 2022 to Present</span>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="right">
-                            <div class="h-130"></div>
-                            <div class="qual-item qual-item2">
-                                <h4 class="title">Flutter Developer</h4>
-                                <h6 class="text-muted">Helpen.in Infotech</h6>
-                                <span class="mt-3 d-block date">April 2022 to May 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="projects container minh600" id="projects">
-            <h1 class="heading text-center">My Projects</h1>
-            <h2 class="subheading text-center mb-5">What i made so far</h2>
-            <div class="center my-3">
-                <button id="web-btn" onclick="toggleProject()" class="btn me-2 me-sm-3"><i
-                        class="icon-globe"></i></i>
-                    Web Dev
-                </button>
-                <button id="app-btn" onclick="toggleProject()" class="btn my-active"><i class="fa-solid fa-mobile-screen"></i>
-                    App Dev
-                </button>
-            </div>
-            <div class="py-4 row center mt-5 px-0 mb-0 " id="project-grid">
-                <div class="col-12 col-lg-10">
-                    <div id="web-dev-projects" class="row px-0 d-none mx-0"></div>
-                    <div id="app-dev-projects" class="row px-0 mx-0"></div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio py-5 container minh600" id="portfolio">
-            <h1 class="heading text-center">Portfolio</h1>
-            <h2 class="subheading text-center mb-0 mb-sm-5">Most recent work</h2>
-            <div id="portfolio-modals"></div>
-            <div class="row py-4 mt-0 mt-sm-5 px-0 mb-0 center">
-                <div class="col-12 col-xl-10 px-0">
-                    <div class="py-4 swiper portfolio-swiper px-0 mb-0">
-                        <div class="swiper-wrapper pb-0 pb-sm-4" id="portfolio-wrapper"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero container my-5 px-0" id="hero">
-            <div class="row py-4 px-0 mx-0 center">
-                <div class="col-12 col-lg-10 px-0 mx-0">
-                    <div class="row mx-0 bg-theme">
-                        <div class="col-12 col-lg-7">
-                            <div class="">
-                                <h1 class="heading text-white">You have a new project</h1>
-                                <p class="subheading text-white">Contact me now and get a 30% discount on your new
-                                    project.</p>
-                                <button class="btn mt-5 bg-white fs-6 between" onclick="scrollToFunc('contact')">Contact me <i
-                                        class="fa-solid fa-angle-right fs-6 ms-1"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-5">
-                            <div class="center">
-                                <img class="h250 img-fluid" src="./assets/img/project.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact container px-0 my-5 minh600" id="contact">
-            <h1 class="heading text-center text-dark">Contact Me</h1>
-            <h2 class="subheading text-center mb-0 mb-sm-5">Stay in touch</h2>
-            <div class="row mx-0 center">
-                <div class="col-12 col-lg-10">
-                    <div class="row mx-0 px-0 mt-5">
-                        <div class="col-lg-6 col-12">
-                            <div class="left">
-                                <div class="contact-item d-flex">
-                                    <i class="fa-solid fa-phone me-3 text-theme"></i>
-                                    <div class="detail text-dark">
-                                        <h5>Phone</h5>
-                                        <span>+91 7439876937</span>
-                                    </div>
-                                </div>
-                                <div class="contact-item d-flex">
-                                    <i class="icon-envelope me-3 text-theme"></i>
-                                    <div class="detail text-dark">
-                                        <h5>Email</h5>
-                                        <span>rishav.rj74@gmail.com</span>
-                                    </div>
-                                </div>
-                                <div class="contact-item d-flex">
-                                    <i class="fa-brands fa-github me-3 text-theme"></i>
-                                    <div class="detail  text-dark">
-                                        <h5>Github</h5>
-                                        <span>@rishav-jha-mech</span>
-                                    </div>
-                                </div>
-                                <div class="contact-item d-flex">
-                                    <i class="icon-location-pin me-3 text-theme"></i>
-                                    <div class="detail text-dark">
-                                        <h5>Location</h5>
-                                        <span>Kolkata, West Bengal, India.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <form action="/" onsubmit="event.preventDefault(); handleFormSubmit();">
-                                <div class="right mt-sm-0 mt-4">
-                                    <div class="row mb-3">
-                                        <div class="col-12 col-lg-6 mb-lg-0 mb-3">
-                                            <input id="f-name" name="name" class="form-control py-3" type="text" placeholder="Name" required>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <input id="f-email" name="email" class="form-control py-3" type="email" placeholder="Email" required>
+            <footer class="footer" id="footer">
+                <div class="container">
+                    <div class="row mx-0 px-0">
+                        <div class="center">
+                            <div class="col-12 col-lg-12 col-10">
+                                <div class="row">
+                                    <div class="col-12 col-lg-3 mb-3">
+                                        <div class="d-flex flex-column align-items-start align-items-lg-end">
+                                            <div>
+                                                <h3>Rishav Jha</h3>
+                                                <p>Personal Portfolio Website.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <input id="f-subject" name="subject" class="form-control py-3 mb-3" type="text" placeholder="Subject" required>
-                                    <textarea id="f-message" name="message" class="form-control py-3 mb-3" cols="30" rows="10"
-                                        placeholder="Message" required></textarea>
-                                    <div class="row mx-0 px-0">
-                                        <button class="col-12 col-lg-5 btn fs-6" type="submit">Send Message</button>
+                                    <div class="col-12 col-lg-6 mb-4">
+                                        <div
+                                            class="d-flex flex-sm-row flex-column justify-content-start justify-content-lg-center">
+                                            <a class="me-5 mb-2" href="#about" target="_blank"
+                                                rel="noopener noreferrer">About me</a>
+                                            <a class="me-5 mb-2" href="https://github.com/rishav-jha-mech/devraj"
+                                                target="_blank" rel="noopener noreferrer">Portfolio</a>
+                                            <a class="me-5 mb-2" href="tel:+917439876937" target="_blank"
+                                                rel="noopener noreferrer">Contact me</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer" id="footer">
-            <div class="container">
-                <div class="row mx-0 px-0">
-                    <div class="center">
-                        <div class="col-12 col-lg-12 col-10">
-                            <div class="row">
-                                <div class="col-12 col-lg-3 mb-3">
-                                    <div class="d-flex flex-column align-items-start align-items-lg-end">
-                                        <div>
-                                            <h3>Rishav Jha</h3>
-                                            <p>Personal Portfolio Website.</p>
+                                    <div class="col-12 col-lg-3 mb-3">
+                                        <div class="d-flex flex-column align-items-start">
+                                            <div>
+                                                <a class="me-4 mb-2" href="https://github.com/rishav-jha-mech"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa-brands fa-github"></i>
+                                                </a>
+                                                <a class="me-4 mb-2"
+                                                    href="https://www.linkedin.com/in/rishav-jha-549b45203/"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </a>
+                                                <a class="me-4 mb-2"
+                                                    href="https://stackoverflow.com/users/16330307/rishav-jha"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa-brands fa-stack-overflow"></i>
+                                                </a>
+                                                <a class="me-4 mb-2"
+                                                    href="https://wa.me/send?text=Hi%20Rishav&phone=7439876937"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6 mb-4">
-                                    <div
-                                        class="d-flex flex-sm-row flex-column justify-content-start justify-content-lg-center">
-                                        <a class="me-5 mb-2" href="#about" target="_blank" rel="noopener noreferrer" >About me</a>
-                                        <a class="me-5 mb-2" href="https://github.com/rishav-jha-mech/devraj" target="_blank" rel="noopener noreferrer" >Portfolio</a>
-                                        <a class="me-5 mb-2" href="tel:+917439876937" target="_blank" rel="noopener noreferrer" >Contact me</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 mb-3">
-                                    <div class="d-flex flex-column align-items-start">
-                                        <div>
-                                            <a class="me-4 mb-2" href="https://github.com/rishav-jha-mech" target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-github"></i>
-                                            </a>
-                                            <a class="me-4 mb-2" href="https://www.linkedin.com/in/rishav-jha-549b45203/"  target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-linkedin"></i>
-                                            </a>
-                                            <a class="me-4 mb-2" href="https://stackoverflow.com/users/16330307/rishav-jha"  target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-stack-overflow"></i>
-                                            </a>
-                                            <a class="me-4 mb-2" href="https://wa.me/send?text=Hi%20Rishav&phone=7439876937" target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-whatsapp"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="text-center mt-5">&copy; Rishav Jha. all rights reserved</p>
                             </div>
-                            <p class="text-center mt-5">&copy; Rishav Jha. all rights reserved</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </section>
     </section>
+
+
+    <script id="Loading Script">
+        const loading = document.getElementById("loading")
+        setTimeout(() => {
+            daTime++;
+            if (daTime == 2) {
+                loading.innerHTML += `
+                    <h4 class="text-info fs-6 fadeIn"> Slow internet connection is observed, please wait patiently</h4>
+                `
+            }
+        }, 4000)
+        onload = (event) => {
+            loading.className = 'd-none';
+            document.getElementById("page").className = '';
+            console.log('page is fully loaded');
+        };
+    </script>
 
     <script src="./assets//js/bootstrap.js"></script>
     <script src="./assets//js/swiper-bundle.min.js"></script>
@@ -480,4 +530,5 @@
     <script src="./assets/js/swal2.js"></script>
     <script src="./assets//js/main.js"></script>
 </body>
+
 </html>
