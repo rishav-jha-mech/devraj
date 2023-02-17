@@ -49,3 +49,10 @@
         padding: 0 2rem;
     }
 }
+
+#skills-images{
+    overflow-x: scroll;
+}
+#skills::-webkit-scrollbar{
+    display: none;
+}

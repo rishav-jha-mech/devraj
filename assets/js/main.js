@@ -14,6 +14,7 @@ const backEndContainer = document.getElementById("back-end");
 const AppDevContainer = document.getElementById("app-dev");
 const devOpsContainer = document.getElementById("dev-ops");
 const projectGrid = document.getElementById("project-grid");
+const skillsImages = document.getElementById("skills-images");
 const webdevContainer = document.getElementById("web-dev-projects");
 const appdevContainer = document.getElementById("app-dev-projects");
 
@@ -154,7 +155,6 @@ const devOps = [
 ]
 
 const attachSkills = (parentElement, data) => {
-
     data.forEach((skill) => {
         const skillDiv = document.createElement("div");
         skillDiv.classList.add("skill");
@@ -182,6 +182,118 @@ attachSkills(AppDevContainer, AppDeveloper);
 attachSkills(devOpsContainer, devOps);
 
 // ADD Skills
+// ADD Skills images
+const skills_images = [
+    {
+        name: 'C',
+        url: './assets/img/logos/C.png'
+    },
+    {
+        name: 'C++',
+        url: './assets/img/logos/C++.png'
+    },
+    {
+        name: 'Javascript',
+        url: './assets/img/logos/Javascript.png'
+    },
+    {
+        name: 'Python',
+        url: './assets/img/logos/Python.png'
+    },
+    {
+        name: 'Dart',
+        url: './assets/img/logos/Dart.png'
+    },
+    {
+        name: 'Typescript',
+        url: './assets/img/logos/Typescript.png'
+    },
+    {
+        name: 'HTML',
+        url: './assets/img/logos/HTML.svg'
+    },
+    {
+        name: 'CSS',
+        url: './assets/img/logos/CSS.png'
+    },
+    {
+        name: 'Bootstrap',
+        url: './assets/img/logos/Bootstrap.png'
+    },
+    {
+        name: 'Tailwind',
+        url: './assets/img/logos/Tailwind.png'
+    },
+    {
+        name: 'React',
+        url: './assets/img/logos/React.png'
+    },
+    {
+        name: 'Django',
+        url: './assets/img/logos/Django.png'
+    },
+    {
+        name: 'Flask',
+        url: './assets/img/logos/Flask.png'
+    },
+    {
+        name: 'Expressjs',
+        url: './assets/img/logos/Expressjs.png'
+    },
+    {
+        name: 'Firebase',
+        url: './assets/img/logos/Firebase.png'
+    },
+    {
+        name: 'Flutter',
+        url: './assets/img/logos/Flutter.jpg'
+    },
+    {
+        name: 'React Native',
+        url: './assets/img/logos/React-Native.png'
+    },
+    {
+        name: 'Git',
+        url: './assets/img/logos/Git.png'
+    },
+    {
+        name: 'GitHub',
+        url: './assets/img/logos/GitHub.png'
+    },
+    {
+        name: 'Gitlab',
+        url: './assets/img/logos/Gitlab.png'
+    },
+    {
+        name: 'Bitbucket',
+        url: './assets/img/logos/Bitbucket.png'
+    },
+    {
+        name: 'Heroku',
+        url: './assets/img/logos/Heroku.png'
+    },
+    {
+        name: 'AWS',
+        url: './assets/img/logos/aws.png'
+    },
+    {
+        name: 'Cloudflare',
+        url: './assets/img/logos/Cloudflare.png'
+    },
+    {
+        name: 'Termux',
+        url: './assets/img/logos/Termux.png'
+    },
+]
+
+// skills_images.map((skill) => {
+//     const div = document.createElement("div");
+//     div.className = "col-3 my-2 mx-2 d-flex bg-success justify-content-center align-items-center";
+//     div.innerHTML = `
+//         <img class="w-100" src="${skill.url}" alt="${skill.name}" />
+//     `
+//     skillsImages.appendChild(div);
+// })
 
 // Animate Progress & Counter
 
@@ -1766,6 +1878,7 @@ var swiper = new Swiper(".portfolio-swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
 
 document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project) => {
 
