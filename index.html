@@ -54,6 +54,8 @@
             <i class="fa-solid fa-angle-up fs-4"></i>
         </button>
 
+        <a id="download-cv-link" href="./assets/files/Resume.pdf" download hidden></a>
+
         <section class="main" id="main">
 
             <div class="home minh625 container center" id="home">
@@ -136,8 +138,12 @@
                                 </div>
                                 <div
                                     class="display-flex justify-content-center justify-content-sm-start align-center w-100">
-                                    <button class="btn d-block mx-auto mx-xl-0 my-3 mt-md-4" onclick="">Download CV <i
-                                            class="fa-solid fa-angle-right fs-6 ml-3"></i></button>
+                                    <button 
+                                        class="btn d-block mx-auto mx-xl-0 my-3 mt-md-4" 
+                                        onclick="downloadCv()">
+                                        Download CV 
+                                        <i class="fa-solid fa-angle-right fs-6 ml-3"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -530,6 +536,9 @@
             removeLoading();
             removeEventListener('load', onload);
         };
+        function downloadCv() {
+            document.getElementById('download-cv-link').click();
+        }
     </script>
 
     <script src="./assets//js/bootstrap.js"></script>
