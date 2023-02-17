@@ -507,18 +507,28 @@
 
 
     <script id="Loading Script">
-        const loading = document.getElementById("loading")
+        const loading = document.getElementById("loading");
         setTimeout(() => {
-            if (daTime == 2) {
-                loading.innerHTML += `
-                    <h4 class="text-info fs-6 fadeIn"> Slow internet connection is observed, please wait patiently</h4>
-                `
-            }
+            loading.innerHTML += `
+                <h4 class="text-info text-center mx-auto px-3 fs-6 fadeIn"> Slow internet connection is observed, please wait patiently</h4>
+                <button 
+                    class="btn btn-info fadeIn mt-4" 
+                    style="font-size: 1rem;padding: 0.375rem 0.75rem;"
+                    onClick="removeLoading()"
+                >
+                    Disable Loading
+                </button>
+            `
         }, 4000)
-        onload = (event) => {
+        function removeLoading(param) {
             loading.className = 'd-none';
             document.getElementById("page").className = '';
+            console.clear();
             console.log('page is fully loaded');
+        }
+        onload = (event) => {
+            removeLoading();
+            removeEventListener('load', onload);
         };
     </script>
 
