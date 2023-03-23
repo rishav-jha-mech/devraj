@@ -46,14 +46,25 @@
     border-radius: 8px;
 }
 
-#projects .btn {
+#projects .modal-body .inactive {
     background-color: #fff !important;
     color: var(--theme-color) !important;
     border-color: var(--theme-color);
     transition: 0.5s ease;
 }
-
-#projects .btn:hover {
+#projects .modal-body .whiteBtn {
+    background-color: #fff !important;
+    color: var(--theme-color) !important;
+    border-color: var(--theme-color);
+    transition: 0.5s ease;
+}
+#projects .modal-body .btn {
+    flex: 1;
+    margin: 0 0.25rem;
+    font-size: 1rem;
+    padding: 0.8rem !important;
+}
+#projects .modal-body .whiteBtn:hover {
     transition: 0.5s ease;
     background: var(--bs-gray-200) !important;
 }
@@ -183,4 +194,26 @@
     #projects .modal .modal-body .project-description img{
         min-height: unset;
     }
+}
+
+
+#projects #togBtns .btn {
+    background-color: #fff !important;
+    color: var(--theme-color) !important;
+    border-color: var(--theme-color);
+    transition: 0.5s ease;
+}
+
+#projects #togBtns .btn:hover {
+    transition: 0.5s ease;
+    background: var(--bs-gray-200) !important;
+}
+#projects #togBtns .my-active {
+    transition: 0.5s ease;
+    background: var(--theme-color) !important;
+    color: var(--bs-white) !important;
+}
+
+#projects #togBtns .my-active:hover {
+    background: var(--theme-color) !important;
 }

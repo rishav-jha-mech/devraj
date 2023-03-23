@@ -502,38 +502,17 @@ const uv_des = `
 const trek_title = `Treklers is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling.`;
 const trek_des = `
                 
-        <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Capricon Technologies</span></span>
+        <span class="fw-bold d-block mb-1">Company: <a class="ms-1" href="https://capricontechnology.com/" target="_blank" rel="noopener noreferrer">Capricon</a></span>
         <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Android Developer</span></span>
 
         <span class="fw-bold">Treklers</span> is a Taxi Booking App that allows users to book a cab and track the driver in real-time. It has several options live location and emergency calling. I built this project from scratch using Typescript in React Native.
-        The app has over 50+ screens and is currently under development. 
-
-        <span class="fw-bold d-block mt-3">Some important screens:</span>
-        <ol>
-            <li>Splash screens.</li>
-            <li>Login Screen.</li>
-            <li>Signup Screen.</li>
-            <li>Verify OTP screen.</li>
-            <li>Home screen.</li>
-            <li>Profile screen.</li>
-            <li>My rides screen.</li>
-            <li>Promotions screen.</li>
-            <li>My favorites screen.</li>
-            <li>My drivers screen.</li>
-            <li>Payments screen.</li>
-            <li>Notifications screen.</li>
-            <li>Select location screen.</li>
-            <li>Additional Info screen.</li>
-            <li>Select car screen.</li>
-            <li>Feedback screen.</li>
-        </ol>
+        The app has over 50+ screens and is currently under development, it is about to be released in the soon.
         
         <span class="text-theme d-block mt-2 fw-bold">Technologies used</span>
         <ul style="list-style-type:disc;">
             <li>React Native</li>
             <li>Typescript</li>
         </ul>
-
 `
 
 // ADD PROJECTS
@@ -1116,17 +1095,17 @@ const appdev = [
                 url: "./assets/img/projects/UV Downloader/6.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/UV Downloader/7.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/UV Downloader/8.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/UV Downloader/9.webp",
                 style: 'h100p'
@@ -1383,37 +1362,11 @@ const appdev = [
         link: "",
         description: `
         
-        <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Capricon Technologies</span></span>
-        <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Android Developer</span></span>
+        <span class="fw-bold d-block mb-1">Company: <a class="ms-1" href="https://capricontechnology.com/" target="_blank" rel="noopener noreferrer">Capricon</a></span>
+        <span class="fw-bold d-block mb-3">Role: <span class="text-theme">Android Developer</span></span>
 
         <span class="fw-bold">Triunits</span> is a cryptocurrency trading app which allows users to trade cryptocurrencies and earn money. It has charts and graphs to show the current market status. The app is currently on Google Play Store. The goal of a developer while making this app is to keep the UI of the application minimal and easy to use. I have worked on many screens and also developed several screens from scratch. I also add the shimmering loading effect in various parts of the application for better User Experience. I also created a coin news API which scrapes data from the web, caches it and sends it to the app.
         
-        <br>
-        <span class="fw-bold d-block mt-3">Screens and Features:</span>
-        <ol>
-            <li>Home screen with wallet balance, favorite coins and settings.</li>
-            <li>Market screen where users can browse over 1000+ coins.</li>
-            <li>Futures screen where users can browse over 1000+ coins.</li>
-            <li>Wallet screen where users can see their transaction history, their account balance and manage their portfolio.</li>
-            <li>Coin detail screen where there are four tabs.
-                <ul style="list-style-type:disc;">
-                    <li>Live chart tab where it has line chart and candle stick chart. At the bottom of the chart user can browse latest News regarding to the selected coin.</li>
-                    <li>Order book tab.</li>
-                    <li>History tab.</li>
-                    <li>My trades tab</li>
-                    <li>For the futures coin there are 4 sub tabs in My trades tab
-                            <ul style="list-style-type:disc;">
-                                <li>Position</li>
-                                <li>Open orders</li>
-                                <li>Open history</li>
-                                <li>Trade history</li>
-                                <li>Income history</li>
-                            </ul>
-                        </li>
-                    </li>
-                </ul>
-            </li>
-        </ol>
         <br>
         <span class="text-theme fw-bold">Technologies used</span>
             <ul style="list-style-type:disc;">
@@ -1424,16 +1377,12 @@ const appdev = [
                 <li>Dart</li>
             </ul>
         <div class="around">
-            <button class="btn btn-lg d-block me-1 my-4 mx-auto">
-                <a href="https://triunits.com/" target="_blank" rel="noopener noreferrer">
+            <a class="btn whiteBtn btn-lg d-block me-1 my-4 mx-auto" href="https://triunits.com/" target="_blank" rel="noopener noreferrer">
                     Visit Website
-                </a>
-            </button>
-            <button class="btn my-active btn-lg d-block ms-1 my-4 mx-auto">
-                <a href="https://play.google.com/store/apps/details?id=com.triunits.android.triunits.triunits&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
-                    Visit Play Store
-                </a>
-            </button>
+            </a>
+            <a class="btn my-active btn-lg d-block ms-1 my-4 mx-auto" href="https://play.google.com/store/apps/details?id=com.triunits.android.triunits.triunits&hl=en&gl=US" target="_blank" rel="noopener noreferrer">
+                Visit Play Store
+            </a>
         </div>
 
         `
@@ -1441,7 +1390,7 @@ const appdev = [
     {
         name: "Tricket",
         label: "Flutter",
-        title: "Tricket is an Indian fantasy sports platform that allows users to play fantasy cricket and win real money. It has a live scorecard to show the current status of the match.",
+        title: "Tricket Tricket  is an innovative real-time fantasy cricket game that lets you enjoy your favorite fantasy sports without the need to create a team. Simply analyze the game ...",
         images: [
             {
                 url: "./assets/img/projects/Tricket/app-poster.webp",
@@ -1471,27 +1420,27 @@ const appdev = [
                 url: "./assets/img/projects/Tricket/7.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/Tricket/8.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/Tricket/9.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/Tricket/10.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/Tricket/11.webp",
                 style: 'h100p'
             },
-            
+
             {
                 url: "./assets/img/projects/Tricket/12.webp",
                 style: 'h100p'
@@ -1500,18 +1449,36 @@ const appdev = [
         link: "",
         description: `
             
-            <span class="fw-bold d-block mb-1">Company: <span class="text-theme">Helpen.in</span></span>
-            <span class="fw-bold d-block mb-2">Role: <span class="text-theme">Flutter Developer</span></span>
-            <span class="fw-bold">Tricket</span> is an Indian fantasy sports platform that allows users to play fantasy cricket and win real money. 
-            <br>
-            Created the live scorecard on the live match screen, leaderboard screen and live matches screen.            
+            <span class="fw-bold d-block mb-1">Company: <a class="ms-1" href="https://tricket.in" target="_blank" rel="noopener noreferrer">Helpen.In</a></span>
+            <span class="fw-bold d-block mb-2">Role: <span class="text-theme ms-1">Flutter Developer</span></span>
+            <span class="fw-bold">Tricket</span> is an innovative real-time fantasy cricket game that lets you enjoy your favorite fantasy sports without the need to create a team. Simply analyze the game, project the score of the next SPELL (a set of 4 or 5 overs), and join a Contest to compete against other players. You can play in real-time with the live match, just be sure to record your projections before the deadline (which is before the start of each over). The closer your projections are to the actual scores of the Spell of the live match, the more points you’ll earn and the higher your chances of topping the leaderboard and winning cash prizes. And the best part is that in just 15 minutes, you can play and get a winning result!. 
             <br>
             <span class="text-theme d-block mt-2 fw-bold">Technologies used</span>
             <ul style="list-style-type:disc;">
                 <li>Flutter</li>
                 <li>Dart</li>
             </ul>
+            <p class="fw-bold my-2 text-center">The app has crossed over 10k downloads as of March 2023 on Google Play Store</p>
 
+            <div class="between">
+                <button class="btn whiteBtn btn-lg d-block my-4">
+                    <a href="https://apps.apple.com/us/app/tricket-fantasy-cricket-app/id1667156965" target="_blank" rel="noopener noreferrer">
+                       Visit App Store
+                    </a>
+                </button>
+                <button class="btn my-active btn-lg d-block my-4">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        Visit Play Store
+                    </a>
+                </button>
+            </div>
+            <div class="w-100">
+                <button class="btn w-100 flex-1 btn-lg d-block">
+                    <a href="https://tricket.in" target="_blank" rel="noopener noreferrer">
+                        Visit Website
+                    </a>
+                </button>
+            </div>
         `,
     },
     {
@@ -1519,139 +1486,139 @@ const appdev = [
         label: "React Native",
         title: trek_title,
         images: [
-                {
-                    url: "./assets/img/projects/Treklers/app-poster.webp",
-                    style: 'h100p'
-                },
-                    
-                {
-                    url: "./assets/img/projects/Treklers/2.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/3.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/4.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/5.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/6.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/7.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/8.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/9.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/10.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/11.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/12.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/13.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/14.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/15.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/16.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/17.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/18.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/19.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/20.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/21.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/22.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/23.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/24.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/25.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/26.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/27.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/28.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/29.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/30.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/31.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/32.webp",
-                    style: 'h100p'
-                },
-                {
-                    url: "./assets/img/projects/Treklers/33.webp",
-                    style: 'h100p'
-                },
+            {
+                url: "./assets/img/projects/Treklers/app-poster.webp",
+                style: 'h100p'
+            },
+
+            {
+                url: "./assets/img/projects/Treklers/2.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/3.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/4.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/5.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/6.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/7.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/8.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/9.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/10.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/11.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/12.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/13.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/14.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/15.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/16.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/17.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/18.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/19.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/20.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/21.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/22.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/23.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/24.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/25.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/26.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/27.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/28.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/29.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/30.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/31.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/32.webp",
+                style: 'h100p'
+            },
+            {
+                url: "./assets/img/projects/Treklers/33.webp",
+                style: 'h100p'
+            },
 
         ],
         link: "",
@@ -1725,12 +1692,12 @@ function addProject(parentElement, list) {
                             <div id="viewScreensProject${project.name}" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     ${project.images.map((image, index) => {
-                                        return (
-                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+            return (
+                `<div class="carousel-item ${index == 0 ? 'active' : ''}">
                                                 <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
                                             </div>`
-                                        )
-                                    }).join('')}
+            )
+        }).join('')}
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="prev">
                                     <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
@@ -1752,7 +1719,7 @@ function addProject(parentElement, list) {
 
         `
     }).join('');
-    
+
 }
 
 addProject(webdevContainer, webdev);
@@ -1916,8 +1883,8 @@ document.getElementById('portfolio-wrapper').innerHTML += portfolio.map((project
     </div>
 
     `
-    
-    }).join('');
+
+}).join('');
 
 document.getElementById('portfolio-modals').innerHTML += portfolio.map((project) => {
     let name = `${project.name}`.replace(/_/g, " ");
@@ -1957,12 +1924,12 @@ document.getElementById('portfolio-modals').innerHTML += portfolio.map((project)
                 </div>
                 <div class="modal-body">
                     ${project.images.map((image, index) => {
-                        return (
-                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+        return (
+            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
                                 <img src="${image}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
                             </div>`
-                        )
-                    }).join('')}
+        )
+    }).join('')}
                 </div>
                 <!--<div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
