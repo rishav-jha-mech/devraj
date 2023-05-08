@@ -748,7 +748,7 @@ const webdev = [
     {
         name: "K_Plus",
         label: "Freelance",
-        title: "K Plus is a platform which provides free and paid courses to the students along with free resources and notes. It also has a custom admin panel for various operations.",
+        title: "K Plus is a platform which provides free and paid courses to the students along with free resources and notes.",
         images: [
             {
                 url: "./assets/img/projects/K Plus/1.webp",
@@ -867,7 +867,7 @@ const webdev = [
     {
         name: "Squid_Game",
         label: "Django",
-        title: "Squid game theme website where users play and go through two elimination rounds. The first round being 'Green Light Red Light' and the second one is 'Paper Candy'.",
+        title: "Squid game theme website where users play and go through two elimination rounds.",
         images: [
             {
                 url: "./assets/img/projects/Squid Game/1.webp",
@@ -1639,10 +1639,13 @@ function addProject(parentElement, list) {
                         <div class="project-image">
                             <img src="${project.images[0].url}" width="100%" height="100%" class="d-block ${project.images[0].style} w-100" alt="${name} 1">
                         </div>
-                        <div class="project-description mt-4">
-                            <h6 class="fw-bold">${name}</h6>
-                            <p class="mt-3">${project.title}</p>
-                                <div class="around">
+
+
+                        
+                        <div class="overlay project-description">
+                            <h6 class="fw-bold text-white">${name}</h6>
+                            <p class="mt-3 text-white">${project.title}</p>
+                                <div class="around btn-containers">
                                     <button id="modalBtnReadMore${project.name}" class="btn pri d-block my-active" data-bs-toggle="modal" data-bs-target="#projectModal${project.name}">
                                         Read More
                                     </button>
@@ -1651,6 +1654,9 @@ function addProject(parentElement, list) {
                                     </button>
                                 </div>
                         </div>
+                        
+
+
                     </div>
                 </div>
             </div>
@@ -1692,12 +1698,12 @@ function addProject(parentElement, list) {
                             <div id="viewScreensProject${project.name}" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     ${project.images.map((image, index) => {
-            return (
-                `<div class="carousel-item ${index == 0 ? 'active' : ''}">
-                                                <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
-                                            </div>`
-            )
-        }).join('')}
+                                        return (
+                                            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
+                                                                            <img src="${image.url}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
+                                                                        </div>`
+                                        )
+                                    }).join('')}
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#viewScreensProject${project.name}" data-bs-slide="prev">
                                     <span class="fa fa-angle-left text-theme fs-5" aria-hidden="true"></span>
