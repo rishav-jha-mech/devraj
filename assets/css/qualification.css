@@ -10,11 +10,10 @@
 }
 #qual .stepper-container {
     display: flex;
-    height: 300px;
     position: relative;
 }
 #qual .btn {
-    background-color: #fff !important;
+    background: var(--bs-white) !important;
     color: var(--theme-color) !important;
     border-color: var(--theme-color);
     transition: 0.5s  ease;
@@ -163,11 +162,13 @@
 
 @media(max-width: 700px) {
 
-    #qual .stepper-container {
-        height: 340px;
+    #educ-container .qual-item3{
+        margin-top: -9px !important;
     }
-
-    #qual .stepper-container .h-130 {
-        height: 120px;
+    #work-container .qual-item2{
+        margin-top: 9px !important;
+    }
+    #work-container .qual-item4{
+        margin-top: 0px !important;
     }
 }
