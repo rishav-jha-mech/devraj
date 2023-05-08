@@ -8,8 +8,20 @@
 #home .left button {
     font-size: 1.25rem;
     padding: 0.65rem 1.5rem;
+    border: 1px solid var(--theme-color);
 }
 
+#home .left .outline-btn{
+    border: 1px solid var(--theme-color);
+    color: var(--theme-color) !important;
+    background: #fff !important;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1rem;
+}
+#home .left .outline-btn:hover{
+    color: #fff !important;
+    background: var(--theme-color) !important;
+}
 #home .right {
     flex: 1;
 }
@@ -60,6 +72,15 @@
 }
 
 @media (max-width: 400px) {
+    #home .left .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .left button {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
     #home .left,
     #home .right {
         flex: 1;
