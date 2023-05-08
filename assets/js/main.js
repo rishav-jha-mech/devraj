@@ -1923,13 +1923,34 @@ document.getElementById('portfolio-modals').innerHTML += portfolio.map((project)
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ${project.images.map((image, index) => {
-        return (
-            `<div class="carousel-item ${index == 0 ? 'active' : ''}">
-                                <img src="${image}" width="100%" height="100%" class="d-block ${image.style} w-100" alt="${name} 1">
-                            </div>`
-        )
-    }).join('')}
+
+                    <div id="xmenas${project.name}" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            ${project.images.map((image, index) => {
+                                if (index == 0) {
+                                    return `
+                                    <div class="carousel-item active">
+                                        <img src="${image}" class="d-block mx-auto maxh400" alt="${name} ${index + 1}">
+                                    </div>`
+                                } else {
+                                    return `
+                                    <div class="carousel-item">
+                                        <img src="${image}" class="d-block mx-auto maxh400" alt="${name} ${index + 1}">
+                                    </div>`
+                                }
+                            }).join('')}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#xmenas${project.name}" data-bs-slide="prev">
+                            <i class="icon-arrow-left" aria-hidden="true"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#xmenas${project.name}" data-bs-slide="next">
+                            <i class="icon-arrow-right" aria-hidden="true"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
                 </div>
                 <!--<div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -1944,6 +1965,7 @@ document.getElementById('portfolio-modals').innerHTML += portfolio.map((project)
     `
 
 }).join('')
+
 
 
 var typingOptions = {
