@@ -62,8 +62,13 @@
     background: var(--theme-color);
 }
 
-#qual .stepper-container .left .qual-item:last-child {
+/* #qual .stepper-container .left .qual-item:last-child {
     margin-right: -2px;
+} */
+
+#qual .stepper-container .right .qual-item:last-child {
+    margin-left: -2px;
+    background-color: #fff;
 }
 
 #qual .stepper-container .left .qual-item:last-child::before {
