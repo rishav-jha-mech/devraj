@@ -62,12 +62,11 @@
     background: var(--theme-color);
 }
 
-/* #qual .stepper-container .left .qual-item:last-child {
+#qual .stepper-container .left .qual-item:last-child {
     margin-right: -2px;
-} */
+}
 
 #qual .stepper-container .right .qual-item:last-child {
-    margin-left: -2px;
     background-color: #fff;
 }
 
@@ -166,14 +165,10 @@
 }
 
 @media(max-width: 700px) {
-
     #educ-container .qual-item3{
         margin-top: -9px !important;
     }
     #work-container .qual-item2{
         margin-top: 9px !important;
-    }
-    #work-container .qual-item4{
-        margin-top: 0px !important;
     }
 }
