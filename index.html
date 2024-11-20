@@ -69,7 +69,7 @@
             <i class="fa-solid fa-angle-up fs-4"></i>
         </button>
 
-        <a id="download-cv-link" href="./assets/files/Resume.pdf" download hidden></a>
+        <a id="download-cv-link" href="./assets/files/Resume_Rishav_Jha.pdf" download hidden></a>
 
         <section class="main" id="main">
 
@@ -673,14 +673,18 @@
                 <h1 class="heading text-center">My Projects</h1>
                 <h2 class="subheading text-center mb-5">What i made so far</h2>
                 <div class="center my-3" id="togBtns">
-                    <button id="web-btn" onclick="toggleProject()" class="btn me-2 me-sm-3"><i
+                    <button id="web-btn" onclick="showProjects('web')" class="btn my-2 my-sm-0"><i
                             class="icon-globe"></i></i>
                         Web Dev
                     </button>
-                    <button id="app-btn" onclick="toggleProject()" class="btn my-active"><i
+                    <button id="app-btn" onclick="showProjects('app')" class="btn mx-0 mx-sm-2 my-2 my-sm-0"><i
                             class="fa-solid fa-mobile-screen"></i>
                         App Dev
                     </button>
+                    <button id="game-btn" onclick="showProjects('game')" class="btn my-active my-2 my-sm-0"><i
+                        class="fa-solid fa-gamepad"></i>
+                    Game Dev
+                </button>
                 </div>
                 <div class="py-4 row center mt-5 px-0 mb-0 " id="project-grid">
                     <div class="col-12 col-lg-10">
@@ -2039,7 +2043,7 @@
 
                             </div>
                         </div>
-                        <div id="app-dev-projects" class="row px-0 mx-0">
+                        <div id="app-dev-projects" class="row px-0 mx-0 d-none">
                             <div id="app-dev-projects" class="row px-0 mx-0">
                                 <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
                                     <div class="project-item card rounded-5" data-ribbon="React Native"
@@ -3517,6 +3521,747 @@
 
                             </div>
                         </div>
+                        
+                        <div id="game-dev-projects" class="row px-0 mx-0">
+                            <div id="game-dev-projects" class="row px-0 mx-0">
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                        src="./assets/img/projects/Games/no-attack.jpeg"
+                                        width="100%"
+                                        class="d-block h100p w-100"
+                                        alt="No attack 1"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">No Attack</h6>
+                                      <p class="mt-3 text-white">
+                                        Strategically place chess pieces on a grid without attacks to
+                                        outlast your opponent in this turn-based, no-attack chessboard
+                                        game!
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreNoAttack"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalNoAttack"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensNoAttack"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensprojectModalNoAttack"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalNoAttack"
+                                tabindex="-1"
+                                aria-labelledby="projectModalNoAttackLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalNoAttackLabel">
+                                        No Attack
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description">
+                                        The <strong>No Attack Game</strong> is a strategic chess-inspired game where
+                                        players take turns placing pieces on an <strong>m x n grid</strong>,
+                                        ensuring no two pieces can attack each other. The game is played
+                                        over three rounds, with different combinations of<strong> Kings, Knights,
+                                        Bishops, and Rooks</strong>. It features two board
+                                        types: <strong>Normal (standard grid)</strong> and <strong>Blocked</strong> (with
+                                        pre-defined squares where pieces cannot be placed).
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensprojectModalNoAttack"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensprojectModalNoAttackLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="viewScreensprojectModalNoAttackLabel">
+                                        No Attack Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 1</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/no-attack-1.mp4" autoplay controls></video>
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 2</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/no-attack-2.mp4" autoplay controls></video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                        src="./assets/img/projects/Games/chess-moves.jpeg"
+                                        width="100%"
+                                        height="100%"
+                                        class="d-block h100p w-100"
+                                        alt="UV Downloader 1"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">Chess Moves</h6>
+                                      <p class="mt-3 text-white">
+                                        Strategically move your piece to land on the target block, or in
+                                        the reverse variant, avoid placing your piece on it to outsmart
+                                        your opponent!
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreChessMoves"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalChessMoves"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensChessMoves"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensProjectModalChessMoves"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalChessMoves"
+                                tabindex="-1"
+                                aria-labelledby="projectModalChessMovesLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalChessMovesLabel">
+                                        Chess Moves
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description">
+                                        <strong>Chess Moves</strong> is a dynamic strategy game where players navigate chess pieces on a grid to achieve specific objectives. In the standard variant, the goal is to guide your piece to land on a designated target block while avoiding obstacles and planning strategic paths. The reverse variant challenges players to avoid placing their pieces on the target block, requiring careful moves to outwit opponents. The game tests <strong>spatial reasoning, foresight, and adaptability with endless possibilities for creative play.</strong>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensProjectModalChessMoves"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensProjectChessMovesLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="viewScreensProjectChessMovesLabel">
+                                        Chess Moves Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 1</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/chess-moves-1.mp4" autoplay controls></video>
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 2</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/chess-moves-2.mp4" autoplay controls></video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                        src="./assets/img/projects/Games/nims.jpeg"
+                                        width="100%"
+                                        height="100%"
+                                        class="d-block h100p w-100"
+                                        alt="Nims"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">Nims</h6>
+                                      <p class="mt-3 text-white">
+                                        A 3-round tile-tapping strategy game with varying layouts, rules,
+                                        and win conditions.
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreNimsGame"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalNimsGame"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensNimsGame"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensProjectModalNimsGame"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalNimsGame"
+                                tabindex="-1"
+                                aria-labelledby="projectModalNimsGameLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalNimsGameLabel">
+                                        Nims 
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description">
+                                            Nims is a turn-based strategic tile-tapping game designed for two players. The game is played over three rounds, with the objective of winning at least two rounds to claim victory in the match. The game combines <strong>pattern recognition</strong>, <strong>planning</strong>, and <strong>strategic moves</strong> based on specific rules and tile arrangements.  
+
+                                            <span class="text-theme fw-bold d-block mt-2">Gameplay Overview</span>  
+                                            Players interact with a set of tiles arranged in one of the following patterns:  
+                                            <ul>
+                                                <li><strong>Grid:</strong> Tiles are arranged in a rectangular or square layout.  </li>
+                                                <li><strong>Line:</strong> Tiles are aligned in a straight line.  </li>
+                                                <li><strong>Loop:</strong> Tiles are placed in a circular or loop-like pattern.  </li>
+                                                <li><strong>Piles:</strong> Tiles are grouped into separate piles.  </li>
+                                            </ul>
+
+                                            During each turn, players must tap tiles according to the tapping rules for the round. The goal of each round depends on the win condition:  
+                                            <ul>
+                                                <li><strong>Normal Version:</strong> The player who taps the last tile wins the round.  </li>
+                                                <li><strong>Reverse Version:</strong> The player who taps the last tile loses the round.  </li>
+                                            </ul>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Rules and Variations</span>  
+                                            <li><strong>Tapping Rules:</strong> Each round may include restrictions on the number of tiles a player can tap or specific tiles they are allowed to interact with based on the arrangement.  </li>
+                                            <li><strong>Tile Arrangement:</strong> The layout of the tiles (grid, line, loop, or piles) determines the strategic approach for each game round.  </li>
+                                            <li><strong>Win Condition:</strong> The win condition (Normal or Reverse) changes how players strategize to achieve or avoid tapping the last tile.  </li>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Round Structure</span>  
+                                            <ol>
+                                                <li><strong>First Player Alternates:</strong> The player who goes first changes in each round to ensure fairness.  </li>
+                                                <li><strong>Strategic Moves:</strong> Players must plan their moves carefully, considering the current tile arrangement and tapping rules to outwit their opponent.  </li>
+                                                <li><strong>Winning a Round:</strong> A player wins a round by achieving the win condition for that round.  </li>
+                                            </ol>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Match Objective</span>  
+                                            The match is played as a best-of-three. The player who wins two rounds is declared the overall winner. If a round ends prematurely due to a player being unable to make a legal move, the other player wins the round.  
+
+                                            <strong>Nims</strong> combines strategic depth with simplicity, making it an engaging and competitive experience for players of all skill levels.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensProjectModalNimsGame"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensProjectNimsGameLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1
+                                        class="modal-title"
+                                        id="viewScreensProjectNimsGameLabel"
+                                      >
+                                        Nims Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 1</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/nims-1.mp4" autoplay controls></video>
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 2</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/nims-2.mp4" autoplay controls></video>
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 3</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/nims-3.mp4" autoplay controls></video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                      src="./assets/img/projects/Games/coc.jpeg"
+                                        width="100%"
+                                        height="100%"
+                                        class="d-block h100p w-100"
+                                        alt="Clash of Colors"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">Clash of Colours</h6>
+                                      <p class="mt-3 text-white">
+                                        A turn-based strategy game where players color patterns under
+                                        variant-specific boundary rules until one can’t move.
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreCOC"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalCOC"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensCOC"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensProjectModalCOC"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalCOC"
+                                tabindex="-1"
+                                aria-labelledby="projectModalCOCLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalCOCLabel">Clash Of Colors</h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description"> 
+                                            <strong>Clash of Colours</strong> is an exciting and strategic game for two players where each player must color a pattern with their respective colors. Players take turns coloring the pattern according to specific rules and constraints. The first player unable to color the pattern loses the game. The game requires careful planning, spatial reasoning, and foresight, making each move crucial to securing victory.
+
+                                            <span class="text-theme fw-bold d-block mt-2">Gameplay Overview</span>
+                                            The game involves a pattern with various cells or areas that players need to fill with their color. The arrangement of the pattern varies based on the game variant chosen. The players alternate turns, coloring different cells or regions while adhering to the constraints of the selected variation.
+
+                                            <ul>
+                                                <li><strong>Pattern Filling:</strong> Players fill a pattern with their respective colors. The pattern can be anything from a grid, circle, or a custom design that players must color by following certain rules.</li>
+                                                <li><strong>Two Players:</strong> Each player is assigned a specific color at the beginning of the game. They will only be allowed to color the pattern with their respective color during their turn.</li>
+                                                <li><strong>Turn-Based Gameplay:</strong> Players alternate turns, filling cells or areas on the pattern. The game ends when one player cannot make a legal move and is unable to color a cell.</li>
+                                            </ul>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Variations and Rules</span>
+                                            There are four different variations of rules for coloring the pattern, which add depth and complexity to the gameplay. These variations determine how players interact with the pattern and with each other’s colors.
+
+                                            <ul>
+                                                <li><strong>Variation 1 - No Sharing Boundaries with the Opponent:</strong> Players can share boundaries with their own color but cannot share boundaries with the opponent’s color. This forces players to be more careful with placement to avoid blocking themselves.</li>
+                                                <li><strong>Variation 2 - Sharing Boundaries with the Opponent:</strong> Players can share boundaries with the opponent’s color but cannot share boundaries with their own color. This variant encourages players to take calculated risks and make aggressive moves.</li>
+                                                <li><strong>Variation 3 - No Boundary Sharing:</strong> Players cannot share boundaries with either their own or the opponent’s color. This forces players to think strategically about how to expand their territory without touching anyone else's color.</li>
+                                                <li><strong>Variation 4 - Required Boundary with Previous Cell:</strong> Players must share a boundary with the cell they previously filled. This forces players to make a series of connected moves, requiring careful thought about their placement strategy.</li>
+                                            </ul>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Rules of the Game</span>
+                                            The rules of the game are designed to ensure fairness and add strategic depth to each match. 
+
+                                            <ul>
+                                                <li><strong>Coloring the Pattern:</strong> Each player can color only their assigned cells with their respective color. The placement of each color is governed by the current variation.</li>
+                                                <li><strong>Turn Limitations:</strong> Players are required to follow the rules of the variation when selecting a cell to color. Players can’t place their color on any cell that would violate the boundaries set by the variation.</li>
+                                                <li><strong>Inability to Color:</strong> The game ends for a player if they are unable to color any more cells due to restrictions, resulting in a loss for that player.</li>
+                                            </ul>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Winning the Game</span>
+                                            The objective of the game is to be the last player able to make a move and color a cell according to the variation’s rules. If a player is unable to make a legal move, they lose the game. The key to winning is strategic planning, anticipating the opponent’s moves, and preventing them from gaining access to important areas of the pattern.
+
+                                            <span class="text-theme fw-bold d-block mt-2">Match Objective</span>
+                                            The match is played as a best-of-three. The player who wins two rounds is declared the overall winner of the match. The first player who is unable to make a legal move in any round loses that round, and the opponent wins.  
+
+                                            <strong>Clash of Colours</strong> combines simple mechanics with strategic depth, providing a competitive and engaging experience for players of all skill levels. The game encourages players to think ahead, adapt their strategies, and outmaneuver their opponent to secure a victory.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensProjectModalCOC"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensProjectCOCLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="viewScreensProjectCOCLabel">
+                                        Clash of Colors Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 1</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/coc-1.mp4" autoplay controls></video>
+                                        <span class="text-theme text-center fs-3 fw-bold d-block my-2">Gameplay 2</span>
+                                        <video style="height: 100%;width:100%;" src="./assets/videos/coc-2.mp4" autoplay controls></video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                      src="./assets/img/projects/Games/rearrange.jpeg"
+                                        width="100%"
+                                        height="100%"
+                                        class="d-block h100p w-100"
+                                        alt="Rearrange"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">Rearrange</h6>
+                                      <p class="mt-3 text-white">
+                                        Arrange tiles in order within grid constraints, solving sequential
+                                        puzzles by finding the correct placement.
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreRearrange"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalRearrange"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensRearrange"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensProjectModalRearrange"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalRearrange"
+                                tabindex="-1"
+                                aria-labelledby="projectModalRearrangeLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalRearrangeLabel">Rearrange</h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description">
+                                        <strong>Rearrange</strong> is a puzzle game where the player must arrange tiles in either increasing or decreasing order, following specific movement restrictions. This game tests the player's ability to think critically and logically within a grid-based environment.
+
+                                        <span class="text-theme fw-bold d-block mt-2">Gameplay Overview</span>
+                                        In <strong>Rearrange</strong>, the tiles are randomly placed within a grid, and the player must organize them in the correct order. Movement of tiles is restricted to the grid; players cannot jump tiles or move diagonally. The player must carefully slide the tiles into place while adhering to the movement constraints.
+
+                                        <span class="text-theme fw-bold d-block mt-2">Rules and Variations</span>
+                                        <ul>
+                                            <li><strong>Tile Arrangement:</strong> The tiles are placed in random order within a grid, and the player must organize them in increasing or decreasing order based on the objective.</li>
+                                            <li><strong>Movement Restrictions:</strong> Tiles can only be moved within the grid; no jumping or diagonal moves are allowed.</li>
+                                            <li><strong>Answer Check:</strong> After placing a tile, the player checks the answer to see if it is correct. If incorrect, the player stays on the question and continues until the correct order is found.</li>
+                                        </ul>
+
+                                        <span class="text-theme fw-bold d-block mt-2">Objective</span>
+                                        The objective of <strong>Rearrange</strong> is to order the tiles correctly. If the player arranges the tiles in the correct order, they move on to the next level. The game continues until all the levels are completed or the player fails to place the tiles correctly within the given conditions.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensProjectModalRearrange"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensProjectRearrangeLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="viewScreensProjectRearrangeLabel">
+                                        Rearrange Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <video style="height: 100%;width:100%;" src="./assets/videos/rearrange.mp4" autoplay controls></video>                                        
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                                <div
+                                  class="project-item card rounded-5"
+                                  data-ribbon="Phaser"
+                                  style="--d: 6px; --f: 10px; --c: var(--theme-color)"
+                                >
+                                  <div class="card-body">
+                                    <div class="project-image">
+                                      <img
+                                      src="./assets/img/projects/Games/slot-machine.jpeg"
+                                        width="100%"
+                                        height="100%"
+                                        class="d-block h100p w-100"
+                                        alt="Slot Turner"
+                                      />
+                                    </div>
+                          
+                                    <div class="overlay project-description">
+                                      <h6 class="fw-bold text-white">Slot Turner</h6>
+                                      <p class="mt-3 text-white">
+                                        Turn slot items to match the target value and answer the question.
+                                      </p>
+                                      <div class="around btn-containers">
+                                        <button
+                                          id="modalBtnReadMoreSlot"
+                                          class="btn pri d-block my-active"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#projectModalSlot"
+                                        >
+                                          Read More
+                                        </button>
+                                        <button
+                                          id="modalBtnViewScreensSlot"
+                                          class="btn sec ms-2"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#viewScreensProjectModalSlot"
+                                        >
+                                          View Game Play
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- Modal Description -->
+                              <div
+                                class="modal modal1 fade"
+                                id="projectModalSlot"
+                                tabindex="-1"
+                                aria-labelledby="projectModalSlotLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog undefined modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="projectModalSlotLabel">Slot Turner</h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="mt-4 project-description">
+                                            <strong>Slot Turner</strong> is a game designed for single players, where players must turn items within a slot to match a specific target value. The game challenges players' problem-solving skills, spatial reasoning, and ability to visualize transformations.
+
+                                            <span class="text-theme fw-bold d-block mt-2">Gameplay Overview</span>
+                                            In <strong>Slot Turner</strong>, the player is presented with a slot containing several items. Each item can be rotated to a different state. The objective of the game is to turn the items in such a way that they align with the target value shown. The player interacts with each item by turning it to a specific angle or position according to the rules of the game.
+
+                                            <span class="text-theme fw-bold d-block mt-2">Rules and Variations</span>
+                                            <ul>
+                                                <li><strong>Items in Slot:</strong> The slot contains items that must be turned to match a target value.</li>
+                                                <li><strong>Turn Logic:</strong> Each item has distinct angles or positions it can be turned to, and the player must find the correct positioning for each item to match the target.</li>
+                                                <li><strong>Level Progression:</strong> As the player progresses through levels, the difficulty increases with more complex patterns and additional rules for how the items can be turned.</li>
+                                                <li><strong>Time Limit (Optional):</strong> Some variations may include a time limit for each turn, increasing the pressure to complete the puzzle quickly.</li>
+                                            </ul>
+
+                                            <span class="text-theme fw-bold d-block mt-2">Objective</span>
+                                            The objective is to match the arrangement of items in the slot with the target value. Once all items are correctly aligned, the player moves on to the next level. The game ends when the player either completes all the levels or fails to complete a level within the constraints (e.g., number of moves or time limit).
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                              <!-- MODAL VIEW SCREENS -->
+                              <div
+                                class="modal modal2 fade"
+                                id="viewScreensProjectModalSlot"
+                                tabindex="-1"
+                                aria-labelledby="viewScreensProjectSlotLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title" id="viewScreensProjectSlotLabel">
+                                        Slot Turner Game Play
+                                      </h1>
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <video style="height: 100%;width:100%;" src="./assets/videos/slot-turner.mp4" autoplay controls></video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          
                     </div>
                 </div>
             </div>
