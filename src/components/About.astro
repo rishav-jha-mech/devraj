@@ -1,0 +1,50 @@
+---
+interface Stat {
+    value: number;
+    duration: number;
+    label: string;
+}
+
+const stats: Stat[] = [
+    { value: 2,    duration: 800,  label: 'Years Experience' },
+    { value: 2600, duration: 3500, label: 'Commits on Github' },
+    { value: 100,  duration: 2000, label: 'Repositories on Github' },
+    { value: 20,   duration: 2000, label: 'Fullstack Projects' },
+];
+---
+<div class="about minh700 container" id="about">
+    <h1 class="heading text-center">About Me</h1>
+    <h2 class="subheading text-center mb-5 pb-3">My introduction</h2>
+    <div class="row mx-0 center">
+        <div class="col-12 col-lg-11">
+            <div class="row px-0">
+                <div class="col-12 col-lg-5 left start">
+                    <div class="gradient1">
+                        <img src="/assets/img/devraj.png" alt="Rishav Jha">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 center flex-column">
+                    <p class="text text-dark mb-3">
+                        I'm Rishav Jha, a Mechanical Engineering B.Tech graduate from NIT Durgapur. Over the past year,
+                        I have been extensively working on projects based on React and React Native using TypeScript.
+                        I believe in the power of open source and love contributing to the community. Currently, I'm
+                        focused on enhancing my Data Structures and Algorithms skills.
+                    </p>
+                    <div class="row w-100 flex-row text-center my-2 my-sm-4">
+                        {stats.map((stat) => (
+                            <div class="col-sm-3 col-6 my-2 my-sm-0">
+                                <span data-value={stat.value} data-duration={stat.duration} class="blockHero">0</span>
+                                <span class="title">{stat.label}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <div class="display-flex justify-content-center justify-content-sm-start align-center w-100">
+                        <button class="btn d-block mx-auto mx-xl-0 my-3 mt-md-4" onclick="window.downloadCv()">
+                            Download CV <i class="fa-solid fa-angle-right fs-6 ml-3"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

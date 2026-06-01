@@ -1,0 +1,49 @@
+---
+interface Service {
+    title: string;
+    description: string;
+    icon: string; // Bootstrap icon class
+}
+
+const services: Service[] = [
+    {
+        title: 'Web Development',
+        description: 'I develop custom websites using the latest technologies and frameworks.',
+        icon: 'bi-layout-text-window-reverse',
+    },
+    {
+        title: 'UI/UX Design',
+        description: 'I design user interfaces and user experiences for the web and mobile applications.',
+        icon: 'bi-palette',
+    },
+    {
+        title: 'App Development',
+        description: 'I develop cross platform mobile applications for Android and iOS using React Native and Flutter.',
+        icon: 'bi-phone',
+    },
+    {
+        title: 'DevOps',
+        description: 'I have experience in Devops using AWS, GCP and Azure.',
+        icon: 'bi-laptop',
+    },
+];
+---
+<div class="services minh525 container" id="services">
+    <h1 class="heading text-center">Services</h1>
+    <h2 class="subheading text-center mb-5">What I Do</h2>
+    <div class="row mx-0 center">
+        {services.map((service) => (
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <i class={`fs-1 bi ${service.icon}`}></i>
+                        </div>
+                        <h5 class="text-center mb-3">{service.title}</h5>
+                        <article class="text-center">{service.description}</article>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</div>

@@ -1,0 +1,61 @@
+---
+interface SocialLink {
+    href: string;
+    icon: string;
+    label: string;
+}
+
+const navLinks = [
+    { href: '#about',  label: 'About me' },
+    { href: 'https://github.com/rishav-jha-mech/devraj', label: 'Portfolio' },
+    { href: 'tel:+917439876937', label: 'Contact me' },
+];
+
+const socialLinks: SocialLink[] = [
+    { href: 'https://github.com/rishav-jha-mech', icon: 'fa-brands fa-github', label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/rishav-jha-549b45203/', icon: 'fa-brands fa-linkedin', label: 'LinkedIn' },
+    { href: 'https://stackoverflow.com/users/16330307/rishav-jha', icon: 'fa-brands fa-stack-overflow', label: 'Stack Overflow' },
+    { href: 'https://wa.me/send?text=Hi%20Rishav&phone=7439876937', icon: 'fa-brands fa-whatsapp', label: 'WhatsApp' },
+];
+---
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row mx-0 px-0">
+            <div class="center">
+                <div class="col-12 col-lg-12 col-10">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 mb-3">
+                            <div class="d-flex flex-column align-items-start align-items-lg-end">
+                                <div>
+                                    <h3>Rishav Jha</h3>
+                                    <p>Personal Portfolio Website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 mb-4">
+                            <div class="d-flex flex-sm-row flex-column justify-content-start justify-content-lg-center">
+                                {navLinks.map((link) => (
+                                    <a class="me-5 mb-2" href={link.href} target="_blank" rel="noopener noreferrer">
+                                        {link.label}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 mb-3">
+                            <div class="d-flex flex-column align-items-start">
+                                <div>
+                                    {socialLinks.map((link) => (
+                                        <a class="me-4 mb-2" href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                                            <i class={link.icon}></i>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-5">&copy; Rishav Jha. all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

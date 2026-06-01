@@ -1,0 +1,73 @@
+---
+import { education, work } from '../data/experience';
+
+const leftEdu  = education.filter(e => e.side === 'left');
+const rightEdu = education.filter(e => e.side === 'right');
+const leftWork  = work.filter(e => e.side === 'left');
+const rightWork = work.filter(e => e.side === 'right');
+---
+<div class="qual container minh600" id="qual">
+    <h1 class="heading text-center">Qualification</h1>
+    <h2 class="subheading text-center mb-5">My Journey</h2>
+    <div class="row px-0 mb-0">
+        <div class="center my-3">
+            <button id="educ-btn" onclick="toggleQual()" class="btn me-2 me-sm-3">
+                <i class="fa-solid fa-graduation-cap"></i> Education
+            </button>
+            <button id="work-btn" onclick="toggleQual()" class="btn active ms-2 ms-sm-3">
+                <i class="fa-solid fa-briefcase"></i> Work
+            </button>
+        </div>
+        <div class="row px-2 mx-0 center">
+
+            <!-- Education -->
+            <div class="col-12 col-lg-7 stepper-container d-none mt-5" id="educ-container">
+                <div class="left">
+                    {leftEdu.map((entry, i) => (
+                        <div class={`qual-item qual-item${i + 1}`}>
+                            <h4 class="title">{entry.title}</h4>
+                            <h6 class="text-muted">{entry.org}</h6>
+                            <span class={`mt-3 d-block date${entry.highlight ? ' fw-bold' : ''}`}>{entry.date}</span>
+                        </div>
+                    ))}
+                </div>
+                <div class="line"></div>
+                <div class="right">
+                    <div class="h-130"></div>
+                    {rightEdu.map((entry, i) => (
+                        <div class={`qual-item qual-item${i + 3}`}>
+                            <h4 class="title">{entry.title}</h4>
+                            <h6 class="text-muted">{entry.org}</h6>
+                            <span class="mt-3 d-block date">{entry.date}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <!-- Work -->
+            <div class="col-12 col-lg-7 stepper-container mt-5" id="work-container">
+                <div class="left">
+                    {leftWork.map((entry, i) => (
+                        <div class={`qual-item qual-item${i * 2 + 1}${i > 0 ? ' mt-7' : ''}`}>
+                            <h4 class="title">{entry.title}</h4>
+                            <h6 class="text-muted">{entry.org}</h6>
+                            <span class={`mt-3 d-block date${entry.highlight ? ' text-theme fw-bold' : ''}`}>{entry.date}</span>
+                        </div>
+                    ))}
+                </div>
+                <div class="line"></div>
+                <div class="right">
+                    <div class="h-130"></div>
+                    {rightWork.map((entry, i) => (
+                        <div class={`qual-item qual-item${i * 2 + 2}${i > 0 ? ' mt-7' : ''} gsoc`}>
+                            <h4 class="title">{entry.title}</h4>
+                            <h6 class="text-muted">{entry.org}</h6>
+                            <span class="mt-3 d-block date">{entry.date}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

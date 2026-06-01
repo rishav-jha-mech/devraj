@@ -1,0 +1,60 @@
+---
+interface ContactItem {
+    icon: string;
+    label: string;
+    value: string;
+    href?: string;
+}
+
+const contactItems: ContactItem[] = [
+    { icon: 'fa-solid fa-phone',      label: 'Phone',    value: '+91 7439876937', href: 'tel:+917439876937' },
+    { icon: 'icon-envelope',          label: 'Email',    value: 'rishav.rj74@gmail.com', href: 'mailto:rishav.rj74@gmail.com' },
+    { icon: 'fa-brands fa-github',    label: 'Github',   value: '@rishav-jha-mech', href: 'https://github.com/rishav-jha-mech' },
+    { icon: 'icon-location-pin',      label: 'Location', value: 'Kolkata, West Bengal, India.' },
+];
+---
+<div class="contact container px-0 my-5 minh600" id="contact">
+    <h1 class="heading text-center text-dark">Contact Me</h1>
+    <h2 class="subheading text-center mb-0 mb-sm-5">Stay in touch</h2>
+    <div class="row mx-0 center">
+        <div class="col-12 col-lg-10">
+            <div class="row mx-0 px-0 mt-5">
+                <div class="col-lg-6 col-12">
+                    <div class="left">
+                        {contactItems.map((item) => (
+                            <div class="contact-item d-flex">
+                                <i class={`${item.icon} me-3 text-theme`}></i>
+                                <div class="detail text-dark">
+                                    <h5>{item.label}</h5>
+                                    {item.href
+                                        ? <a href={item.href} target="_blank" rel="noopener noreferrer">{item.value}</a>
+                                        : <span>{item.value}</span>
+                                    }
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <form action="/" onsubmit="event.preventDefault(); handleFormSubmit();">
+                        <div class="right mt-sm-0 mt-4">
+                            <div class="row mb-3">
+                                <div class="col-12 col-lg-6 mb-lg-0 mb-3">
+                                    <input id="f-name" name="name" class="form-control py-3" type="text" placeholder="Name" required />
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input id="f-email" name="email" class="form-control py-3" type="email" placeholder="Email" required />
+                                </div>
+                            </div>
+                            <input id="f-subject" name="subject" class="form-control py-3 mb-3" type="text" placeholder="Subject" required />
+                            <textarea id="f-message" name="message" class="form-control py-3 mb-3" cols="30" rows="10" placeholder="Message" required></textarea>
+                            <div class="row mx-0 px-0">
+                                <button class="col-12 col-lg-5 btn fs-6" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

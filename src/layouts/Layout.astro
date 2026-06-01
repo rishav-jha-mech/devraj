@@ -1,0 +1,71 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="I'm Rishav Jha, a Mechanical Engineering B.Tech graduate from NIT Durgapur. I am enthusiastic about learning new technologies. My techstack includes HTML, CSS, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Flask, Django, C++, Python, Typescript, Dart, React Native, Flutter, Git, GitHub, Heroku, Netlify, Firebase, AWS EC2, Cloudflare. This is my portfolio website." />
+    <meta name="google-site-verification" content="vzaU_1zGSIwp-uHIjBY6U3S9TzHJCg-Xxa-PyylmDSY" />
+
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/helper.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/skills.css">
+    <link rel="stylesheet" href="/assets/css/qualification.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/hero-and-contactme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
+    <title>Rishav Jha</title>
+</head>
+<body>
+    <slot />
+
+    <script>
+        (window as any).removeLoading = function () {
+            const l = document.getElementById("loading");
+            const p = document.getElementById("page");
+            if (l) l.className = 'd-none';
+            if (p) p.className = '';
+        };
+
+        (window as any).downloadCv = function () {
+            const link = document.getElementById('download-cv-link') as HTMLAnchorElement;
+            link?.click();
+        };
+
+        const loading = document.getElementById("loading");
+        if (loading) {
+            setTimeout(() => {
+                loading.innerHTML += `
+                    <h4 class="text-info text-center mx-auto px-3 fs-6 fadeIn">Slow internet connection is observed, please wait patiently</h4>
+                    <button class="btn btn-info fadeIn mt-4" style="font-size:1rem;padding:0.375rem 0.75rem;" onclick="window.removeLoading()">
+                        Disable Loading
+                    </button>
+                `;
+            }, 4000);
+        }
+
+        window.addEventListener('load', () => {
+            (window as any).removeLoading();
+        });
+    </script>
+
+    <script is:inline src="/assets/js/bootstrap.js"></script>
+    <script is:inline src="/assets/js/swiper-bundle.min.js"></script>
+    <script is:inline src="/assets/js/typed.js"></script>
+    <script is:inline src="/assets/js/swal2.js"></script>
+    <script is:inline src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Services from '../components/Services.astro';
+import Qualification from '../components/Qualification.astro';
+import Projects from '../components/Projects.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout>
+    <section id="loading" class="minhfull flex-column center" style="background-color: #07192F;">
+        <h1 class="text-info fw-bolder">
+            <i class="fa-solid fa-code fs-1"></i> LOADING ...
+        </h1>
+    </section>
+
+    <section id="page" class="d-none">
+        <Header />
+
+        <button id="up-btn" class="btn d-none upBtn h-0 w-0 rounded-circle">
+            <i class="fa-solid fa-angle-up fs-4"></i>
+        </button>
+
+        <a id="download-cv-link" href="/assets/files/Resume_Rishav_Jha.pdf" download hidden></a>
+
+        <section class="main" id="main">
+            <Hero />
+            <About />
+            <Skills />
+            <Services />
+            <Qualification />
+            <Projects />
+            <Portfolio />
+            <Contact />
+        </section>
+
+        <Footer />
+    </section>
+</Layout>
+
+<style is:global>
+    body {
+        overflow-x: hidden;
+    }
+</style>
