@@ -189,11 +189,10 @@ var swiper = new Swiper(".portfolio-swiper", {
 
 var typingOptions = {
   strings: [
-    "Game Developer",
+    "Cross-Platform Developer",
     "Full Stack Developer",
-    "App Developer",
-    "UI/UX Designer",
-    "Freelancer",
+    "React Native Developer",
+    "Game Developer",
     "Open Source Contributor",
   ],
   typeSpeed: 80,

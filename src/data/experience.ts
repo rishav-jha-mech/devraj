@@ -14,10 +14,11 @@ export const education: ExperienceEntry[] = [
 
 export const work: ExperienceEntry[] = [
   { title: 'React Developer', org: 'Tech Particle', date: 'April 2021 to June 2021', side: 'left' },
-  { title: 'Android Developer', org: 'Triunits', date: 'Jan 2022 to May 2022', side: 'right' },
+  { title: 'Flutter Developer', org: 'Triunits', date: 'Jan 2022 to May 2022', side: 'right' },
   { title: 'Flutter Developer', org: 'Helpen.in', date: 'April 2022 to May 2022', side: 'left' },
-  { title: 'App Developer', org: 'Capricon Technology', date: 'June 2022 to May 2024', side: 'right' },
-  { title: 'Summer Intern', org: 'Reliance Industries Limited', date: 'May 2023 to July 2023', side: 'left' },
+  { title: 'React Native & Flutter Developer', org: 'Capricon Technology', date: 'June 2022 to May 2024', side: 'right' },
+  { title: 'Engineering Intern', org: 'Reliance Industries Limited', date: 'May 2023 to July 2023', side: 'left' },
   { title: 'GSoC Contributor', org: 'Palisadoes Foundation', date: 'May 2023 to Oct 2023', side: 'right' },
-  { title: 'Software Developer', org: 'Cuemath', date: 'Oct 2023 to Present', side: 'left', highlight: true },
+  { title: 'Software Developer', org: 'Cuemath', date: 'Oct 2023 to Aug 2025', side: 'left' },
+  { title: 'MTS2 — Cross-Platform Dev', org: 'Tessell', date: 'Aug 2025 to Present', side: 'right', highlight: true },
 ];

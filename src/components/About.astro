@@ -6,15 +6,15 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-    { value: 2,    duration: 800,  label: 'Years Experience' },
+    { value: 3,    duration: 800,  label: 'Years Experience' },
     { value: 2600, duration: 3500, label: 'Commits on Github' },
     { value: 100,  duration: 2000, label: 'Repositories on Github' },
-    { value: 20,   duration: 2000, label: 'Fullstack Projects' },
+    { value: 20,   duration: 2000, label: 'Projects Shipped' },
 ];
 ---
 <div class="about minh700 container" id="about">
     <h1 class="heading text-center">About Me</h1>
-    <h2 class="subheading text-center mb-5 pb-3">My introduction</h2>
+    <h2 class="subheading text-center mb-5 pb-3">Who I am</h2>
     <div class="row mx-0 center">
         <div class="col-12 col-lg-11">
             <div class="row px-0">
@@ -25,10 +25,10 @@ const stats: Stat[] = [
                 </div>
                 <div class="col-12 col-lg-7 center flex-column">
                     <p class="text text-dark mb-3">
-                        I'm Rishav Jha, a Mechanical Engineering B.Tech graduate from NIT Durgapur. Over the past year,
-                        I have been extensively working on projects based on React and React Native using TypeScript.
-                        I believe in the power of open source and love contributing to the community. Currently, I'm
-                        focused on enhancing my Data Structures and Algorithms skills.
+                        I'm Rishav Jha, a developer from Kolkata based in Bengaluru. I build apps — web, mobile, desktop, whatever the problem needs.
+                        Right now I'm at Tessell doing cross-platform desktop work with Tauri and Electron. Before that, React Native and Flutter at Capricon,
+                        a GSoC stint at Palisadoes Foundation, and a run at Cuemath. I also make games on the side, which is where
+                        some of the more interesting projects on this portfolio came from.
                     </p>
                     <div class="row w-100 flex-row text-center my-2 my-sm-4">
                         {stats.map((stat) => (

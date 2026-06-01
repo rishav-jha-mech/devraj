@@ -62,7 +62,7 @@ export const projects: Project[] = [
     name: 'SamVaad',
     ribbon: 'React',
     thumbnail: '/assets/img/projects/Samvaad/web-poster.webp',
-    tagline: 'Provides you with the latest news from all over the world in 7 different categories from different sources. My first React project.',
+    tagline: 'News aggregator pulling from 50+ countries across 7 categories — built with React and a Flask backend that handles 1500+ requests/day.',
     description: `Samvaad provides you with the latest news from all over the world in 7 different categories from different sources. This was my first React project built from scratch. The backend is made using Flask and python requests which calls NewsApi, with a try-catch mechanism that can serve around 1500 requests per day.`,
     techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Flask', 'Cloudflare Pages'],
     liveUrl: 'https://samvaad.pages.dev',
@@ -166,7 +166,6 @@ export const projects: Project[] = [
     tagline: 'Buzzpost is a blogging app which allows users to create their own blogs and share them with the world.',
     description: `Buzzpost app companion to the web platform. Features home, login/signup, trending screen, read/search blogs, write blogs with rich text editor, profile screens, and social interactions (likes, comments, replies).`,
     techStack: ['React Native', 'JavaScript', 'Django', 'Python Anywhere'],
-    liveUrl: 'https://rj-freya.herokuapp.com',
     screens: [
       { src: '/assets/img/projects/BuzzpostApp/app-poster.webp', alt: 'Buzzpost App poster' },
       ...Array.from({ length: 17 }, (_, i) => ({
